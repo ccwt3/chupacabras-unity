@@ -28,8 +28,8 @@ public static class TrackingBuild
             EditorSceneManager.SaveScene(scene, ScenePath);
         }
         PlayerSettings.productName = "Chupacabras — Seguimiento";
-        PlayerSettings.bundleVersion = "0.0.2";
-        PlayerSettings.Android.bundleVersionCode = 2;
+        PlayerSettings.bundleVersion = "0.0.3";
+        PlayerSettings.Android.bundleVersionCode = 3;
         PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.chupacabras.ar.trackingprobe");
         PlayerSettings.Android.forceInternetPermission = false;
         PlayerSettings.defaultInterfaceOrientation = UIOrientation.AutoRotation;

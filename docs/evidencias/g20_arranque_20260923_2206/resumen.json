@@ -1,0 +1,21 @@
+{
+  "samples": 430,
+  "camera_samples": 425,
+  "marker_visible_samples": 0,
+  "max_playback_s": 0.0,
+  "camera_span_s": 52.567099999999996,
+  "physical_marker_tested": false,
+  "limitation": "Sin marcador; frame_ms suavizado y RT sin render al no haber seguimiento.",
+  "frame_ms": {
+    "median": 33.322,
+    "max": 203.665
+  },
+  "image_ms": {
+    "median": 9.267,
+    "max": 255.832
+  },
+  "detect_ms": {
+    "median": 9.251,
+    "max": 17.902
+  }
+}

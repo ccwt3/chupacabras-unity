@@ -2,11 +2,11 @@
 
 ## Estado y alcance
 
-Preparación de la prueba de viabilidad, todavía **sin validación física**. Se retoma 2.4 y se prepara 3.1; no se ejecuta el paso 4. Unity exclusivo 6000.3.22f1 en Linux, URP 17.3.0 y AprilTag 1.0.3 embebido original. ARM64 sigue provisional hasta consultar el sistema del G20. La escena de diagnóstico 02 y su APK se conservan.
+Prueba de viabilidad **parcial en el G20**: ABI, instalación, cámara y detector sobre imagen incluida comprobados; impresión, pose/escala y seguimiento físico pendientes. Paso 2 cerrado; paso 3 en curso, sin ejecutar 4. Véase [diagnóstico y limpieza](diagnostico_g20.md). Unity exclusivo 6000.3.22f1 en Linux, URP 17.3.0 y AprilTag 1.0.3 embebido original. El G20 conectado confirmó ARM64 y API 30; no extrapolarlo al S23. La escena de diagnóstico 02 y su APK se conservan.
 
 La escena `Assets/Scenes/03_TrackingProbe.unity` muestra la cámara trasera, un cubo de **50 mm de lado** y dos ejes de 100 mm sobre ID 0. A su derecha se muestra una RenderTexture de 512 × 288 con un cubo giratorio generado en tiempo real. Es carga gráfica mínima para medir; no es el corto, no importa animaciones Blender y no completa el intercambio del paso 4 ni garantiza margen para los recursos finales.
 
-## M#[2] — pendiente: acceso y recorrido físico
+## M#[2] — parcial: falta impresión medida y recorrido físico
 
 Antes de realizarlo deben estar disponibles la APK 03 verificada, el PDF y esta guía. El agente instala, recoge registros y depura; el usuario no tiene que ejecutar comandos.
 
@@ -29,7 +29,7 @@ Criterios de diagnóstico iniciales (no resultados ni acuerdos creativos): objet
 - `TrackingState`: oculta y pausa en el primer frame procesado sin ID 0, o tras 0.4 s sin frames frescos. Segundo plano libera cámara/detector. La recuperación continúa el reloj. Se usan poses sin suavizado para observar su estabilidad real.
 - Ventana de prueba sobre capa 8, cámara interna separada y RenderTexture. Se desactiva el render interno cuando no hay seguimiento o se desactiva RT. Materiales/shaders referenciados por escena para incluirlos en Android.
 - Selector de FOV provisional 30–100° para diagnóstico. No se guarda como calibración universal ni se transfiere del G20 al S23. El wrapper fijado asume focales iguales y centro de imagen; no corrige distorsión. El teléfono determinará si basta o requiere calibración.
-- App de desarrollo separada `com.chupacabras.ar.trackingprobe`, versión 0.0.2/2. No reemplaza `com.chupacabras.ar.probe` del diagnóstico 02. No se añade ARCore/AR Foundation ni otra versión del Editor.
+- App de desarrollo separada `com.chupacabras.ar.trackingprobe`, versión 0.0.3/3. No reemplaza `com.chupacabras.ar.probe` del diagnóstico 02. No se añade ARCore/AR Foundation ni otra versión del Editor.
 
 ## Evidencia recogida por la aplicación
 
@@ -62,3 +62,6 @@ Unity Technologies. (s. f.). *WebCamTexture.videoRotationAngle*. Unity 6.3 Docum
 Unity Technologies. (s. f.). *WebCamTexture.videoVerticallyMirrored*. Unity 6.3 Documentation. https://docs.unity3d.com/6000.3/Documentation/ScriptReference/WebCamTexture-videoVerticallyMirrored.html
 
 Wolf, J., & fenjalien. (2026). *CeTZ* (0.5.2) [Paquete Typst]. Typst Universe. https://typst.app/universe/package/cetz/
+
+
+Continuación: el usuario no dispone aún del marcador impreso. La app fue desinstalada y su ausencia verificada por petición explícita; reinstalar temporalmente cuando se retome con el marcador preparado y limpiar lo instalado al terminar. Notificar las acciones manuales necesarias.

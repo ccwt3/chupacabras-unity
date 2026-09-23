@@ -37,3 +37,6 @@ La build regeneró `.utmp`, que el commit inicial había incluido como caché. S
 Ni 2.4 ni 3.5 quedan completos. FOV 60° es provisional; lente real, orientación/reflejo, distorsión, pose/escala, recuperación y rendimiento siguen por validar. La RenderTexture contiene solo un cubo de prueba y no prueba el margen del corto definitivo. S23 pendiente de prueba física propia.
 
 Próxima pareja: **2 retomado en 2.4 + 3 desde 3.2/3.3**, al responder M#[2]. No avanzar al 4 en esta sesión. No cambiar Editor, tecnología, duración 40 s ni decisiones de M#[1].
+
+
+Actualización tras acceso al G20: paso 2 cerrado por ABI/API y carga nativa comprobados; cámara abierta, impresión/seguimiento aún pendientes. APK 0.0.3 corrige stripping y panel horizontal. App desinstalada al finalizar por solicitud del usuario. Véase [diagnóstico físico y limpieza](diagnostico_g20.md).

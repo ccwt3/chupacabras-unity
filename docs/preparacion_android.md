@@ -91,3 +91,6 @@ Ejecutar desde la raíz Unity; elegir un nombre de log nuevo para conservar evid
 ## Continuación: preparación del paso 3
 
 La escena/APK 02 de este documento se conservan. Se añadió la prueba de cámara, cubo y RenderTexture 03: [resultado y evidencias](resultado_paso03.md), [guía física M#[2]](prueba_g20.md). Build y pruebas sintéticas correctas; ABI real G20 y aceptación física siguen pendientes. La configuración activa es 03, sin modificar paquetes ni Editor.
+
+
+Actualización tras acceso al G20: paso 2 cerrado por ABI/API y carga nativa comprobados; cámara abierta, impresión/seguimiento aún pendientes. APK 0.0.3 corrige stripping y panel horizontal. App desinstalada al finalizar por solicitud del usuario. Véase [diagnóstico físico y limpieza](diagnostico_g20.md).

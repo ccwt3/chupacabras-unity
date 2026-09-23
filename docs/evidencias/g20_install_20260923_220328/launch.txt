@@ -1,0 +1,48 @@
+  bash arg: -p
+  bash arg: com.chupacabras.ar.trackingprobe
+  bash arg: -c
+  bash arg: android.intent.category.LAUNCHER
+  bash arg: 1
+// Monkey Version Informations:  
+// Build Label: motorola/java_retail/java:11/RTAS31.68-66-3/66-3:user/release-keys
+// Build Time: 1676958032000
+// Build Type: user
+// Build Tags: release-keys
+// Build Debugable: false
+// Build Changelist: 66-3
+// Monkey Start Time : 795183151; Monkey Start Calendar Time : 2026-09-23 16:03:47.879 
+** New tombstone found: /data/tombstones/tombstone_00, size: 80314
+** New tombstone found: /data/tombstones/tombstone_01, size: 894804
+** New tombstone found: /data/tombstones/tombstone_02, size: 1008838
+** New tombstone found: /data/tombstones/tombstone_03, size: 1049698
+** New tombstone found: /data/tombstones/tombstone_04, size: 977635
+** New tombstone found: /data/tombstones/tombstone_05, size: 921429
+** New tombstone found: /data/tombstones/tombstone_06, size: 1049968
+** New tombstone found: /data/tombstones/tombstone_07, size: 936767
+** New tombstone found: /data/tombstones/tombstone_08, size: 1430553
+** New tombstone found: /data/tombstones/tombstone_09, size: 1391572
+** New tombstone found: /data/tombstones/tombstone_10, size: 431091
+** New tombstone found: /data/tombstones/tombstone_11, size: 1022901
+** New tombstone found: /data/tombstones/tombstone_12, size: 57633
+** New tombstone found: /data/tombstones/tombstone_13, size: 948868
+** New tombstone found: /data/tombstones/tombstone_14, size: 861767
+** New tombstone found: /data/tombstones/tombstone_15, size: 78265
+** New tombstone found: /data/tombstones/tombstone_16, size: 79653
+** New tombstone found: /data/tombstones/tombstone_17, size: 77087
+** New tombstone found: /data/tombstones/tombstone_18, size: 77319
+** New tombstone found: /data/tombstones/tombstone_19, size: 894279
+** New tombstone found: /data/tombstones/tombstone_20, size: 78806
+** New tombstone found: /data/tombstones/tombstone_21, size: 78992
+** New tombstone found: /data/tombstones/tombstone_22, size: 1219830
+** New tombstone found: /data/tombstones/tombstone_23, size: 79503
+** New tombstone found: /data/tombstones/tombstone_24, size: 1100279
+** New tombstone found: /data/tombstones/tombstone_25, size: 1086664
+** New tombstone found: /data/tombstones/tombstone_26, size: 78243
+** New tombstone found: /data/tombstones/tombstone_27, size: 78473
+** New tombstone found: /data/tombstones/tombstone_28, size: 398337
+** New tombstone found: /data/tombstones/tombstone_29, size: 411393
+** New tombstone found: /data/tombstones/tombstone_30, size: 386282
+** New tombstone found: /data/tombstones/tombstone_31, size: 0
+// First NativeCrash Time : 795219256; First NativeCrash Calendar Time : 2026-09-23 16:04:23.994 
+Events injected: 1
+## Network stats: elapsed time=36171ms (0ms mobile, 0ms wifi, 36171ms not connected)

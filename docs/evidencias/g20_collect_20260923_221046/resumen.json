@@ -1,0 +1,19 @@
+{
+  "version": "0.0.3/3",
+  "platform": "Android",
+  "native_smoke_passed": true,
+  "smoke_detections": 1,
+  "blank_detections": 0,
+  "app_error_lines": [],
+  "camera_samples": 50,
+  "reported_rotations": [
+    0,
+    90
+  ],
+  "marker_visible_samples": 0,
+  "physical_marker_tested": false,
+  "tracking_accepted": false,
+  "frame_ms_median": 37.049,
+  "image_ms_median": 5.9495000000000005,
+  "detect_ms_median": 12.673
+}

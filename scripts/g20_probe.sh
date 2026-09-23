@@ -37,11 +37,27 @@ if [[ "$MODE" == install ]]; then
   [[ -f "$APK" ]]
   # -r preserves the probe's data if a later revision is installed. Never uninstall.
   "$ADB" -s "$SERIAL" install -r "$APK" | tee "$OUTPUT/install.txt"
-  "$ADB" -s "$SERIAL" shell monkey -p "$PACKAGE" -c android.intent.category.LAUNCHER 1 > "$OUTPUT/launch.txt"
+  "$ADB" -s "$SERIAL" shell am start -W -n "$PACKAGE/com.unity3d.player.UnityPlayerGameActivity" > "$OUTPUT/launch.txt"
 elif [[ "$MODE" == collect ]]; then
-  "$ADB" -s "$SERIAL" logcat -d -v threadtime Unity:I AndroidRuntime:E '*:S' > "$OUTPUT/logcat.txt"
+  if ! APP_PID="$("$ADB" -s "$SERIAL" shell pidof "$PACKAGE" | tr -d '\r')"; then
+    APP_PID=""
+  fi
+  if [[ "$APP_PID" =~ ^[0-9]+$ ]]; then
+    "$ADB" -s "$SERIAL" logcat -d --pid="$APP_PID" -v threadtime > "$OUTPUT/logcat.txt"
+  else
+    echo 'La app no está ejecutándose; no se recopilan logs de otros procesos.' > "$OUTPUT/logcat.txt"
+  fi
   "$ADB" -s "$SERIAL" shell dumpsys meminfo "$PACKAGE" > "$OUTPUT/memory.txt"
-  "$ADB" -s "$SERIAL" exec-out screencap -p > "$OUTPUT/screen.png"
-  "$ADB" -s "$SERIAL" pull "/sdcard/Android/data/$PACKAGE/files" "$OUTPUT/files"
+  FOREGROUND="$("$ADB" -s "$SERIAL" shell dumpsys activity activities | awk '/mResumedActivity:/{print; exit}')"
+  if [[ "$FOREGROUND" == *"$PACKAGE/"* ]]; then
+    "$ADB" -s "$SERIAL" exec-out screencap -p > "$OUTPUT/screen.png"
+  fi
+  mkdir "$OUTPUT/files"
+  while IFS= read -r PROBE_DIR; do
+    PROBE_DIR="${PROBE_DIR//$'\r'/}"
+    if [[ "$PROBE_DIR" =~ ^probe_[0-9_]+$ ]]; then
+      "$ADB" -s "$SERIAL" pull "/sdcard/Android/data/$PACKAGE/files/$PROBE_DIR" "$OUTPUT/files/$PROBE_DIR"
+    fi
+  done < <("$ADB" -s "$SERIAL" shell ls -1 "/sdcard/Android/data/$PACKAGE/files")
 fi
 printf 'Resultado: %s\n' "$OUTPUT"

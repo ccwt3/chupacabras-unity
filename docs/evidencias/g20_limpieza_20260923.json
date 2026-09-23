@@ -1,0 +1,68 @@
+{
+  "utc": "2026-09-23T22:11:32.062346+00:00",
+  "package": "com.chupacabras.ar.trackingprobe",
+  "installed_before": false,
+  "authorized_cleanup": "Usuario pidió limpiar lo instalado al terminar",
+  "operations": [
+    {
+      "args": [
+        "shell",
+        "am",
+        "force-stop",
+        "com.chupacabras.ar.trackingprobe"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "uninstall",
+        "com.chupacabras.ar.trackingprobe"
+      ],
+      "exit": 0,
+      "stdout": "Success\n",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "shell",
+        "pm",
+        "path",
+        "com.chupacabras.ar.trackingprobe"
+      ],
+      "exit": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "shell",
+        "pidof",
+        "com.chupacabras.ar.trackingprobe"
+      ],
+      "exit": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "args": [
+        "shell",
+        "test",
+        "-d",
+        "/sdcard/Android/data/com.chupacabras.ar.trackingprobe"
+      ],
+      "exit": 1,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "version_and_camera": [
+    "versionCode=3 minSdk=26 targetSdk=35",
+    "versionName=0.0.3",
+    "android.permission.CAMERA: granted=true, flags=[ USER_SET|USER_SENSITIVE_WHEN_GRANTED|USER_SENSITIVE_WHEN_DENIED]"
+  ],
+  "package_absent": true,
+  "process_absent": true,
+  "external_app_directory_absent": true
+}

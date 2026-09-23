@@ -1,0 +1,14 @@
+{
+  "com.chupacabras.ar.trackingprobe": {
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "",
+    "installed_before": false
+  },
+  "com.chupacabras.ar.probe": {
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "",
+    "installed_before": false
+  }
+}

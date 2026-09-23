@@ -63,6 +63,20 @@ namespace Chupacabras
 #if UNITY_EDITOR
             if (syntheticPreview) { cameraName = "SYNTHETIC_EDITOR"; ready = true; return; }
 #endif
+            try
+            {
+                var result = DetectorSmokeTest.Run(Resources.Load<Texture2D>("AprilTagFixture"));
+                result.limitation = "Imagen incluida; no valida marcador físico, escala ni calibración.";
+                string json = JsonUtility.ToJson(result, true);
+                File.WriteAllText(Path.Combine(EvidenceDirectory, "detector-device.json"), json);
+                Debug.Log("CHUPACABRAS_DEVICE_DETECTOR_OK " + json);
+            }
+            catch (Exception error)
+            {
+                Status = "Falló la comprobación del detector; consulta el registro.";
+                Debug.LogException(error);
+                return;
+            }
             StartCoroutine(OpenCamera());
         }
 
@@ -268,7 +282,7 @@ namespace Chupacabras
 
         private void OnGUI()
         {
-            float scale = Mathf.Max(1, Screen.width / 640f);
+            float scale = Mathf.Max(1, Mathf.Min(Screen.width / 480f, Screen.height / 600f));
             GUI.matrix = Matrix4x4.Scale(new Vector3(scale, scale, 1));
             float w = Screen.width / scale, h = Screen.height / scale;
             GUI.Box(new Rect(0, 0, w, 95), "");
