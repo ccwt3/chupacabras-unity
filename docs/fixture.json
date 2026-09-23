@@ -1,0 +1,9 @@
+{
+  "url": "https://api.github.com/repos/AprilRobotics/apriltag-imgs/contents/tagStandard41h12/tag41_12_00000.png",
+  "blob": "cdbeebd32c17c99c2aa4791537379bf01dd994cd",
+  "fixture": "512x512; original a 288x288 con nearest, centrado sobre blanco",
+  "original_sha256": "ad5bc161c157634f05afcfd3cfba34334b9303609dd3afc9c000b86e031da02a",
+  "familia": "tagStandard41h12",
+  "id": 0,
+  "uso": "Imagen sint\u00e9tica; no marcador f\u00edsico validado"
+}

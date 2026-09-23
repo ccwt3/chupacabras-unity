@@ -1,0 +1,8 @@
+{
+  "repo": "https://github.com/keijiro/jp.keijiro.apriltag",
+  "commit": "fd6dd4698c9c6d2dc4a5e676beeab7f620006c78",
+  "version": "1.0.3",
+  "embedded": "Packages/jp.keijiro.apriltag",
+  "modifications": false,
+  "tarball_sha256": "e25ee00042fbe53abc1c2c4c15346bfbea1bacf466b7d74920845504f635bd39"
+}

@@ -1,0 +1,8 @@
+/home/cacawatin/code/unity/chupacabras/.utmp/Debug/5t4b1a4u/arm64-v8a/CMakeFiles/edit_cache.dir
+/home/cacawatin/code/unity/chupacabras/.utmp/Debug/5t4b1a4u/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/home/cacawatin/code/unity/chupacabras/.utmp/Debug/5t4b1a4u/arm64-v8a/GameActivity/CMakeFiles/game.dir
+/home/cacawatin/code/unity/chupacabras/.utmp/Debug/5t4b1a4u/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+/home/cacawatin/code/unity/chupacabras/.utmp/Debug/5t4b1a4u/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
+/home/cacawatin/code/unity/chupacabras/.utmp/Debug/5t4b1a4u/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+/home/cacawatin/code/unity/chupacabras/.utmp/Debug/5t4b1a4u/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+/home/cacawatin/code/unity/chupacabras/.utmp/Debug/5t4b1a4u/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir

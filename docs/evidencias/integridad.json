@@ -1,0 +1,21 @@
+{
+  "apriltag_original_files_unchanged": 62,
+  "prior_blender_files_unchanged": 428,
+  "arcore_or_arfoundation_dependencies": false,
+  "packages": {
+    "com.unity.burst": "1.8.30",
+    "com.unity.collections": "2.6.8",
+    "com.unity.ext.nunit": "2.0.5",
+    "com.unity.mathematics": "1.3.2",
+    "com.unity.nuget.mono-cecil": "1.11.6",
+    "com.unity.render-pipelines.core": "17.3.0",
+    "com.unity.render-pipelines.universal": "17.3.0",
+    "com.unity.render-pipelines.universal-config": "17.0.3",
+    "com.unity.searcher": "4.9.5",
+    "com.unity.shadergraph": "17.3.0",
+    "com.unity.test-framework": "1.6.0",
+    "com.unity.test-framework.performance": "3.5.0",
+    "com.unity.ugui": "2.0.0",
+    "jp.keijiro.apriltag": "file:jp.keijiro.apriltag"
+  }
+}

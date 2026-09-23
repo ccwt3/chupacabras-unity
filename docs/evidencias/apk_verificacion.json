@@ -1,0 +1,101 @@
+{
+  "badging": {
+    "returncode": 0,
+    "stdout": "package: name='com.chupacabras.ar.probe' versionCode='1' versionName='0.0.1' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'\ninstall-location:'preferExternal'\nsdkVersion:'26'\ntargetSdkVersion:'35'\nuses-permission: name='android.permission.INTERNET'\nuses-permission: name='com.chupacabras.ar.probe.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'\napplication-label:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-af:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-am:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-ar:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-as:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-az:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-be:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-bg:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-bn:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-bs:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-ca:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-cs:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-da:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-de:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-el:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-en-AU:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-en-CA:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-en-GB:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-en-IN:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-en-XC:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-es:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-es-US:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-et:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-eu:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-fa:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-fi:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-fr:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-fr-CA:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-gl:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-gu:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-hi:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-hr:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-hu:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-hy:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-in:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-is:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-it:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-iw:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-ja:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-ka:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-kk:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-km:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-kn:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-ko:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-ky:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-lo:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-lt:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-lv:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-mk:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-ml:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-mn:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-mr:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-ms:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-my:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-nb:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-ne:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-nl:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-or:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-pa:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-pl:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-pt:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-pt-BR:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-pt-PT:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-ro:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-ru:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-si:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-sk:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-sl:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-sq:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-sr:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-sr-Latn:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-sv:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-sw:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-ta:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-te:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-th:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-tl:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-tr:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-uk:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-ur:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-uz:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-vi:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-zh-CN:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-zh-HK:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-zh-TW:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-label-zu:'Chupacabras \u2014 Prueba t\u00e9cnica'\napplication-icon-160:'res/mipmap-anydpi-v26/app_icon.xml'\napplication-icon-240:'res/mipmap-anydpi-v26/app_icon.xml'\napplication-icon-320:'res/mipmap-anydpi-v26/app_icon.xml'\napplication-icon-480:'res/mipmap-anydpi-v26/app_icon.xml'\napplication-icon-640:'res/mipmap-anydpi-v26/app_icon.xml'\napplication-icon-65534:'res/mipmap-anydpi-v26/app_icon.xml'\napplication: label='Chupacabras \u2014 Prueba t\u00e9cnica' icon='res/mipmap-anydpi-v26/app_icon.xml'\napplication-debuggable\nlaunchable-activity: name='com.unity3d.player.UnityPlayerGameActivity'  label='' icon=''\nfeature-group: label=''\n  uses-gl-es: '0x30000'\n  uses-feature-not-required: name='android.hardware.touchscreen'\n  uses-feature-not-required: name='android.hardware.touchscreen.multitouch'\n  uses-feature-not-required: name='android.hardware.touchscreen.multitouch.distinct'\nmain\nsupports-screens: 'small' 'normal' 'large' 'xlarge'\nsupports-any-density: 'true'\nlocales: '--_--' 'af' 'am' 'ar' 'as' 'az' 'be' 'bg' 'bn' 'bs' 'ca' 'cs' 'da' 'de' 'el' 'en-AU' 'en-CA' 'en-GB' 'en-IN' 'en-XC' 'es' 'es-US' 'et' 'eu' 'fa' 'fi' 'fr' 'fr-CA' 'gl' 'gu' 'hi' 'hr' 'hu' 'hy' 'in' 'is' 'it' 'iw' 'ja' 'ka' 'kk' 'km' 'kn' 'ko' 'ky' 'lo' 'lt' 'lv' 'mk' 'ml' 'mn' 'mr' 'ms' 'my' 'nb' 'ne' 'nl' 'or' 'pa' 'pl' 'pt' 'pt-BR' 'pt-PT' 'ro' 'ru' 'si' 'sk' 'sl' 'sq' 'sr' 'sr-Latn' 'sv' 'sw' 'ta' 'te' 'th' 'tl' 'tr' 'uk' 'ur' 'uz' 'vi' 'zh-CN' 'zh-HK' 'zh-TW' 'zu'\ndensities: '160' '240' '320' '480' '640' '65534'\nnative-code: 'arm64-v8a'\n",
+    "stderr": ""
+  },
+  "permissions": {
+    "returncode": 0,
+    "stdout": "package: com.chupacabras.ar.probe\nuses-permission: name='android.permission.INTERNET'\npermission: com.chupacabras.ar.probe.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION\nuses-permission: name='com.chupacabras.ar.probe.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'\n",
+    "stderr": ""
+  },
+  "signature": {
+    "returncode": 0,
+    "stdout": "Verifies\nVerified using v1 scheme (JAR signing): false\nVerified using v2 scheme (APK Signature Scheme v2): true\nVerified using v3 scheme (APK Signature Scheme v3): false\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\n",
+    "stderr": ""
+  },
+  "zipalign": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "libraries": {
+    "lib/arm64-v8a/libAprilTag.so": {
+      "sha256": "8b17e7b1727add4c70d33da886939e472d9e516b70b36e692284d9c11670fb59",
+      "LOAD_alignment": [
+        16384,
+        16384,
+        16384,
+        16384
+      ]
+    },
+    "lib/arm64-v8a/lib_burst_generated.so": {
+      "sha256": "505c5e3d64b2b5a95dae272bae25ce013f2d4c8c902ca957e1e4a9a1a28a053a",
+      "LOAD_alignment": [
+        16384,
+        16384,
+        16384,
+        16384
+      ]
+    },
+    "lib/arm64-v8a/libc++_shared.so": {
+      "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4",
+      "LOAD_alignment": [
+        16384,
+        16384,
+        16384,
+        16384
+      ]
+    },
+    "lib/arm64-v8a/libgame.so": {
+      "sha256": "c1a9f70adc9a91912616154694ce30af14ca4c3734ecf0c6ec659d321daf246d",
+      "LOAD_alignment": [
+        16384,
+        16384,
+        16384
+      ]
+    },
+    "lib/arm64-v8a/libil2cpp.so": {
+      "sha256": "088c88140fd6deffbbdd5406b2308082504ce2debec3b44a9cb5ff4f8473da30",
+      "LOAD_alignment": [
+        16384,
+        16384,
+        16384,
+        16384
+      ]
+    },
+    "lib/arm64-v8a/libmain.so": {
+      "sha256": "a570a1fed588946b554fa822758d356ff8b1ee61e388703781fe4da0f4e97f38",
+      "LOAD_alignment": [
+        16384,
+        16384,
+        16384,
+        16384
+      ]
+    },
+    "lib/arm64-v8a/libswappywrapper.so": {
+      "sha256": "03d3f91aec28dbe4d60dfc2c1f3af6442a64182555e0bc5fd790a323051536a9",
+      "LOAD_alignment": [
+        16384,
+        16384,
+        16384
+      ]
+    },
+    "lib/arm64-v8a/libunity.so": {
+      "sha256": "a0f0bd324fd90d0130722942d6590317088ed4a0f2ee9546f8e59bca99fcd240",
+      "LOAD_alignment": [
+        16384,
+        16384,
+        16384,
+        16384
+      ]
+    }
+  },
+  "apriltag_text_section_unchanged": true,
+  "apriltag_whole_file_unchanged": false,
+  "apk": "/home/cacawatin/code/unity/chupacabras/builds/android/02_detector_20260923_205436.apk",
+  "bytes": 35986932,
+  "sha256": "0a150d6bd72390e8d20d9acb5d33ccb90d85ff826e23cfe7998be0e4646f51f9",
+  "physical_device_test": false,
+  "apriltag_original_sha256": "c81ef567c0226fbfa7b64cf9b559daaae9a94e4f180d5ca7a3572f6d983e8f5f"
+}

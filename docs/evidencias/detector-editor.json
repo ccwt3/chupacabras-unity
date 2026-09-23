@@ -1,0 +1,21 @@
+{
+    "unity": "6000.3.22f1",
+    "platform": "LinuxEditor",
+    "family": "tagStandard41h12",
+    "id": 0,
+    "detections": 1,
+    "blankDetections": 0,
+    "position": {
+        "x": -0.000034351243812125176,
+        "y": 0.00011600770085351542,
+        "z": 0.27719518542289736
+    },
+    "rotation": {
+        "x": 0.00254121795296669,
+        "y": -0.001034087035804987,
+        "z": -0.00020371917344164103,
+        "w": 0.9999962449073792
+    },
+    "passed": true,
+    "limitation": "Imagen sintética; cámara, proyección y teléfono pendientes"
+}
