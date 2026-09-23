@@ -1,5 +1,16 @@
 # Seguimiento físico G20 — 23 de septiembre de 2026
 
+## Estado vigente — cierre aceptado por el usuario
+
+**Paso 3 completado, M#[2] resuelta y paso 4 listo, sin ejecutarlo aún.** El usuario acepta como hecha la distancia/escala aproximada de la prueba real (referencia de 30 cm, lecturas iniciales alrededor de 27.4 cm y posteriores de 34.55 cm). Se conserva esta variación tal como se midió. Se acepta el rendimiento observado para continuar y se aplaza su evaluación adicional a etapas posteriores. No repetir medidas ni pedir el teléfono para habilitar el paso 4.
+
+Esta decisión explícita sustituye el cierre parcial y las instrucciones de repetir mediciones que aparecen en el historial siguiente. La aceptación práctica no certifica una calibración exacta ni convierte la APK 0.0.5 en físicamente probada; su comprobación se hará con la validación móvil posterior. AprilTag queda como ruta aceptada; S23 conserva su estado pendiente. Próximos pasos previstos: **4 + 5**, cuando el usuario indique continuar. **No se ejecutó 4**.
+
+Actualización exclusivamente documental: sin cambios de código, APK o evidencia bruta, sin conexión/instalación adicional. App ya retirada y limpieza comprobada. Se revisan coherencia y formato de documentación; no corresponde repetir compilación ni tests de implementación.
+
+## Historial de ejecución y lecturas originales
+
+
 Sesión del paso 3 retomado; paso 4 previsto y todavía no iniciado. Preparación y evidencia anteriores intactas. Repositorio limpio al inicio en a94ac93. Solo se instala el paquete propio `com.chupacabras.ar.trackingprobe`, ausente al comenzar según `evidencias/g20_marcador_20260923/ownership.json`. Debe desinstalarse después de recoger datos, por petición del usuario.
 
 ## Marcador y primera detección

@@ -2,13 +2,17 @@
 
 ## Estado y alcance
 
-Prueba de viabilidad **parcial en el G20**: ABI, instalación, cámara, impresión medida, detección física, giro y pérdida/recuperación comprobados con 0.0.4. Precisión/calibración y margen de rendimiento final pendientes. Véase [recorrido físico](seguimiento_fisico_g20.md). Paso 2 cerrado; paso 3 en curso, sin ejecutar 4. Véase [diagnóstico y limpieza](diagnostico_g20.md). Unity exclusivo 6000.3.22f1 en Linux, URP 17.3.0 y AprilTag 1.0.3 embebido original. El G20 conectado confirmó ARM64 y API 30; no extrapolarlo al S23. La escena de diagnóstico 02 y su APK se conservan.
+**Paso 3 completado por aceptación expresa del usuario (23 de septiembre de 2026).** ABI, instalación, cámara, impresión medida, detección física, giro y pérdida/recuperación comprobados con 0.0.4. El usuario acepta como hecha la distancia/escala aproximada observada y deja la evaluación adicional de rendimiento para después. AprilTag queda aceptado para continuar; **paso 4 listo, sin ejecutarlo aún**. M#[2] resuelta para esta etapa. Véase [recorrido físico y cierre](seguimiento_fisico_g20.md).
+
+La evidencia original se conserva: FOV 60° provisional, lecturas iniciales cercanas a 27.4 cm y posteriores a 34.55 cm para la referencia manual de 30 cm; 0.0.5 compilada pero sin prueba física. La aceptación práctica no modifica estas lecturas ni declara calibración exacta. Rendimiento ampliado y comprobación de esa revisión pasan a validación móvil posterior, sin bloquear el paso 4. No pedir otra medida o conexión para abrirlo.
+
+Unity exclusivo 6000.3.22f1 en Linux, URP 17.3.0 y AprilTag 1.0.3 embebido original. G20 confirmó ARM64 y API 30; S23 pendiente de su propia prueba. App retirada y limpieza comprobada. Escena 02 y APK anteriores conservadas.
 
 La escena `Assets/Scenes/03_TrackingProbe.unity` muestra la cámara trasera, un cubo de **50 mm de lado** y dos ejes de 100 mm sobre ID 0. A su derecha se muestra una RenderTexture de 512 × 288 con un cubo giratorio generado en tiempo real. Es carga gráfica mínima para medir; no es el corto, no importa animaciones Blender y no completa el intercambio del paso 4 ni garantiza margen para los recursos finales.
 
-## M#[2] — parcial: recorrido básico realizado; falta validación cuantitativa
+## M#[2] — resuelta; procedimiento original conservado como referencia
 
-Antes de realizarlo deben estar disponibles la APK 03 verificada, el PDF y esta guía. El agente instala, recoge registros y depura; el usuario no tiene que ejecutar comandos.
+El recorrido siguiente es la guía original, no una solicitud vigente de repetir pruebas. Al coordinar futuras validaciones deben estar disponibles la APK verificada, el PDF y las instrucciones concretas. El agente instala, recoge registros y depura; el usuario no tiene que ejecutar comandos.
 
 1. **Impresión:** imprimir `marker/03_marker_carta.pdf` en tamaño carta al **100 %**, sin «ajustar a página». Medir la regla y comunicar su longitud real: debe medir 100 mm. También comprobar 100 mm en el borde interior del marco negro continuo y 180 mm en el dibujo completo. Si la medida difiere, corregir impresión antes de comprobar escala. Montar plano, sin brillo ni pliegues, conservando márgenes blancos de al menos 15 mm. El marcador final del stand pertenece al paso 21.
 2. **Acceso:** conectar el Moto G20 con un cable de datos y desbloquearlo. Si falta: Ajustes → Acerca del teléfono → pulsar siete veces «Número de compilación»; después Sistema → Opciones de desarrollador → Depuración USB. Aceptar la autorización de este equipo en pantalla. El agente consulta modelo, Android y ABIs, instala la APK adecuada y la abre. Si el sistema no admite ARM64, se detiene esta combinación y se documenta; no se cambia de tecnología automáticamente.
@@ -18,9 +22,9 @@ Antes de realizarlo deben estar disponibles la APK 03 verificada, el PDF y esta 
 6. **Pérdida y recuperación:** tapar toda la hoja durante 3 s y descubrirla, tres veces. Cubo y ventana deben ocultarse y el reloj detenerse; al recuperar, continuar desde el tiempo previo, sin duplicación ni reinicio. Repetir enviando la app a segundo plano y volviendo.
 7. **Carga mínima:** con el tag visible y el teléfono apoyado, mantener 60 s con «RT: sí» y 60 s con «RT: no». El agente recoge tiempos y memoria. Esta comparación no sustituye la prueba final de cinco minutos del paso 22.
 
-**Resultado que permite continuar:** evidencia real de ABI y carga nativa; imagen correcta; pose/escala repetibles; pausa y recuperación; comparación de rendimiento con RenderTexture. No se cierra AprilTag como viable por reconocer solo ID 0 ni por compilar.
+**Criterio original, sustituido para el cierre por la aceptación expresa anterior:** evidencia real de ABI y carga nativa; imagen correcta; pose/escala repetibles; pausa y recuperación; comparación de rendimiento con RenderTexture. No se cierra AprilTag como viable por reconocer solo ID 0 ni por compilar.
 
-Criterios de diagnóstico iniciales (no resultados ni acuerdos creativos): objetivo de 30 fps, detección ≥10 Hz, error de distancia ≤10 % con medidas disponibles; registrar dispersión de pose en tramos quietos y saltos visibles. Si hay errores sistemáticos de escala/proyección, preparar calibración física y repetir antes de aceptar 3.5. El FOV inicial de 60° **es una hipótesis**, no calibración G20. No pedir al usuario que adivine parámetros.
+Criterios de diagnóstico iniciales, conservados para referencia técnica y sin reabrir el paso 3 aceptado: objetivo de 30 fps, detección ≥10 Hz, error de distancia ≤10 % con medidas disponibles; registrar dispersión de pose en tramos quietos y saltos visibles. La exigencia inicial de repetir calibración antes de aceptar 3.5 queda sustituida por la aceptación del usuario; estos objetivos se conservan para análisis posterior. El FOV inicial de 60° **es una hipótesis**, no calibración G20. No pedir al usuario que adivine parámetros.
 
 ## Implementación y motivos
 
@@ -71,3 +75,8 @@ Continuación física: el usuario confirmó cubo y ventana sobre la impresión. 
 
 
 Cierre del recorrido: el usuario confirmó giro correcto y tres ocultaciones/recuperaciones; CSV registra giros 0/90/0 y pausas del reloj sin reinicio. Aproximación de 50 cm aceptada como prueba funcional por petición del usuario; no se insiste en medidas exactas ni se inventa calibración. App 0.0.4 desinstalada, ausencia comprobada. Revisión 0.0.5 procesa cada imagen fresca de la cámara, sin segunda puerta temporal; su frecuencia real y coste requieren futura prueba física. Criterios cuantitativos todavía pendientes: precisión/estabilidad con referencia fiable, ambas horizontales, inclinaciones controladas, reanudación desde segundo plano, comparación RT 60 s sí/no y frecuencia de la última revisión. Hoy no se pide más intervención.
+
+
+## Decisión vigente de cierre
+
+El usuario indicó «ya marca la distancia como hecha» y «el rendimiento bueno, eso viene despues», y pidió dejar listo el paso 4 **sin ejecutarlo aún**. Distancia/escala aceptada, paso 3 y M#[2] cerrados. Las menciones anteriores a validaciones cuantitativas pendientes pasan a etapas posteriores; no condicionan iniciar 4. Próxima pareja prevista cuando solicite continuar: 4 + 5. Esta actualización solo cambia documentación; no ejecuta 4 ni añade pruebas, builds o instalaciones. No quedan acciones manuales pendientes para este cierre.
