@@ -1,0 +1,27 @@
+{
+  "paper": "Letter",
+  "paper_mm": [
+    215.9,
+    279.4
+  ],
+  "pdf_points": [
+    612,
+    792
+  ],
+  "pages": 1,
+  "detection_side_mm": 100,
+  "full_pattern_mm": 180,
+  "same_tag_matrix_as_a4": true,
+  "a4_delivery_unchanged": true,
+  "printer": "Brother_DCP-T510W",
+  "job_id": 43,
+  "copies": 1,
+  "cups_job_state": "completed",
+  "cups_job_state_reasons": "job-completed-successfully",
+  "media_sheets_completed": 1,
+  "print_scaling": "none",
+  "scaling": 100,
+  "fit_to_page": false,
+  "physical_ruler_measurement": "pending",
+  "manual_printer_action": "M#[3] resolved"
+}

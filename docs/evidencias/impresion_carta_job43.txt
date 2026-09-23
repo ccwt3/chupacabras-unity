@@ -1,0 +1,21 @@
+"/tmp/chupacabras_carta/print_job.test":
+    Get-Job-Attributes:
+        attributes-charset (charset) = utf-8
+        attributes-natural-language (naturalLanguage) = en
+        job-uri (uri) = ipp://localhost:631/jobs/43
+        requested-attributes (1setOf keyword) = job-id,job-state,job-state-reasons,job-impressions-completed,job-media-sheets-completed,media,print-scaling,scaling,fit-to-page,copies
+    Chupacabras job 43 status                                            [PASS]
+        RECEIVED: 309 bytes in response
+        status-code = successful-ok (successful-ok)
+        attributes-charset (charset) = utf-8
+        attributes-natural-language (naturalLanguage) = en
+        copies (integer) = 1
+        fit-to-page (boolean) = false
+        media (keyword) = Letter
+        print-scaling (keyword) = none
+        scaling (integer) = 100
+        job-id (integer) = 43
+        job-state (enum) = completed
+        job-state-reasons (keyword) = job-completed-successfully
+        job-impressions-completed (integer) = 1
+        job-media-sheets-completed (integer) = 1

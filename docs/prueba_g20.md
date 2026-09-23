@@ -10,7 +10,7 @@ La escena `Assets/Scenes/03_TrackingProbe.unity` muestra la cámara trasera, un 
 
 Antes de realizarlo deben estar disponibles la APK 03 verificada, el PDF y esta guía. El agente instala, recoge registros y depura; el usuario no tiene que ejecutar comandos.
 
-1. **Impresión:** imprimir `marker/03_marker_a4.pdf` en A4 al **100 %**, sin «ajustar a página». Medir la regla y comunicar su longitud real: debe medir 100 mm. También comprobar 100 mm en el borde interior del marco negro continuo y 180 mm en el dibujo completo. Si la medida difiere, corregir impresión antes de comprobar escala. Montar plano, sin brillo ni pliegues, conservando márgenes blancos de al menos 15 mm. El marcador final del stand pertenece al paso 21.
+1. **Impresión:** imprimir `marker/03_marker_carta.pdf` en tamaño carta al **100 %**, sin «ajustar a página». Medir la regla y comunicar su longitud real: debe medir 100 mm. También comprobar 100 mm en el borde interior del marco negro continuo y 180 mm en el dibujo completo. Si la medida difiere, corregir impresión antes de comprobar escala. Montar plano, sin brillo ni pliegues, conservando márgenes blancos de al menos 15 mm. El marcador final del stand pertenece al paso 21.
 2. **Acceso:** conectar el Moto G20 con un cable de datos y desbloquearlo. Si falta: Ajustes → Acerca del teléfono → pulsar siete veces «Número de compilación»; después Sistema → Opciones de desarrollador → Depuración USB. Aceptar la autorización de este equipo en pantalla. El agente consulta modelo, Android y ABIs, instala la APK adecuada y la abre. Si el sistema no admite ARM64, se detiene esta combinación y se documenta; no se cambia de tecnología automáticamente.
 3. **Permiso:** conceder cámara cuando la app lo solicite. Si se deniega, comprobar el mensaje y usar «Reintentar»; ante denegación permanente, autorizar Cámara desde Ajustes de la app y volver. No dar por probado este caso con el Editor.
 4. **Orientación:** apuntar a la hoja a unos 40–60 cm con buena luz. La imagen debe verse derecha, sin reflejo; usar texto asimétrico alrededor del marcador para comprobarlo. Girar teléfono a vertical y ambas posiciones horizontales, y volver. Si la cámara elegida no es la normal, el agente identifica la correcta con «Otra trasera» y sus registros.
@@ -46,7 +46,7 @@ El agente usa `scripts/g20_probe.sh inspect`, `install <apk>` y `collect` despu�
 - `bash scripts/build_tracking.sh`: comprobaciones de Editor, configuración local y APK con nombre UTC nuevo. Paralelismo IL2CPP limitado como en paso 2; no cambia el sistema.
 - `TrackingChecks.Run`: pruebas sintéticas de geometría, pérdida/recuperación y detector real Linux; informes fechados, sin sobrescribir evidencia del paso 2.
 - `TrackingPreview.Capture`: abre la escena 03 temporalmente con fuente sintética solo en Editor, captura adquisición/pérdida/recuperación y termina. Ejecutar Unity exacto con `-batchmode -projectPath <raíz> -executeMethod TrackingPreview.Capture -logFile <log nuevo>`, sin `-nographics` ni `-quit`. No guarda el modo sintético en escena ni lo compila para Android.
-- `MarkerChecks.Run`: detecta ID 0 sobre el PNG rasterizado desde el PDF y comprueba escala con A4 y 100 mm. Prueba de archivo, no de impresión.
+- `MarkerChecks.Run`: detecta ID 0 sobre el PNG rasterizado desde el PDF y comprueba escala con carta (y A4 anterior) y 100 mm. Prueba de archivo, no de impresión.
 - `TYPST_BIN=<typst> bash scripts/build_marker.sh`: genera en directorio nuevo el PDF CeTZ y su preview; Typst 0.14.2, CeTZ 0.5.2. Caché de paquetes dentro de `Library/TypstPackages`. El binario usado esta sesión se descargó a `/tmp`, sin instalar globalmente.
 
 La escena 02 conserva su script `build_android.sh`; al invocarlo cambia la configuración activa a la prueba 02, y `build_tracking.sh` la devuelve a 03. Ninguna APK previa se sobrescribe.
@@ -64,4 +64,4 @@ Unity Technologies. (s. f.). *WebCamTexture.videoVerticallyMirrored*. Unity 6.3 
 Wolf, J., & fenjalien. (2026). *CeTZ* (0.5.2) [Paquete Typst]. Typst Universe. https://typst.app/universe/package/cetz/
 
 
-Continuación: el usuario no dispone aún del marcador impreso. La app fue desinstalada y su ausencia verificada por petición explícita; reinstalar temporalmente cuando se retome con el marcador preparado y limpiar lo instalado al terminar. Notificar las acciones manuales necesarias.
+Continuación: el usuario dispone de hojas carta; se adaptó el PDF y se envió una copia a Brother DCP-T510W (trabajo 43 completado según CUPS). La medida física de 100 mm sigue pendiente. La app fue desinstalada y su ausencia verificada por petición explícita; reinstalar temporalmente cuando se retome con el marcador preparado y limpiar lo instalado al terminar. Notificar las acciones manuales necesarias.
