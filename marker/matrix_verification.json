@@ -1,0 +1,18 @@
+{
+  "source_sha256": "ad5bc161c157634f05afcfd3cfba34334b9303609dd3afc9c000b86e031da02a",
+  "pattern": [
+    "..#....##",
+    "#########",
+    ".#.....##",
+    "##.....#.",
+    "##.##..##",
+    "##.#.#.#.",
+    ".#.....##",
+    "#########",
+    "..#.##.##"
+  ],
+  "matches_original": true,
+  "detection_side_mm": 100,
+  "full_pattern_mm": 180,
+  "printed": false
+}

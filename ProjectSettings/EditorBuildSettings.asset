@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/02_DetectorSmoke.unity
-    guid: bc4abf0d63eb09beeaef42c97e41764f
+    path: Assets/Scenes/03_TrackingProbe.unity
+    guid: 4d40451c623b74009bfc6e4e1130e8cf
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

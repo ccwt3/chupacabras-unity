@@ -86,3 +86,8 @@ Reproducir la captura de Editor, sin `-nographics` ni `-quit` (el automatismo te
 Ejecutar desde la raíz Unity; elegir un nombre de log nuevo para conservar evidencias anteriores. Las capturas llevan fecha UTC. El informe de detección de Editor se actualiza en cada ejecución; los logs fechados conservan los resultados previos.
 
 **Estado del paso 2:** preparación, carga Linux y compilación realizadas; aceptación completa pendiente de consultar las ABIs reales del G20. Coordinar esa comprobación al preparar la prueba del paso 3, después de disponer de cámara, marcador e instrucciones. No se ha ejecutado el paso 3 en esta sesión.
+
+
+## Continuación: preparación del paso 3
+
+La escena/APK 02 de este documento se conservan. Se añadió la prueba de cámara, cubo y RenderTexture 03: [resultado y evidencias](resultado_paso03.md), [guía física M#[2]](prueba_g20.md). Build y pruebas sintéticas correctas; ABI real G20 y aceptación física siguen pendientes. La configuración activa es 03, sin modificar paquetes ni Editor.
