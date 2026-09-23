@@ -28,8 +28,8 @@ public static class TrackingBuild
             EditorSceneManager.SaveScene(scene, ScenePath);
         }
         PlayerSettings.productName = "Chupacabras — Seguimiento";
-        PlayerSettings.bundleVersion = "0.0.3";
-        PlayerSettings.Android.bundleVersionCode = 3;
+        PlayerSettings.bundleVersion = "0.0.5";
+        PlayerSettings.Android.bundleVersionCode = 5;
         PlayerSettings.SetApplicationIdentifier(NamedBuildTarget.Android, "com.chupacabras.ar.trackingprobe");
         PlayerSettings.Android.forceInternetPermission = false;
         PlayerSettings.defaultInterfaceOrientation = UIOrientation.AutoRotation;
@@ -54,7 +54,7 @@ public static class TrackingBuild
         });
         File.WriteAllText(output + ".build.txt", $"Unity: {Application.unityVersion}\n" +
             $"Result: {report.summary.result}\nErrors: {report.summary.totalErrors}\nWarnings: {report.summary.totalWarnings}\n" +
-            $"Bytes: {report.summary.totalSize}\nDuration: {report.summary.totalTime}\nABI: arm64-v8a PROVISIONAL, G20 pending\n");
+            $"Bytes: {report.summary.totalSize}\nDuration: {report.summary.totalTime}\nABI: arm64-v8a; G20 ABI verified, physical tracking acceptance pending\n");
         if (report.summary.result != BuildResult.Succeeded) throw new BuildFailedException("Falló build de seguimiento.");
         Debug.Log("CHUPACABRAS_TRACKING_APK_OK " + output);
     }

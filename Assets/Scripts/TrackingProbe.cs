@@ -36,7 +36,7 @@ namespace Chupacabras
         private Color32[] raw, upright;
         private StreamWriter telemetry;
         private readonly System.Diagnostics.Stopwatch timer = new System.Diagnostics.Stopwatch();
-        private int rawWidth, rawHeight, rotation, rearIndex;
+        private int rawWidth, rawHeight, rotation, rearIndex, processedFrames;
         private bool mirrored, opening, paused, ready, rtEnabled = true;
         private double lastProcessed, nextSample;
         private float detectMs, imageMs, frameMs;
@@ -58,7 +58,7 @@ namespace Chupacabras
 #endif
             Directory.CreateDirectory(EvidenceDirectory);
             telemetry = new StreamWriter(Path.Combine(EvidenceDirectory, "tracking.csv"));
-            telemetry.WriteLine("seconds,phase,visible,playback_s,frame_ms,image_ms,detect_ms,rt,width,height,rotation,mirrored,sensor_fov,tag_m,x,y,z,qx,qy,qz,qw");
+            telemetry.WriteLine("seconds,phase,visible,playback_s,frame_ms,image_ms,detect_ms,rt,width,height,rotation,mirrored,sensor_fov,tag_m,x,y,z,qx,qy,qz,qw,processed_frames");
             CreateView();
 #if UNITY_EDITOR
             if (syntheticPreview) { cameraName = "SYNTHETIC_EDITOR"; ready = true; return; }
@@ -174,10 +174,10 @@ namespace Chupacabras
             cameraName = devices[rearIndex].name;
             File.WriteAllText(Path.Combine(EvidenceDirectory, "device.txt"),
                 $"UTC {DateTime.UtcNow:O}\nUnity {Application.unityVersion}\n{SystemInfo.deviceModel}\n{SystemInfo.operatingSystem}\n" +
-                $"Camera {cameraName}\nRequested 640x480 @15\n" +
+                $"Camera {cameraName}\nRequested 320x240 @15\n" +
                 string.Join("\n", devices.Select(d => $"{d.name}: {d.kind}")) +
                 "\nFOV 60 degrees is provisional; physical calibration pending.\n");
-            webcam = new WebCamTexture(cameraName, 640, 480, 15);
+            webcam = new WebCamTexture(cameraName, 320, 240, 15);
             webcam.Play(); Status = "Abriendo cámara trasera…";
             double timeout = Time.realtimeSinceStartupAsDouble + 15;
             while ((webcam.width <= 16 || !webcam.didUpdateThisFrame) && Time.realtimeSinceStartupAsDouble < timeout)
@@ -192,16 +192,21 @@ namespace Chupacabras
         {
             double now = Time.realtimeSinceStartupAsDouble;
             frameMs = Mathf.Lerp(frameMs, Time.unscaledDeltaTime * 1000, .05f);
-            if (!paused && ready && now - lastProcessed >= 1.0 / 15)
+            // WebCamTexture is requested at 15 Hz; process each fresh frame.
+            // A second 1/15 time gate skips frames when the 30 Hz display runs slightly fast.
+            if (!paused && ready)
             {
                 try
                 {
 #if UNITY_EDITOR
                     if (syntheticPreview)
                     {
-                        timer.Restart();
-                        var fixture = Resources.Load<Texture2D>("AprilTagFixture");
-                        Process(fixture.GetPixels32(), fixture.width, fixture.height, 0, false, now, syntheticBlank);
+                        if (now - lastProcessed >= 1.0 / 15)
+                        {
+                            timer.Restart();
+                            var fixture = Resources.Load<Texture2D>("AprilTagFixture");
+                            Process(fixture.GetPixels32(), fixture.width, fixture.height, 0, false, now, syntheticBlank);
+                        }
                     }
                     else
 #endif
@@ -237,7 +242,8 @@ namespace Chupacabras
                 rawWidth = width; rawHeight = height; rotation = angle; mirrored = flip;
                 int w = angle % 180 == 0 ? width : height, h = angle % 180 == 0 ? height : width;
                 upright = new Color32[w * h]; image = new Texture2D(w, h, TextureFormat.RGBA32, false);
-                detector = new TagDetector(w, h, 2);
+                // Keep the small capture at full detector resolution; handle camera fallback too.
+                detector = new TagDetector(w, h, Mathf.Min(w, h) <= 240 ? 1 : 2);
                 backdropMaterial.SetTexture("_BaseMap", image);
                 Debug.Log($"CHUPACABRAS_CAMERA {cameraName} {width}x{height} rotation={angle} mirrored={flip}");
             }
@@ -260,7 +266,7 @@ namespace Chupacabras
                 anchor.SetPositionAndRotation(p, q); valid = true; break;
             }
             if (State.Visible != valid) Debug.Log("CHUPACABRAS_TRACK " + (valid ? "acquired" : "lost"));
-            State.Observe(valid, now); lastProcessed = now;
+            State.Observe(valid, now); lastProcessed = now; processedFrames++;
             Status = valid ? "ID 0 visible · cubo 5 cm · escala por comprobar" : "Marcador ausente · oculto y pausado";
         }
 
@@ -276,7 +282,7 @@ namespace Chupacabras
         private void WriteSample(double now)
         {
             if (telemetry == null) return;
-            telemetry.WriteLine(FormattableString.Invariant($"{now:F4},{phase},{State.Visible},{State.PlaybackSeconds:F4},{frameMs:F3},{imageMs:F3},{detectMs:F3},{rtEnabled},{rawWidth},{rawHeight},{rotation},{mirrored},{SensorFov:F2},{TagMeters:F4},{position.x:F6},{position.y:F6},{position.z:F6},{poseRotation.x:F6},{poseRotation.y:F6},{poseRotation.z:F6},{poseRotation.w:F6}"));
+            telemetry.WriteLine(FormattableString.Invariant($"{now:F4},{phase},{State.Visible},{State.PlaybackSeconds:F4},{frameMs:F3},{imageMs:F3},{detectMs:F3},{rtEnabled},{rawWidth},{rawHeight},{rotation},{mirrored},{SensorFov:F2},{TagMeters:F4},{position.x:F6},{position.y:F6},{position.z:F6},{poseRotation.x:F6},{poseRotation.y:F6},{poseRotation.z:F6},{poseRotation.w:F6},{processedFrames}"));
             telemetry.Flush();
         }
 
@@ -308,7 +314,7 @@ namespace Chupacabras
                 string[] phases = { "inicio", "fijo", "cerca", "lejos", "inclinar", "ocultar", "recuperar", "rendimiento" };
                 phase = phases[(Array.IndexOf(phases, phase) + 1) % phases.Length];
             }
-            GUI.Label(new Rect(12, h - 32, w - 24, 26), "Prueba técnica; G20 y calibración pendientes.", label);
+            GUI.Label(new Rect(12, h - 32, w - 24, 26), "Prueba técnica; escala y rendimiento en evaluación.", label);
         }
 
         private void RestartCamera(bool next)

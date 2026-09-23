@@ -54,7 +54,7 @@ def main():
               'signature': signature, 'zipalign_passed': True, 'zipalign_output': alignment,
               'manifest': [line for line in badging.splitlines() if line.startswith(('package:', 'sdkVersion:', 'targetSdkVersion:', 'uses-permission:', 'native-code:'))],
               'libraries': libraries, 'physical_device_tested': False,
-              'limitation': 'ABI G20, instalación y carga nativa Android pendientes.'}
+              'limitation': 'Verificación estática de esta APK; instalación, carga nativa y seguimiento requieren evidencia física separada.'}
     args.report.parent.mkdir(parents=True, exist_ok=True)
     with args.report.open('x') as output:
         json.dump(result, output, indent=2, ensure_ascii=False)

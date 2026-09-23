@@ -1,0 +1,312 @@
+--------- beginning of system
+09-23 17:00:04.813  8210  8210 I ActivityThread: smart_link is  not supported!!!
+--------- beginning of main
+09-23 17:00:59.502  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:00:59.502  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:00:59.502  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:00:59.502  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:00:59.502  8210  8267 I Unity   : 
+09-23 17:01:06.243  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:01:06.243  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:01:06.243  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:01:06.243  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:01:06.243  8210  8267 I Unity   : 
+09-23 17:01:29.031  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:01:29.031  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:01:29.031  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:01:29.031  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:01:29.031  8210  8267 I Unity   : 
+09-23 17:01:29.173  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:01:29.173  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:01:29.173  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:01:29.173  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:01:29.173  8210  8267 I Unity   : 
+09-23 17:02:03.913  8210  8360 I r.trackingprob: Waiting for a blocking GC Explicit
+09-23 17:02:03.951  8210  8360 I r.trackingprob: WaitForGcToComplete blocked Explicit on ProfileSaver for 38.010ms
+09-23 17:02:03.978  8210  8360 I r.trackingprob: Explicit concurrent copying GC freed 220(38KB) AllocSpace objects, 0(0B) LOS objects, 88% free, 3315KB/27MB, paused 130us total 26.393ms
+09-23 17:02:36.042  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:02:36.042  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:02:36.042  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:02:36.042  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:02:36.042  8210  8267 I Unity   : 
+09-23 17:03:48.325  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:03:48.325  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:03:48.325  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:03:48.325  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:03:48.325  8210  8267 I Unity   : 
+09-23 17:03:48.386  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:03:48.386  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:03:48.386  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:03:48.386  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:03:48.386  8210  8267 I Unity   : 
+09-23 17:03:48.526  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:03:48.526  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:03:48.526  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:03:48.526  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:03:48.526  8210  8267 I Unity   : 
+09-23 17:03:58.580  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:03:58.580  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:03:58.580  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:03:58.580  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:03:58.580  8210  8267 I Unity   : 
+09-23 17:03:58.650  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:03:58.650  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:03:58.650  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:03:58.650  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:03:58.650  8210  8267 I Unity   : 
+09-23 17:04:30.942  8210  8360 I r.trackingprob: Explicit concurrent copying GC freed 97096(2951KB) AllocSpace objects, 1(20KB) LOS objects, 88% free, 3345KB/27MB, paused 55us total 27.835ms
+09-23 17:05:04.893  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:05:04.893  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:05:04.893  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:05:04.893  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:05:04.893  8210  8267 I Unity   : 
+09-23 17:05:34.192  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:05:34.192  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:05:34.192  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:05:34.192  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:05:34.192  8210  8267 I Unity   : 
+09-23 17:05:34.313  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:05:34.313  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:05:34.313  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:05:34.313  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:05:34.313  8210  8267 I Unity   : 
+09-23 17:05:34.460  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:05:34.460  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:05:34.460  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:05:34.460  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:05:34.460  8210  8267 I Unity   : 
+09-23 17:05:38.652  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:05:38.652  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:05:38.652  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:05:38.652  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:05:38.652  8210  8267 I Unity   : 
+09-23 17:05:39.589  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:05:39.589  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:05:39.589  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:05:39.589  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:05:39.589  8210  8267 I Unity   : 
+09-23 17:05:40.249  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:05:40.249  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:05:40.249  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:05:40.249  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:05:40.249  8210  8267 I Unity   : 
+09-23 17:05:40.322  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:05:40.322  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:05:40.322  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:05:40.322  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:05:40.322  8210  8267 I Unity   : 
+09-23 17:05:40.378  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:05:40.378  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:05:40.378  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:05:40.378  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:05:40.378  8210  8267 I Unity   : 
+09-23 17:05:40.656  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:05:40.656  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:05:40.656  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:05:40.656  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:05:40.656  8210  8267 I Unity   : 
+09-23 17:05:40.848  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:05:40.848  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:05:40.848  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:05:40.848  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:05:40.848  8210  8267 I Unity   : 
+09-23 17:05:41.190  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:05:41.190  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:05:41.190  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:05:41.190  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:05:41.190  8210  8267 I Unity   : 
+09-23 17:05:41.383  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:05:41.383  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:05:41.383  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:05:41.383  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:05:41.383  8210  8267 I Unity   : 
+09-23 17:05:43.591  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:05:43.591  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:05:43.591  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:05:43.591  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:05:43.591  8210  8267 I Unity   : 
+09-23 17:05:46.580  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:05:46.580  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:05:46.580  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:05:46.580  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:05:46.580  8210  8267 I Unity   : 
+09-23 17:05:49.451  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:05:49.451  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:05:49.451  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:05:49.451  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:05:49.451  8210  8267 I Unity   : 
+09-23 17:05:57.980  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:05:57.980  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:05:57.980  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:05:57.980  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:05:57.980  8210  8267 I Unity   : 
+09-23 17:05:59.188  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:05:59.188  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:05:59.188  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:05:59.188  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:05:59.188  8210  8267 I Unity   : 
+09-23 17:05:59.443  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:05:59.443  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:05:59.443  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:05:59.443  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:05:59.443  8210  8267 I Unity   : 
+09-23 17:06:00.115  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:06:00.115  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:06:00.115  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:06:00.115  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:06:00.115  8210  8267 I Unity   : 
+09-23 17:06:04.907  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:06:04.907  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:06:04.907  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:06:04.907  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:06:04.907  8210  8267 I Unity   : 
+09-23 17:06:06.050  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:06:06.050  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:06:06.050  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:06:06.050  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:06:06.050  8210  8267 I Unity   : 
+09-23 17:06:15.635  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:06:15.635  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:06:15.635  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:06:15.635  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:06:15.635  8210  8267 I Unity   : 
+09-23 17:06:16.633  8210  8327 I gralloc4: register: id=21d000365d4
+09-23 17:06:16.637  8210  8210 I Unity   : onConfigurationChanged
+09-23 17:06:16.644  8210  8210 V GameActivity: onImeInsetsChanged from Text Listener
+09-23 17:06:16.654  8210  8210 V GameActivity: onImeInsetsChanged from Text Listener
+09-23 17:06:16.691  8210  8210 I gralloc4: unregister: id=21d000365c4
+09-23 17:06:16.691  8210  8210 I gralloc4: register: id=21d000365d5
+09-23 17:06:16.702  8210  8327 I gralloc4: register: id=21d000365d6
+09-23 17:06:16.706  8210  8327 I gralloc4: unregister: id=21d000365c6
+09-23 17:06:16.715  8210  8267 I Unity   : Handle cmd APP_CMD_CONFIG_CHANGED(9)
+09-23 17:06:16.717  8210  8210 I gralloc4: register: id=21d000365d7
+09-23 17:06:16.727  8210  8267 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-23 17:06:16.757  8210  8267 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-23 17:06:16.757  8210  8267 I Unity   : Handle cmd APP_CMD_WINDOW_RESIZED(3)
+09-23 17:06:16.769  8210  8267 D Unity   : NativeWindow resized 720x1600
+09-23 17:06:16.775  8210  8210 I Unity   : applyWindowUIChanges fullScreen = true, renderOutsideSafeArea = true
+09-23 17:06:16.776  8210  8267 I Unity   : Handle cmd APP_CMD_WINDOW_REDRAW_NEEDED(4)
+09-23 17:06:16.776  8210  8267 I Unity   : Handle cmd APP_CMD_CONTENT_RECT_CHANGED(5)
+09-23 17:06:16.783  8210  8267 I gralloc4: unregister: id=21d000365c7
+09-23 17:06:16.783  8210  8267 I gralloc4: unregister: id=21d000365c8
+09-23 17:06:16.784  8210  8267 I gralloc4: unregister: id=21d000365d4
+09-23 17:06:16.784  8210  8267 I gralloc4: unregister: id=21d000365d6
+09-23 17:06:16.785  8210  8267 W libEGL  : EGLNativeWindowType 0xb40000772bd4c8e0 disconnect failed
+09-23 17:06:16.788  8210  8210 V GameActivity: onImeInsetsChanged from Text Listener
+09-23 17:06:16.795  8210  8267 D Unity   : ANativeWindow: (720/1600) RequestedResolution: (0/0) RenderingResolution: (0/0) EGLSurface: (720/1600)
+09-23 17:06:16.950  8210  8267 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-23 17:06:16.954  8210  8327 I gralloc4: register: id=21d000365d8
+09-23 17:06:16.959  8210  8327 D Unity   : Requested framebuffer: resolution[720x1600], rgba[8/8/8/8], depth+stencil[on], samples[1]
+09-23 17:06:16.959  8210  8327 D Unity   : Created framebuffer: resolution[720x1600], rgba[8/8/8/8], depth+stencil[24/8], samples[0] 
+09-23 17:06:17.250  8210  8267 I Unity   : CHUPACABRAS_CAMERA Camera 0 320x240 rotation=90 mirrored=False
+09-23 17:06:17.250  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:06:17.250  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:06:17.250  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:06:17.250  8210  8267 I Unity   : 
+09-23 17:06:17.279  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:06:17.279  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:06:17.279  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:06:17.279  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:06:17.279  8210  8267 I Unity   : 
+09-23 17:06:17.348  8210  8327 I gralloc4: register: id=21d000365dc
+09-23 17:06:17.364  8210  8327 I gralloc4: register: id=21d000365dd
+09-23 17:06:18.320  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:06:18.320  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:06:18.320  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:06:18.320  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:06:18.320  8210  8267 I Unity   : 
+09-23 17:06:19.578  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:06:19.578  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:06:19.578  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:06:19.578  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:06:19.578  8210  8267 I Unity   : 
+09-23 17:06:19.858  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:06:19.858  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:06:19.858  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:06:19.858  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:06:19.858  8210  8267 I Unity   : 
+09-23 17:06:19.995  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:06:19.995  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:06:19.995  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:06:19.995  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:06:19.995  8210  8267 I Unity   : 
+09-23 17:06:20.955  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:06:20.955  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:06:20.955  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:06:20.955  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:06:20.955  8210  8267 I Unity   : 
+09-23 17:06:21.022  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:06:21.022  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:06:21.022  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:06:21.022  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:06:21.022  8210  8267 I Unity   : 
+09-23 17:06:21.287  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:06:21.287  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:06:21.287  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:06:21.287  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:06:21.287  8210  8267 I Unity   : 
+09-23 17:06:22.427  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:06:22.427  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:06:22.427  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:06:22.427  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:06:22.427  8210  8267 I Unity   : 
+09-23 17:06:25.081  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:06:25.081  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:06:25.081  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:06:25.081  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:06:25.081  8210  8267 I Unity   : 
+09-23 17:06:26.961  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:06:26.961  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:06:26.961  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:06:26.961  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:06:26.961  8210  8267 I Unity   : 
+09-23 17:06:28.550  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:06:28.550  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:06:28.550  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:06:28.550  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:06:28.550  8210  8267 I Unity   : 
+09-23 17:06:32.359  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:06:32.359  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:06:32.359  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:06:32.359  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:06:32.359  8210  8267 I Unity   : 
+09-23 17:06:33.617  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:06:33.617  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:06:33.617  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:06:33.617  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:06:33.617  8210  8267 I Unity   : 
+09-23 17:06:40.981  8210  8210 I Unity   : onConfigurationChanged
+09-23 17:06:40.991  8210  8267 I Unity   : Handle cmd APP_CMD_CONFIG_CHANGED(9)
+09-23 17:06:41.008  8210  8210 V GameActivity: onImeInsetsChanged from Text Listener
+09-23 17:06:41.039  8210  8210 V GameActivity: onImeInsetsChanged from Text Listener
+09-23 17:06:41.044  8210  8267 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-23 17:06:41.045  8210  8267 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-23 17:06:41.088  8210  8210 I gralloc4: unregister: id=21d000365d5
+09-23 17:06:41.089  8210  8210 I gralloc4: register: id=21d000365e6
+09-23 17:06:41.097  8210  8267 I Unity   : Handle cmd APP_CMD_WINDOW_RESIZED(3)
+09-23 17:06:41.098  8210  8267 D Unity   : NativeWindow resized 1600x720
+09-23 17:06:41.104  8210  8327 D Unity   : Requested framebuffer: resolution[1600x720], rgba[8/8/8/8], depth+stencil[on], samples[1]
+09-23 17:06:41.104  8210  8327 D Unity   : Created framebuffer: resolution[1600x720], rgba[8/8/8/8], depth+stencil[24/8], samples[0] 
+09-23 17:06:41.105  8210  8210 I Unity   : applyWindowUIChanges fullScreen = true, renderOutsideSafeArea = true
+09-23 17:06:41.107  8210  8267 I Unity   : Handle cmd APP_CMD_WINDOW_REDRAW_NEEDED(4)
+09-23 17:06:41.107  8210  8267 I Unity   : Handle cmd APP_CMD_CONTENT_RECT_CHANGED(5)
+09-23 17:06:41.108  8210  8267 I gralloc4: unregister: id=21d000365d8
+09-23 17:06:41.109  8210  8267 I gralloc4: unregister: id=21d000365dc
+09-23 17:06:41.109  8210  8267 I gralloc4: unregister: id=21d000365dd
+09-23 17:06:41.109  8210  8267 W libEGL  : EGLNativeWindowType 0xb40000772bd4c8e0 disconnect failed
+09-23 17:06:41.112  8210  8267 D Unity   : ANativeWindow: (1600/720) RequestedResolution: (0/0) RenderingResolution: (0/0) EGLSurface: (1600/720)
+09-23 17:06:41.115  8210  8210 V GameActivity: onImeInsetsChanged from Text Listener
+09-23 17:06:41.130  8210  8267 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-23 17:06:41.139  8210  8327 I gralloc4: register: id=21d000365ea
+09-23 17:06:41.163  8210  8327 I gralloc4: register: id=21d000365ec
+09-23 17:06:41.179  8210  8327 I gralloc4: register: id=21d000365ef
+09-23 17:06:41.460  8210  8267 I Unity   : CHUPACABRAS_CAMERA Camera 0 320x240 rotation=0 mirrored=False
+09-23 17:06:41.460  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:06:41.460  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:06:41.460  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:06:41.460  8210  8267 I Unity   : 
+09-23 17:06:41.494  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:06:41.494  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:06:41.494  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:06:41.494  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:06:41.494  8210  8267 I Unity   : 

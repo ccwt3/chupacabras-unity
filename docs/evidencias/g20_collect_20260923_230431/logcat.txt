@@ -1,0 +1,346 @@
+--------- beginning of system
+09-23 17:00:04.813  8210  8210 I ActivityThread: smart_link is  not supported!!!
+--------- beginning of main
+09-23 17:00:05.874  8210  8267 D Unity   : [Subsystems] Discovering subsystems at path /data/app/~~UVX5ALGV3jGJ0J3gMA8k5A==/com.chupacabras.ar.trackingprobe-KvRw6rg9fHR8Dr8NxKcMKw==/base.apk/assets/bin/Data/UnitySubsystems
+09-23 17:00:05.885  8210  8210 I Unity   : onConfigurationChanged
+09-23 17:00:05.919  8210  8210 V GameActivity: onImeInsetsChanged from Text Listener
+09-23 17:00:05.937  8210  8267 D Unity   : [EGL] Request: ES 3.2 RGB 000 0/0
+09-23 17:00:05.937  8210  8267 D Unity   : [EGL] Checking ES 3.2 support...
+09-23 17:00:05.939  8210  8210 V GameActivity: onImeInsetsChanged from Text Listener
+09-23 17:00:05.956  8210  8267 D Unity   : [EGL] ES 3.2 support detected
+09-23 17:00:05.956  8210  8267 D Unity   : [EGL] Found: ID[5] ES 3.2 RGB 565 0/0
+09-23 17:00:05.956  8210  8267 D Unity   : GfxDevice: creating device client; kGfxThreadingModeThreaded
+09-23 17:00:05.956  8210  8267 D Unity   : [EGL] Request: ES 3.2 RGB 000 0/0
+09-23 17:00:05.956  8210  8267 D Unity   : [EGL] Found: ID[5] ES 3.2 RGB 565 0/0
+09-23 17:00:05.957  8210  8267 D Unity   : [EGL] Request: ES 3.0 RGBA 8888 0/0
+09-23 17:00:05.958  8210  8267 D Unity   : [EGL] Found: ID[1] ES 3.0 RGBA 8888 0/0
+09-23 17:00:05.983  8210  8210 I Unity   : applyWindowUIChanges fullScreen = true, renderOutsideSafeArea = true
+09-23 17:00:05.984  8210  8267 D Unity   : ANativeWindow: (720/1600) RequestedResolution: (0/0) RenderingResolution: (0/0) EGLSurface: (720/1600)
+09-23 17:00:05.998  8210  8210 V GameActivity: onImeInsetsChanged from Text Listener
+09-23 17:00:06.013  8210  8267 D Unity   : Renderer: Mali-G52
+09-23 17:00:06.013  8210  8267 D Unity   : Vendor:   ARM
+09-23 17:00:06.013  8210  8267 D Unity   : Version:  OpenGL ES 3.2 v1.r25p1-01bet0.###other-sha0123456789ABCDEF0###
+09-23 17:00:06.013  8210  8267 D Unity   : GLES:     3
+09-23 17:00:06.013  8210  8267 D Unity   :  GL_EXT_debug_marker GL_ARM_rgba8 GL_ARM_mali_shader_binary GL_OES_depth24 GL_OES_depth_texture GL_OES_depth_texture_cube_map GL_OES_packed_depth_stencil GL_OES_rgb8_rgba8 GL_EXT_read_format_bgra GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_standard_derivatives GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_EGL_image_external_essl3 GL_OES_EGL_sync GL_OES_texture_npot GL_OES_vertex_half_float GL_OES_required_internalformat GL_OES_vertex_array_object GL_OES_mapbuffer GL_EXT_texture_format_BGRA8888 GL_EXT_texture_rg GL_EXT_texture_type_2_10_10_10_REV GL_OES_fbo_render_mipmap GL_OES_element_index_uint GL_EXT_shadow_samplers GL_OES_texture_compression_astc GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_hdr GL_KHR_texture_compression_astc_sliced_3d GL_EXT_texture_compression_astc_decode_mode GL_EXT_texture_compression_astc_decode_mode_rgb9e5 GL_KHR_debug GL_EXT_occlusion_query_boolean GL_EXT_disjoint_timer_query GL_EXT_blend_minmax GL_EXT_discard_framebuffer
+09-23 17:00:06.013  8210  8267 D Unity   :  GL_OES_get_program_binary GL_OES_texture_3D GL_EXT_texture_storage GL_EXT_multisampled_render_to_texture GL_EXT_multisampled_render_to_texture2 GL_OES_surfaceless_context GL_OES_texture_stencil8 GL_EXT_shader_pixel_local_storage GL_ARM_shader_framebuffer_fetch GL_ARM_shader_framebuffer_fetch_depth_stencil GL_ARM_mali_program_binary GL_EXT_sRGB GL_EXT_sRGB_write_control GL_EXT_texture_sRGB_decode GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_RG8 GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_OES_texture_storage_multisample_2d_array GL_OES_shader_image_atomic GL_EXT_robustness GL_EXT_draw_buffers_indexed GL_OES_draw_buffers_indexed GL_EXT_texture_border_clamp GL_OES_texture_border_clamp GL_EXT_texture_cube_map_array GL_OES_texture_cube_map_array GL_OES_sample_variables GL_OES_sample_shading GL_OES_shader_multisample_interpolation GL_EXT_shader_io_blocks GL_OES_shader_io_blocks GL_EXT_tessellation_shader GL_OES_tessellation_shader GL_EXT_primitive_bounding_box GL_OES_primitive_bounding_
+09-23 17:00:06.013  8210  8267 D Unity   : box GL_EXT_geometry_shader GL_OES_geometry_shader GL_ANDROID_extension_pack_es31a GL_EXT_gpu_shader5 GL_OES_gpu_shader5 GL_EXT_texture_buffer GL_OES_texture_buffer GL_EXT_copy_image GL_OES_copy_image GL_EXT_shader_non_constant_global_initializers GL_EXT_color_buffer_half_float GL_EXT_color_buffer_float GL_EXT_YUV_target GL_OVR_multiview GL_OVR_multiview2 GL_OVR_multiview_multisampled_render_to_texture GL_KHR_robustness GL_KHR_robust_buffer_access_behavior GL_EXT_draw_elements_base_vertex GL_OES_draw_elements_base_vertex GL_EXT_protected_textures GL_EXT_buffer_storage GL_EXT_external_buffer GL_EXT_EGL_image_array GL_EXT_texture_filter_anisotropic GL_ARM_texture_unnormalized_coordinates
+09-23 17:00:06.046  8210  8267 D Unity   : OPENGL LOG: Creating OpenGL ES 3.2 graphics device ; Context level  <OpenGL ES 3.2> ; Context handle 467063760
+09-23 17:00:06.055  8210  8267 D Unity   : Error setting CPU thread affinity, errno=22, tid=8327
+09-23 17:00:06.063  8210  8267 D Unity   : [EGL] Attaching window :0xb40000772bd4c8e0
+09-23 17:00:06.071  8210  8267 D Unity   : Requested framebuffer: resolution[720x1600], rgba[8/8/8/8], depth+stencil[on], samples[1]
+09-23 17:00:06.071  8210  8267 D Unity   : Created framebuffer: resolution[720x1600], rgba[8/8/8/8], depth+stencil[24/8], samples[0] 
+09-23 17:00:06.094  8210  8267 I SwappyWrapper: SwappyWrapperInit() succeeded. Build: Wed Sep 23 16:57:23 2026
+09-23 17:00:06.094  8210  8267 D Unity   : SwappyWrapper: InitSwappyWrapper() succeeded.
+09-23 17:00:06.119  8210  8267 E SwappyDisplayManager: dalvik.system.InMemoryDexClassLoader[DexPathList[[dex file "InMemoryDexFile[cookie=[0, -5476376638804234928]]"],nativeLibraryDirectories=[/system/lib64, /system_ext/lib64]]] couldn't find "libgame.so"
+09-23 17:00:06.125  8210  8331 I SwappyDisplayManager: Starting looper thread
+09-23 17:00:06.129  8210  8267 D Unity   : [EGL] Attaching window :0xb40000772bd4c8e0
+09-23 17:00:06.129  8210  8267 D Unity   : Initialize engine version: 6000.3.22f1 (1c726e1fb402)
+09-23 17:00:06.202  8210  8267 I AAudio  : AAudioStreamBuilder_openStream() called ----------------------------------------
+09-23 17:00:06.202  8210  8267 I AudioStreamBuilder: rate   =  24000, channels  = 2, format   = 5, sharing = SH, dir = OUTPUT
+09-23 17:00:06.202  8210  8267 I AudioStreamBuilder: device =      0, sessionId = 0, perfMode = 12, callback: ON with frames = 512
+09-23 17:00:06.202  8210  8267 I AudioStreamBuilder: usage  =      0, contentType = 0, inputPreset = 0, allowedCapturePolicy = 0
+09-23 17:00:06.202  8210  8267 I AudioStreamBuilder: privacy sensitive = false
+09-23 17:00:06.202  8210  8267 D AudioStreamBuilder: build() MMAP not used because sessionId specified.
+09-23 17:00:06.202  8210  8267 D r.trackingprob: PlayerBase::PlayerBase()
+09-23 17:00:06.203  8210  8267 D AudioStreamTrack: open(), request notificationFrames = 512, frameCount = 8192
+09-23 17:00:06.207  8210  8267 I AudioTrack: set(): streamType -1, sampleRate 24000, format 0x5, channelMask 0x3, frameCount 8192, flags #4, notificationFrames 512, sessionId 0, transferType 1, uid -1, pid -1
+09-23 17:00:06.266  8210  8267 D AudioTrack: createTrack_l(-1275068298): AUDIO_OUTPUT_FLAG_FAST denied by server; frameCount 8192 -> 8192
+09-23 17:00:06.279  8210  8267 D AAudioStream: setState(s#1) from 0 to 2
+09-23 17:00:06.287  8210  8267 W AudioStreamTrack: open() flags changed from 0x00000004 to 0x00000000
+09-23 17:00:06.287  8210  8267 W AudioStreamTrack: open() perfMode changed from 12 to 10
+09-23 17:00:06.289  8210  8267 I AAudio  : AAudioStreamBuilder_openStream() returns 0 = AAUDIO_OK for s#1 ----------------
+09-23 17:00:06.290  8210  8267 D AAudio  : AAudioStream_requestStart(s#1) called --------------
+09-23 17:00:06.290  8210  8267 D AAudioStream: setState(s#1) from 2 to 3
+09-23 17:00:06.291  8210  8267 I AudioTrack: start  mClientUid:10685 mClientPid:8210  mSessionId:76041 app name:com.chupacabras.ar.trackingprobe 
+09-23 17:00:06.304  8210  8267 D r.trackingprob: PlayerBase::start() from IPlayer
+09-23 17:00:06.304  8210  8267 D AAudio  : AAudioStream_requestStart(s#1) returned 0 ---------
+09-23 17:00:06.304  8210  8243 D AudioStreamLegacy: onAudioDeviceUpdate() devId 2 => 2
+09-23 17:00:06.431  8210  8334 D AAudioStream: setState(s#1) from 3 to 4
+09-23 17:00:06.600  8210  8267 D Unity   : [Physics::Module] Selected backend.
+09-23 17:00:06.601  8210  8267 D Unity   : [Physics::Module] Name: PhysX
+09-23 17:00:06.601  8210  8267 D Unity   : [Physics::Module] Id: 0xf2b8ea05
+09-23 17:00:06.601  8210  8267 D Unity   : [Physics::Module] SDK Version: 4.1.2
+09-23 17:00:06.601  8210  8267 D Unity   : [Physics::Module] Integration Version: 1.0.0
+09-23 17:00:06.601  8210  8267 D Unity   : [Physics::Module] Threading Mode: Multi-Threaded
+09-23 17:00:06.920  8210  8267 D Unity   : PlayerInitEngineGraphics OK
+09-23 17:00:06.935  8210  8267 D Unity   : Found 63 native sensors
+09-23 17:00:06.938  8210  8267 D Unity   : Sensor :        Accelerometer ( 1) ; 0.010000 / 0.00s ; icm42607 Accelerometer / INV 
+09-23 17:00:06.939  8210  8267 D Unity   : Sensor :        Accelerometer ( 1) ; 0.010000 / 0.00s ; icm42607 Accelerometer / INV 
+09-23 17:00:06.939  8210  8267 D Unity   : enabled Accelerometer sensor
+09-23 17:00:06.951  8210  8267 D Unity   : Input: mapping [16:AXIS_GENERIC_1]
+09-23 17:00:06.951  8210  8267 D Unity   : Input: attaching joystick ["uinput-fpc"][0x00000007:0a2365ce4f51162539f3bf91469900de3a450172] at pos [0x01]
+09-23 17:00:06.952  8210  8267 I Unity   :     HasWindow = 1, HasFocus = 0
+09-23 17:00:06.952  8210  8267 I Unity   : Handle cmd APP_CMD_WINDOW_RESIZED(3)
+09-23 17:00:06.954  8210  8267 D Unity   : NativeWindow resized 720x1600
+09-23 17:00:06.955  8210  8267 I Unity   : Handle cmd APP_CMD_WINDOW_REDRAW_NEEDED(4)
+09-23 17:00:06.955  8210  8267 I Unity   : Handle cmd APP_CMD_GAINED_FOCUS(7)
+09-23 17:00:06.955  8210  8267 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-23 17:00:06.956  8210  8267 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-23 17:00:06.957  8210  8267 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-23 17:00:06.958  8210  8267 I Unity   : Handle cmd APP_CMD_CONFIG_CHANGED(9)
+09-23 17:00:06.958  8210  8267 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-23 17:00:06.958  8210  8267 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-23 17:00:06.961  8210  8267 W libEGL  : EGLNativeWindowType 0xb40000772bd4c8e0 disconnect failed
+09-23 17:00:06.964  8210  8267 D Unity   : ANativeWindow: (720/1600) RequestedResolution: (0/0) RenderingResolution: (0/0) EGLSurface: (720/1600)
+09-23 17:00:06.979  8210  8267 V MediaRouter: Selecting route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+09-23 17:00:07.221  8210  8327 I gralloc4: register: id=21d000365b7
+09-23 17:00:07.261  8210  8327 I gralloc4: register: id=21d000365b8
+09-23 17:00:07.293  8210  8327 I gralloc4: register: id=21d000365b9
+09-23 17:00:07.652  8210  8210 V MediaRouter: Selecting route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+09-23 17:00:09.218  8210  8210 D GameActivity: ************** mainWorkCallback *********
+09-23 17:00:09.218  8210  8210 D gti.InputConnection: setSoftKeyboardActive, active: false
+09-23 17:00:09.220  8210  8267 D Unity   : UnloadTime: 1.763384 ms
+09-23 17:00:09.260  8210  8267 D CompatibilityChangeReporter: Compat change id reported: 147600208; UID 10685; state: ENABLED
+09-23 17:00:09.266  8210  8267 D Unity   : Sensor :        Accelerometer ( 1) ; 0.010000 / 0.00s ; icm42607 Accelerometer / INV 
+09-23 17:00:09.266  8210  8267 D Unity   : Using NDK Choreographer.
+09-23 17:00:09.301  8210  8267 D Unity   : Stopping Unity systrace
+09-23 17:00:09.356  8210  8267 I IL2CPP  : Locale en-US
+09-23 17:00:09.740  8210  8267 D Unity   : Failed to load native plugin: Unable to lookup library path for '_burst_0_0'.
+09-23 17:00:09.860  8210  8267 I Unity   : CHUPACABRAS_DEVICE_DETECTOR_OK {
+09-23 17:00:09.860  8210  8267 I Unity   :     "unity": "6000.3.22f1",
+09-23 17:00:09.860  8210  8267 I Unity   :     "platform": "Android",
+09-23 17:00:09.860  8210  8267 I Unity   :     "family": "tagStandard41h12",
+09-23 17:00:09.860  8210  8267 I Unity   :     "id": 0,
+09-23 17:00:09.860  8210  8267 I Unity   :     "detections": 1,
+09-23 17:00:09.860  8210  8267 I Unity   :     "blankDetections": 0,
+09-23 17:00:09.860  8210  8267 I Unity   :     "position": {
+09-23 17:00:09.860  8210  8267 I Unity   :         "x": -0.000030418614187510684,
+09-23 17:00:09.860  8210  8267 I Unity   :         "y": 0.0001228229666594416,
+09-23 17:00:09.860  8210  8267 I Unity   :         "z": 0.27718374133110049
+09-23 17:00:09.860  8210  8267 I Unity   :     },
+09-23 17:00:09.860  8210  8267 I Unity   :     "rotation": {
+09-23 17:00:09.860  8210  8267 I Unity   :         "x": 0.002918973797932267,
+09-23 17:00:09.860  8210  8267 I Unity   :         "y": -0.0010334892431274057,
+09-23 17:00:09.860  8210  8267 I Unity   :         "z": -0.00016976076585706323,
+09-23 17:00:09.860  8210  8267 I Unity   :         "w": 0.9999952912330627
+09-23 17:00:09.860  8210  8267 I Unity   :     },
+09-23 17:00:09.860  8210  8267 I Unity   :     "passed": true,
+09-23 17:00:09.860  8210  8267 I Unity   :     "limitation": "Imagen incluida; no valida marcador físico, escala ni calibración."
+09-23 17:00:09.860  8210  8267 I Unity   : }
+09-23 17:00:09.860  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:00:09.860  8210  8267 I Unity   : Chupacabras.TrackingProbe:Start()
+09-23 17:00:09.860  8210  8267 I Unity   : 
+09-23 17:00:09.888  8210  8267 I CameraManagerGlobal: Connecting to camera service
+09-23 17:00:09.931  8210  8267 I Unity   : Camera2 0 is a simple camera
+09-23 17:00:09.932  8210  8267 I Unity   : Camera2 1 is a simple camera
+09-23 17:00:09.934  8210  8267 I Unity   : Camera2 2 is a simple camera
+09-23 17:00:09.935  8210  8267 I Unity   : Camera2 3 is a simple camera
+09-23 17:00:09.936  8210  8267 I Unity   : Camera2 4 is a simple camera
+09-23 17:00:09.940  8210  8267 I Unity   : Camera2: 0 focal length 4.71
+09-23 17:00:09.941  8210  8267 I Unity   : Camera2: sensor size 6.4 x 4.8
+09-23 17:00:09.941  8210  8267 I Unity   : Camera2: focal length equivalent 26
+09-23 17:00:09.962  8210  8267 I Unity   : Camera2: 1 focal length 3.748
+09-23 17:00:09.962  8210  8267 I Unity   : Camera2: sensor size 4.712 x 3.494
+09-23 17:00:09.962  8210  8267 I Unity   : Camera2: focal length equivalent 28
+09-23 17:00:09.981  8210  8267 I Unity   : Camera2: 2 focal length 4.222
+09-23 17:00:09.981  8210  8267 I Unity   : Camera2: sensor size 4.614 x 3.444
+09-23 17:00:09.981  8210  8267 I Unity   : Camera2: focal length equivalent 32
+09-23 17:00:09.989  8210  8267 I Unity   : Camera2: 3 focal length 1.66
+09-23 17:00:09.989  8210  8267 I Unity   : Camera2: sensor size 3.655 x 2.741
+09-23 17:00:09.989  8210  8267 I Unity   : Camera2: focal length equivalent 16
+09-23 17:00:10.008  8210  8267 I Unity   : Camera2: 4 focal length 1.93
+09-23 17:00:10.008  8210  8267 I Unity   : Camera2: sensor size 2.8 x 2.1
+09-23 17:00:10.008  8210  8267 I Unity   : Camera2: focal length equivalent 24
+09-23 17:00:10.018  8210  8267 I Unity   : Camera2: Hardware level: 0
+09-23 17:00:10.022  8210  8267 I Unity   : Camera2: FrameSize 4000 x 3000 [5.051457288616511]
+09-23 17:00:10.022  8210  8267 I Unity   : Camera2: FrameSize 4000 x 2250 [4.7637752161647295]
+09-23 17:00:10.022  8210  8267 I Unity   : Camera2: FrameSize 4000 x 2000 [4.645992180508347]
+09-23 17:00:10.022  8210  8267 I Unity   : Camera2: FrameSize 4000 x 1800 [4.540631664850521]
+09-23 17:00:10.023  8210  8267 I Unity   : Camera2: FrameSize 4000 x 1896 [4.592591403781231]
+09-23 17:00:10.023  8210  8267 I Unity   : Camera2: FrameSize 3840 x 2160 [4.68213122712422]
+09-23 17:00:10.023  8210  8267 I Unity   : Camera2: FrameSize 3264 x 2448 [4.64477544058045]
+09-23 17:00:10.023  8210  8267 I Unity   : Camera2: FrameSize 3264 x 1836 [4.35709336812867]
+09-23 17:00:10.023  8210  8267 I Unity   : Camera2: FrameSize 3264 x 1632 [4.239310332472286]
+09-23 17:00:10.023  8210  8267 I Unity   : Camera2: FrameSize 3264 x 1552 [4.189048497691398]
+09-23 17:00:10.023  8210  8267 I Unity   : Camera2: FrameSize 3264 x 1468 [4.133405006122695]
+09-23 17:00:10.023  8210  8267 I Unity   : Camera2: FrameSize 2592 x 1944 [4.1837281233567865]
+09-23 17:00:10.023  8210  8267 I Unity   : Camera2: FrameSize 2592 x 1458 [3.8960460509050057]
+09-23 17:00:10.023  8210  8267 I Unity   : Camera2: FrameSize 2592 x 1296 [3.778263015248622]
+09-23 17:00:10.023  8210  8267 I Unity   : Camera2: FrameSize 2592 x 1224 [3.7211046014086735]
+09-23 17:00:10.023  8210  8267 I Unity   : Camera2: FrameSize 2560 x 1920 [4.1588830833596715]
+09-23 17:00:10.023  8210  8267 I Unity   : Camera2: FrameSize 2560 x 1440 [3.8712010109078907]
+09-23 17:00:10.023  8210  8267 I Unity   : Camera2: FrameSize 2448 x 2448 [4.35709336812867]
+09-23 17:00:10.023  8210  8267 I Unity   : Camera2: FrameSize 2320 x 1740 [3.9620029377331667]
+09-23 17:00:10.023  8210  8267 I Unity   : Camera2: FrameSize 2304 x 1728 [3.9481620520440193]
+09-23 17:00:10.023  8210  8267 I Unity   : Camera2: FrameSize 2272 x 1080 [3.464172180823544]
+09-23 17:00:10.023  8210  8267 I Unity   : Camera2: FrameSize 2160 x 1080 [3.413619901660713]
+09-23 17:00:10.023  8210  8267 I Unity   : Camera2: FrameSize 2048 x 1536 [3.7125959807312525]
+09-23 17:00:10.023  8210  8267 I Unity   : Camera2: FrameSize 2048 x 1152 [3.4249139082794713]
+09-23 17:00:10.024  8210  8267 I Unity   : Camera2: FrameSize 1920 x 1080 [3.295836866004329]
+09-23 17:00:10.024  8210  8267 I Unity   : Camera2: FrameSize 1920 x 1072 [3.2884018875168106]
+09-23 17:00:10.024  8210  8267 I Unity   : Camera2: FrameSize 1600 x 1200 [3.2188758248682006]
+09-23 17:00:10.024  8210  8267 I Unity   : Camera2: FrameSize 1440 x 1080 [3.0081547935525483]
+09-23 17:00:10.024  8210  8267 I Unity   : Camera2: FrameSize 1600 x 720 [2.70805020110221]
+09-23 17:00:10.024  8210  8267 I Unity   : Camera2: FrameSize 1280 x 720 [2.4849066497880004]
+09-23 17:00:10.024  8210  8267 I Unity   : Camera2: FrameSize 960 x 720 [2.1972245773362196]
+09-23 17:00:10.024  8210  8267 I Unity   : Camera2: FrameSize 800 x 600 [1.83258146374831]
+09-23 17:00:10.024  8210  8267 I Unity   : Camera2: FrameSize 720 x 480 [1.5040773967762742]
+09-23 17:00:10.024  8210  8267 I Unity   : Camera2: FrameSize 640 x 480 [1.3862943611198906]
+09-23 17:00:10.024  8210  8267 I Unity   : Camera2: FrameSize 352 x 288 [0.2776317365982795]
+09-23 17:00:10.024  8210  8267 I Unity   : Camera2: FrameSize 320 x 240 [0.0]
+09-23 17:00:10.024  8210  8267 I Unity   : Camera2: FrameSize 320 x 180 [0.28768207245178085]
+09-23 17:00:10.024  8210  8267 I Unity   : Camera2: FrameSize 320 x 144 [0.5108256237659907]
+09-23 17:00:10.024  8210  8267 I Unity   : Camera2: FrameSize 176 x 144 [1.1086626245216111]
+09-23 17:00:10.025  8210  8267 I Unity   : Camera2: FPS requested: 15 set: 15
+09-23 17:00:10.025  8210  8267 I Unity   : Camera2: Open logical camera 0
+09-23 17:00:10.773  8210  8361 I Unity   : Camera2: CameraDevice opened.
+09-23 17:00:10.778  8210  8267 I Unity   : Camera2: Start preview.
+09-23 17:00:10.793  8210  8361 I Unity   : Camera2: CaptureSession is configured.
+09-23 17:00:10.807  8210  8243 I gralloc4: register: id=21d000365ba
+09-23 17:00:10.977  8210  8243 I gralloc4: register: id=21d000365bb
+09-23 17:00:10.980  8210  8360 I gralloc4: register: id=21d000365bc
+09-23 17:00:10.984  8210  8243 I gralloc4: register: id=21d000365bd
+09-23 17:00:11.207  8210  8243 I gralloc4: register: id=21d000365be
+09-23 17:00:13.671  8210  8360 I gralloc4: register: id=21d000365bf
+09-23 17:00:14.236  8210  8267 I Unity   : CHUPACABRAS_CAMERA Camera 0 320x240 rotation=90 mirrored=False
+09-23 17:00:14.236  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:00:14.236  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:00:14.236  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:00:14.236  8210  8267 I Unity   : 
+09-23 17:00:20.101  8210  8327 I gralloc4: register: id=21d000365c1
+09-23 17:00:20.109  8210  8210 I Unity   : onConfigurationChanged
+09-23 17:00:20.143  8210  8327 I gralloc4: register: id=21d000365c2
+09-23 17:00:20.145  8210  8327 I gralloc4: unregister: id=21d000365b7
+09-23 17:00:20.219  8210  8210 V GameActivity: onImeInsetsChanged from Text Listener
+09-23 17:00:20.244  8210  8210 V GameActivity: onImeInsetsChanged from Text Listener
+09-23 17:00:20.269  8210  8327 I gralloc4: register: id=21d000365c3
+09-23 17:00:20.271  8210  8327 I gralloc4: unregister: id=21d000365b8
+09-23 17:00:20.317  8210  8267 I Unity   : Handle cmd APP_CMD_CONFIG_CHANGED(9)
+09-23 17:00:20.323  8210  8267 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-23 17:00:20.335  8210  8267 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-23 17:00:20.369  8210  8210 I gralloc4: unregister: id=21d000365a7
+09-23 17:00:20.369  8210  8210 I gralloc4: register: id=21d000365c4
+09-23 17:00:20.393  8210  8267 I Unity   : Handle cmd APP_CMD_WINDOW_RESIZED(3)
+09-23 17:00:20.393  8210  8267 D Unity   : NativeWindow resized 1600x720
+09-23 17:00:20.416  8210  8210 I gralloc4: unregister: id=21d000365a6
+09-23 17:00:20.416  8210  8210 I gralloc4: register: id=21d000365c5
+09-23 17:00:20.430  8210  8327 D Unity   : Requested framebuffer: resolution[1600x720], rgba[8/8/8/8], depth+stencil[on], samples[1]
+09-23 17:00:20.430  8210  8327 D Unity   : Created framebuffer: resolution[1600x720], rgba[8/8/8/8], depth+stencil[24/8], samples[0] 
+09-23 17:00:20.450  8210  8210 I Unity   : applyWindowUIChanges fullScreen = true, renderOutsideSafeArea = true
+09-23 17:00:20.453  8210  8267 I Unity   : Handle cmd APP_CMD_WINDOW_REDRAW_NEEDED(4)
+09-23 17:00:20.453  8210  8267 I Unity   : Handle cmd APP_CMD_CONTENT_RECT_CHANGED(5)
+09-23 17:00:20.455  8210  8210 V GameActivity: onImeInsetsChanged from Text Listener
+09-23 17:00:20.455  8210  8267 I gralloc4: unregister: id=21d000365b9
+09-23 17:00:20.456  8210  8267 I gralloc4: unregister: id=21d000365c1
+09-23 17:00:20.457  8210  8267 I gralloc4: unregister: id=21d000365c3
+09-23 17:00:20.457  8210  8267 I gralloc4: unregister: id=21d000365c2
+09-23 17:00:20.474  8210  8267 W libEGL  : EGLNativeWindowType 0xb40000772bd4c8e0 disconnect failed
+09-23 17:00:20.492  8210  8267 D Unity   : ANativeWindow: (1600/720) RequestedResolution: (0/0) RenderingResolution: (0/0) EGLSurface: (1600/720)
+09-23 17:00:21.115  8210  8267 I Unity   : CHUPACABRAS_CAMERA Camera 0 320x240 rotation=0 mirrored=False
+09-23 17:00:21.115  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:00:21.115  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:00:21.115  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:00:21.115  8210  8267 I Unity   : 
+09-23 17:00:21.171  8210  8267 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-23 17:00:21.184  8210  8327 I gralloc4: register: id=21d000365c6
+09-23 17:00:21.220  8210  8327 I gralloc4: register: id=21d000365c7
+09-23 17:00:21.243  8210  8327 I gralloc4: register: id=21d000365c8
+09-23 17:00:28.025  8210  8267 I Unity   : Handle cmd APP_CMD_LOW_MEMORY(10)
+09-23 17:00:40.161  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:00:40.161  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:00:40.161  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:00:40.161  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:00:40.161  8210  8267 I Unity   : 
+09-23 17:00:40.411  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:00:40.411  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:00:40.411  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:00:40.411  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:00:40.411  8210  8267 I Unity   : 
+09-23 17:00:43.483  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:00:43.483  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:00:43.483  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:00:43.483  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:00:43.483  8210  8267 I Unity   : 
+09-23 17:00:45.216  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:00:45.216  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:00:45.216  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:00:45.216  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:00:45.216  8210  8267 I Unity   : 
+09-23 17:00:45.582  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:00:45.582  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:00:45.582  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:00:45.582  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:00:45.582  8210  8267 I Unity   : 
+09-23 17:00:50.775  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:00:50.775  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:00:50.775  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:00:50.775  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:00:50.775  8210  8267 I Unity   : 
+09-23 17:00:50.914  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:00:50.914  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:00:50.914  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:00:50.914  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:00:50.914  8210  8267 I Unity   : 
+09-23 17:00:51.242  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:00:51.242  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:00:51.242  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:00:51.242  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:00:51.242  8210  8267 I Unity   : 
+09-23 17:00:52.246  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:00:52.246  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:00:52.246  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:00:52.246  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:00:52.246  8210  8267 I Unity   : 
+09-23 17:00:52.646  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:00:52.646  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:00:52.646  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:00:52.646  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:00:52.646  8210  8267 I Unity   : 
+09-23 17:00:52.912  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:00:52.912  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:00:52.912  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:00:52.912  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:00:52.912  8210  8267 I Unity   : 
+09-23 17:00:59.502  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:00:59.502  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:00:59.502  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:00:59.502  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:00:59.502  8210  8267 I Unity   : 
+09-23 17:01:06.243  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:01:06.243  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:01:06.243  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:01:06.243  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:01:06.243  8210  8267 I Unity   : 
+09-23 17:01:29.031  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:01:29.031  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:01:29.031  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:01:29.031  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:01:29.031  8210  8267 I Unity   : 
+09-23 17:01:29.173  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:01:29.173  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:01:29.173  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:01:29.173  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:01:29.173  8210  8267 I Unity   : 
+09-23 17:02:03.913  8210  8360 I r.trackingprob: Waiting for a blocking GC Explicit
+09-23 17:02:03.951  8210  8360 I r.trackingprob: WaitForGcToComplete blocked Explicit on ProfileSaver for 38.010ms
+09-23 17:02:03.978  8210  8360 I r.trackingprob: Explicit concurrent copying GC freed 220(38KB) AllocSpace objects, 0(0B) LOS objects, 88% free, 3315KB/27MB, paused 130us total 26.393ms
+09-23 17:02:36.042  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:02:36.042  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:02:36.042  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:02:36.042  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:02:36.042  8210  8267 I Unity   : 
+09-23 17:03:48.325  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:03:48.325  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:03:48.325  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:03:48.325  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:03:48.325  8210  8267 I Unity   : 
+09-23 17:03:48.386  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:03:48.386  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:03:48.386  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:03:48.386  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:03:48.386  8210  8267 I Unity   : 
+09-23 17:03:48.526  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:03:48.526  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:03:48.526  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:03:48.526  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:03:48.526  8210  8267 I Unity   : 
+09-23 17:03:58.580  8210  8267 I Unity   : CHUPACABRAS_TRACK lost
+09-23 17:03:58.580  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:03:58.580  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:03:58.580  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:03:58.580  8210  8267 I Unity   : 
+09-23 17:03:58.650  8210  8267 I Unity   : CHUPACABRAS_TRACK acquired
+09-23 17:03:58.650  8210  8267 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-23 17:03:58.650  8210  8267 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-23 17:03:58.650  8210  8267 I Unity   : Chupacabras.TrackingProbe:Update()
+09-23 17:03:58.650  8210  8267 I Unity   : 

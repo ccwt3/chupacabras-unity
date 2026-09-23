@@ -1,0 +1,37 @@
+{
+  "utc": "2026-09-23T23:07:15.025605+00:00",
+  "package": "com.chupacabras.ar.trackingprobe",
+  "installed_before": false,
+  "collected": "docs/evidencias/g20_collect_20260923_230650",
+  "force_stop": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "uninstall": {
+    "returncode": 0,
+    "stdout": "Success",
+    "stderr": ""
+  },
+  "checks": {
+    "package": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    "process": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    "external_app_directory": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": ""
+    }
+  },
+  "package_absent": true,
+  "process_absent": true,
+  "external_app_directory_absent": true,
+  "cleanup_complete": true
+}

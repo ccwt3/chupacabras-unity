@@ -1,0 +1,59 @@
+{
+  "csv": "docs/evidencias/g20_collect_20260923_230204/files/probe_20260923_230009_349/tracking.csv",
+  "start": 84.7163,
+  "end": 114.8737,
+  "samples": 246,
+  "visible_samples": 246,
+  "elapsed_s": 30.157399999999996,
+  "rt_states": [
+    "True"
+  ],
+  "camera_modes": [
+    [
+      "320",
+      "240",
+      "0",
+      "60.00"
+    ]
+  ],
+  "limitation": "CSV samples can repeat poses. Frame time is an EMA, not GPU profiling. User actions and distances require separate evidence.",
+  "processed_hz": 8.986185811774225,
+  "visible_statistics": {
+    "frame_ms": {
+      "median": 33.322,
+      "min": 33.318,
+      "max": 33.33,
+      "stdev": 0.00117119034602582
+    },
+    "image_ms": {
+      "median": 4.8805,
+      "min": 1.921,
+      "max": 12.698,
+      "stdev": 1.5383778226870826
+    },
+    "detect_ms": {
+      "median": 14.743,
+      "min": 10.849,
+      "max": 21.067,
+      "stdev": 2.254811531818439
+    },
+    "x": {
+      "median": -0.013564,
+      "min": -0.028007,
+      "max": -0.007769,
+      "stdev": 0.004267511945027819
+    },
+    "y": {
+      "median": 0.027033,
+      "min": 0.016419,
+      "max": 0.03332,
+      "stdev": 0.004205052146609395
+    },
+    "z": {
+      "median": 0.3455455,
+      "min": 0.341559,
+      "max": 0.356066,
+      "stdev": 0.0030167866266520944
+    }
+  }
+}

@@ -1,0 +1,7 @@
+ro.product.model=moto g(20)
+ro.product.manufacturer=motorola
+ro.build.version.release=11
+ro.build.version.sdk=30
+ro.product.cpu.abilist=arm64-v8a,armeabi-v7a,armeabi
+ro.product.cpu.abilist64=arm64-v8a
+4096

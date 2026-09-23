@@ -64,6 +64,24 @@ public static class TrackingChecks
                 Check(Quaternion.Angle(q, Quaternion.Euler(0, 0, -angle)) < 2, "Pose orientation " + angle);
             }
         }
+        // Camera capture at 320x240: full tag remains metric with decimation 1.
+        var small = new Color32[320 * 240];
+        for (int y = 0; y < 240; y++)
+        for (int x = 0; x < 320; x++)
+            small[y * 320 + x] = x >= 40 && x < 280
+                ? pixels[(y * 2 + 16) * 512 + (x - 40) * 2 + 16]
+                : new Color32(255, 255, 255, 255);
+        using (var detector = new TagDetector(320, 240, 1))
+        {
+            detector.ProcessImage(small, 60 * Mathf.Deg2Rad, .1f);
+            var tags = detector.DetectedTags.ToArray();
+            Check(tags.Length == 1 && tags[0].ID == 0, "Small camera tag ID");
+            float expectedZ = 240f / (2 * Mathf.Tan(30 * Mathf.Deg2Rad)) * .1f / 80;
+            Check(Mathf.Abs(tags[0].Position.z - expectedZ) < .003f, "Small camera metric depth");
+            Array.Fill(small, new Color32(255, 255, 255, 255));
+            detector.ProcessImage(small, 60 * Mathf.Deg2Rad, .1f);
+            Check(!detector.DetectedTags.Any(), "Small blank camera has no detection");
+        }
         Directory.CreateDirectory("docs/evidencias");
         string output = "docs/evidencias/tracking_checks_" + DateTime.UtcNow.ToString("yyyyMMdd_HHmmss") + ".json";
         File.WriteAllText(output, $"{{\"passed\":true,\"assertions\":{assertions},\"unity\":\"{Application.unityVersion}\",\"physical_device\":false}}\n");
