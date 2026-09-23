@@ -22,6 +22,10 @@
   "print_scaling": "none",
   "scaling": 100,
   "fit_to_page": false,
-  "physical_ruler_measurement": "pending",
+  "physical_ruler_measurement": {
+    "millimeters": 100,
+    "source": "Respuesta explícita del usuario: Mide 100 mm (10 cm)",
+    "verified_by_agent_directly": false
+  },
   "manual_printer_action": "M#[3] resolved"
 }

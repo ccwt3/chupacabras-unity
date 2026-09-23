@@ -25,4 +25,4 @@ Trabajo **Brother_DCP-T510W-43**. Consulta IPP: `completed`, `job-completed-succ
 - `docs/evidencias/marker_checks_a4_20260923_222124.json` y `marker_checks_carta_20260923_222124.json`; log `marker_carta_20260923.log`.
 - `docs/evidencias/marcador_carta.json` y `impresion_carta_job43.txt`.
 
-**M#[2] sigue pendiente:** medir en la hoja la línea de control (100 mm/10 cm) y completar el recorrido físico en G20. Se notificó esta medida; no se interpreta el estado de CUPS como medida real ni prueba AR. La app continúa desinstalada del móvil conforme a la petición previa. Paso 2 cerrado, paso 3 parcial; no se inicia 4.
+**M#[2] parcial:** el usuario respondió explícitamente «Mide 100 mm (10 cm)» a la notificación de medida. La regla impresa queda confirmada por su comprobación física; falta el recorrido en G20. Esto no valida pose, escala virtual ni seguimiento AR. La app continúa desinstalada del móvil conforme a la petición previa. Paso 2 cerrado, paso 3 parcial; no se inicia 4.

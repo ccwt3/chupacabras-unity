@@ -6,4 +6,4 @@ Fuente CeTZ: `03_marker_carta.typ`; preview: `03_marker_carta_preview.png`. Gene
 
 Los archivos A4 anteriores y su README/hashes se conservan como entrega histórica. Los nuevos hashes están en `SHA256SUMS_carta`; la matriz coincide exactamente con la versión A4.
 
-El 23 de septiembre de 2026 se envió una copia a la Brother DCP-T510W elegida por el usuario, trabajo 43. CUPS informó una hoja completada, Letter, scaling100, print-scaling none y fit-to-page false. **Medir físicamente la regla de 100 mm antes de aceptar escala.** Resultado y evidencia en `docs/marcador_carta.md`.
+El 23 de septiembre de 2026 se envió una copia a la Brother DCP-T510W elegida por el usuario, trabajo 43. CUPS informó una hoja completada, Letter, scaling100, print-scaling none y fit-to-page false. **El usuario confirmó que la regla impresa mide 100 mm (10 cm).** Falta validar escala virtual y seguimiento en el G20. Resultado y evidencia en `docs/marcador_carta.md`.

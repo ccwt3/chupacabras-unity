@@ -64,4 +64,4 @@ Unity Technologies. (s. f.). *WebCamTexture.videoVerticallyMirrored*. Unity 6.3 
 Wolf, J., & fenjalien. (2026). *CeTZ* (0.5.2) [Paquete Typst]. Typst Universe. https://typst.app/universe/package/cetz/
 
 
-Continuación: el usuario dispone de hojas carta; se adaptó el PDF y se envió una copia a Brother DCP-T510W (trabajo 43 completado según CUPS). La medida física de 100 mm sigue pendiente. La app fue desinstalada y su ausencia verificada por petición explícita; reinstalar temporalmente cuando se retome con el marcador preparado y limpiar lo instalado al terminar. Notificar las acciones manuales necesarias.
+Continuación: el usuario dispone de hojas carta; se adaptó el PDF y se envió una copia a Brother DCP-T510W (trabajo 43 completado según CUPS). El usuario confirmó que la regla impresa mide 100 mm (10 cm); falta el recorrido físico con el G20. La app fue desinstalada y su ausencia verificada por petición explícita; reinstalar temporalmente cuando se retome con el marcador preparado y limpiar lo instalado al terminar. Notificar las acciones manuales necesarias.
