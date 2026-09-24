@@ -1,0 +1,16 @@
+{
+    "passed": true,
+    "physicalDevice": false,
+    "hiddenCreatureFrames": 150,
+    "hiddenSheepFrames": 114,
+    "emptyFrames": 30,
+    "maxContact": 0.00000200186445908912,
+    "maxCamera": 0.0004620760155376047,
+    "maxPair": 0.0000015542989331152058,
+    "clipDuration": 40.000003814697269,
+    "sheepPixelsBefore": 460,
+    "sheepPixelsAfter": 653,
+    "creaturePixelsCalm": 330,
+    "eyePixelsCalm": 7,
+    "clock": "preliminary Playables; final Timeline remains step 17"
+}

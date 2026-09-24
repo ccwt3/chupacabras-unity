@@ -1,0 +1,57 @@
+{
+  "blender_root": "/home/cacawatin/code/blender/chupacabras",
+  "unity_root": "/home/cacawatin/code/unity/chupacabras",
+  "files": [
+    {
+      "path": "scenes/04_intercambio.blend",
+      "bytes": 98975,
+      "sha256": "ac2606cb12bb7a32801d8ab1c6019ce998304001059e8a5d17f8cce16dcac77e"
+    },
+    {
+      "path": "scenes/05_blocking_r04.blend",
+      "bytes": 230301,
+      "sha256": "d25f5cbb53530499b4c32a7d7554a03c851e0e8e30f45cea3d30b1900c3a9d8e"
+    },
+    {
+      "path": "exports/04_intercambio.fbx",
+      "bytes": 698332,
+      "sha256": "20f65daccb8955b58c0306a92c85484a8dcebb48d52ce66d2597078845be09fe"
+    },
+    {
+      "path": "exports/04_intercambio.json",
+      "bytes": 47947,
+      "sha256": "1d5c93c2fbd19552e56bab951e7c02e98c9ffa36a25b1204a4ec474166a22d27"
+    },
+    {
+      "path": "exports/05_blocking_r04.fbx",
+      "bytes": 2048076,
+      "sha256": "77959ef07b21152040983e8e6fa68a4f62a410720f46d42a597789e78c86612f"
+    },
+    {
+      "path": "exports/05_blocking_r04.json",
+      "bytes": 10776,
+      "sha256": "b11a8f1e7da7a3941f991691fca172ad7bdd349ef72a6872d8f0a45fc8205e03"
+    },
+    {
+      "path": "previews/05_blocking_r04.mp4",
+      "bytes": 293364,
+      "sha256": "5a341bcbb62db2d30601f84f761fd8a8410be7aee0477e25803ae520e374fc6b"
+    },
+    {
+      "path": "scripts/intercambio.py",
+      "bytes": 5706,
+      "sha256": "90ee1d08eefa3ab08e045577530a78c000fbfd695ef7fe272e14aa5819cd02c1"
+    },
+    {
+      "path": "scripts/blocking.py",
+      "bytes": 7781,
+      "sha256": "55bb0c9ab54844fe3f48d1d8659a29b6c529cd01720711df45d3456f6b192457"
+    },
+    {
+      "path": "scripts/verificar_intercambio.py",
+      "bytes": 1265,
+      "sha256": "790a5e4d43be86ace9701f1462c19fa3aef0a3ba27c051d7a1d8ce6b14aa3bc7"
+    }
+  ],
+  "exports_identical": true
+}

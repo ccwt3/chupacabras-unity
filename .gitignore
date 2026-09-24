@@ -8,3 +8,9 @@
 *.csproj
 *.sln
 *.slnx
+
+# Reproducible session captures and raw logs (lossless .gz copies are versioned).
+/.utmp/
+/docs/evidencias/2026-09-24*/*.log
+/docs/evidencias/2026-09-24*/frames/
+/docs/evidencias/blocking_build_20260924_*.log

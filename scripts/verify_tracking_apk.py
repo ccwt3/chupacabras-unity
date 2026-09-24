@@ -18,6 +18,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('apk', type=Path)
     parser.add_argument('report', type=Path)
+    parser.add_argument('--package', default='com.chupacabras.ar.trackingprobe')
+    parser.add_argument('--no-camera-check', action='store_true', help='For an offline preview only')
     args = parser.parse_args()
     if args.report.exists():
         raise SystemExit('El informe ya existe; elegir una ruta nueva.')
@@ -27,7 +29,10 @@ def main():
     signature = run(str(build_tools / 'apksigner'), 'verify', '--verbose', str(args.apk), env=env)
     alignment = run(str(build_tools / 'zipalign'), '-c', '-P', '16', '4', str(args.apk))
     badging = run(str(build_tools / 'aapt'), 'dump', 'badging', str(args.apk))
-    for required in ("name='com.chupacabras.ar.trackingprobe'", "sdkVersion:'26'", "targetSdkVersion:'35'", "android.permission.CAMERA", "native-code: 'arm64-v8a'"):
+    requirements = [f"name='{args.package}'", "sdkVersion:'26'", "targetSdkVersion:'35'", "native-code: 'arm64-v8a'"]
+    if not args.no_camera_check:
+        requirements.append('android.permission.CAMERA')
+    for required in requirements:
         assert required in badging, required
     assert 'arcore' not in badging.lower()
     libraries = []

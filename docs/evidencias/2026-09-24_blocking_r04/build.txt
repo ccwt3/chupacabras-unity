@@ -1,0 +1,6 @@
+Unity: 6000.3.22f1
+Result: Succeeded
+Errors: 0
+Warnings: 0
+Duration: 00:01:02.4642870
+Physical device: not tested; offline blocking preview only

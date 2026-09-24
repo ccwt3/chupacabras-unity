@@ -1,0 +1,33 @@
+{
+  "restored_tracked_side_effects": [
+    ".utmp/Debug/5t4b1a4u/arm64-v8a/.cmake/api/v1/reply/cache-v2-0134f3db0f78dcc19cdb.json",
+    ".utmp/Debug/5t4b1a4u/arm64-v8a/.cmake/api/v1/reply/cmakeFiles-v1-59a83bcd0a91ffc8309a.json",
+    ".utmp/Debug/5t4b1a4u/arm64-v8a/.cmake/api/v1/reply/index-2026-09-23T21-07-21-0883.json",
+    ".utmp/Debug/5t4b1a4u/arm64-v8a/.ninja_deps",
+    ".utmp/Debug/5t4b1a4u/arm64-v8a/.ninja_log",
+    ".utmp/Debug/5t4b1a4u/arm64-v8a/CMakeCache.txt",
+    ".utmp/Debug/5t4b1a4u/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o",
+    ".utmp/Debug/5t4b1a4u/arm64-v8a/build.ninja",
+    ".utmp/Debug/5t4b1a4u/arm64-v8a/configure_fingerprint.bin",
+    "ProjectSettings/GraphicsSettings.asset",
+    "ProjectSettings/QualitySettings.asset"
+  ],
+  "archive": "Library/Session_20260924_build_side_effects",
+  "compressed_logs": [
+    "docs/evidencias/2026-09-24_intercambio/import.log.gz",
+    "docs/evidencias/2026-09-24_intercambio/verify.log.gz",
+    "docs/evidencias/2026-09-24_intercambio/verify2.log.gz",
+    "docs/evidencias/2026-09-24_intercambio/capture.log.gz",
+    "docs/evidencias/2026-09-24_intercambio/runtime_window.log.gz",
+    "docs/evidencias/2026-09-24_blocking/configure.log.gz",
+    "docs/evidencias/2026-09-24_blocking/verify.log.gz",
+    "docs/evidencias/2026-09-24_blocking_r03/configure.log.gz",
+    "docs/evidencias/2026-09-24_blocking_r03/verify.log.gz",
+    "docs/evidencias/2026-09-24_blocking_r03/video_capture.log.gz",
+    "docs/evidencias/2026-09-24_blocking_r04/configure.log.gz",
+    "docs/evidencias/2026-09-24_blocking_r04/verify.log.gz",
+    "docs/evidencias/2026-09-24_blocking_r04/video_capture.log.gz",
+    "docs/evidencias/blocking_build_20260924_232913.log.gz",
+    "docs/evidencias/blocking_build_20260924_233444.log.gz"
+  ]
+}

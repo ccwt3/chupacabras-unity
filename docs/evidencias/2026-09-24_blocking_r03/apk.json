@@ -1,0 +1,91 @@
+{
+  "apk": "builds/android/05_blocking_20260924_232922.apk",
+  "bytes": 36606838,
+  "sha256": "24b4e47dec04d336224d8692758f03c5b81442bdcd0e6e41cea788bb8aad309a",
+  "signature": "Verifies\nVerified using v1 scheme (JAR signing): false\nVerified using v2 scheme (APK Signature Scheme v2): true\nVerified using v3 scheme (APK Signature Scheme v3): false\nVerified using v3.1 scheme (APK Signature Scheme v3.1): false\nVerified using v4 scheme (APK Signature Scheme v4): false\nVerified for SourceStamp: false\nNumber of signers: 1\n",
+  "zipalign_passed": true,
+  "zipalign_output": "",
+  "manifest": [
+    "package: name='com.chupacabras.ar.blockingpreview' versionCode='10' versionName='0.1.0' platformBuildVersionName='15' platformBuildVersionCode='35' compileSdkVersion='35' compileSdkVersionCodename='15'",
+    "sdkVersion:'26'",
+    "targetSdkVersion:'35'",
+    "uses-permission: name='android.permission.INTERNET'",
+    "uses-permission: name='android.permission.CAMERA'",
+    "uses-permission: name='com.chupacabras.ar.blockingpreview.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'",
+    "native-code: 'arm64-v8a'"
+  ],
+  "libraries": [
+    {
+      "name": "lib/arm64-v8a/libAprilTag.so",
+      "load_alignment": [
+        16384,
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/lib_burst_generated.so",
+      "load_alignment": [
+        16384,
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libc++_shared.so",
+      "load_alignment": [
+        16384,
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libgame.so",
+      "load_alignment": [
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libil2cpp.so",
+      "load_alignment": [
+        16384,
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libmain.so",
+      "load_alignment": [
+        16384,
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libswappywrapper.so",
+      "load_alignment": [
+        16384,
+        16384,
+        16384
+      ]
+    },
+    {
+      "name": "lib/arm64-v8a/libunity.so",
+      "load_alignment": [
+        16384,
+        16384,
+        16384,
+        16384
+      ]
+    }
+  ],
+  "physical_device_tested": false,
+  "limitation": "Verificación estática de esta APK; instalación, carga nativa y seguimiento requieren evidencia física separada."
+}

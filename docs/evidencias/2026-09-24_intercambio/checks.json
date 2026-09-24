@@ -1,0 +1,10 @@
+{
+    "passed": true,
+    "physicalDevice": false,
+    "samples": 41,
+    "duration": 40.0,
+    "maxContact": 1.3328003944934609e-7,
+    "maxPoint": 1.7881393432617188e-7,
+    "maxVertex": 3.4530847869973515e-7,
+    "maxShape": 1.0967254837623841e-7
+}
