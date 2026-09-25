@@ -1,0 +1,14 @@
+{
+  "environment": "docs/evidencias/environment_20260925_003326/checks.json",
+  "sheep": "docs/evidencias/sheep_20260925_003326/checks.json",
+  "tracking_assertions": 32,
+  "python_syntax": true,
+  "bash_syntax": true,
+  "csharp_format": true,
+  "physical_device": false,
+  "new_apk": false,
+  "restored_editor_side_effects": [
+    "GraphicsSettings.asset",
+    "QualitySettings.asset"
+  ]
+}

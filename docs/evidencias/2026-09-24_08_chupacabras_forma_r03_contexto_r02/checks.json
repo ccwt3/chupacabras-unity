@@ -1,0 +1,17 @@
+{
+    "passed": true,
+    "physicalDevice": false,
+    "finalRig": false,
+    "triangles": 8486,
+    "meshes": 12,
+    "materials": 2,
+    "hiddenSheepFrames": 114,
+    "hiddenCreatureFrames": 150,
+    "emptyFrames": 30,
+    "sheepBefore": 266,
+    "sheepAfter": 463,
+    "eyesPixels": 6,
+    "maxBoundsError": 4.053554221172817e-7,
+    "maxLandmarkError": 0.000002396076979493955,
+    "failures": []
+}

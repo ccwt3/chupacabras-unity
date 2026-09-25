@@ -1,0 +1,19 @@
+{
+  "completed_main_steps": [
+    8,
+    9
+  ],
+  "next_main_steps": [
+    10,
+    11
+  ],
+  "physical_device": false,
+  "new_apk": false,
+  "unity_version": "6000.3.22f1",
+  "manual_actions_pending": [],
+  "blender_git_repository": false,
+  "previous_blender_files_unchanged": 481,
+  "push": false,
+  "final_context_suffix": "_contexto_r02",
+  "barn_collision_frames_checked": 1200
+}
