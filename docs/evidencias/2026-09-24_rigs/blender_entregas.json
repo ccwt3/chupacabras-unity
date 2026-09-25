@@ -1,0 +1,47 @@
+[
+  {
+    "path": "scenes/10_rig_oveja.blend",
+    "sha256": "7ed12a79ba5941968d8af2130db8b0ba6dea2077321122c9d3b508f972363405",
+    "bytes": 1428925
+  },
+  {
+    "path": "exports/10_rig_oveja.fbx",
+    "sha256": "1a888a9832d8ca7f48b04a85d8fe0d029b2cef3398268469b136e2bf557af5ad",
+    "bytes": 561628
+  },
+  {
+    "path": "exports/10_rig_oveja.json",
+    "sha256": "829f9f53b186b4cd682950bbfaad78bd99d359bb5ea7096a99ea2ba25c22acd0",
+    "bytes": 5453178
+  },
+  {
+    "path": "scenes/11_rig_chupacabras_poses.blend",
+    "sha256": "c00fe48a9db8fdc0784f2aae81e3d2da9fefd188cc2cd575c2596122f2cd54e8",
+    "bytes": 496413
+  },
+  {
+    "path": "exports/11_rig_chupacabras_poses.fbx",
+    "sha256": "1fe80d49c09560999b00c8ff6ec025f5fa92c54bac6771abc71f5df37b7057ad",
+    "bytes": 1762316
+  },
+  {
+    "path": "exports/11_rig_chupacabras_poses.json",
+    "sha256": "c5dcb62ac44e4a6d8bb5076da3a526f330099c443f40f859703921db4c8a6399",
+    "bytes": 15644634
+  },
+  {
+    "path": "scenes/11_rigs_contacto_r03.blend",
+    "sha256": "71c3d4a423faac36c62d7bfd57fddc3a60e7edca47b280c3d82e23252ad13577",
+    "bytes": 637367
+  },
+  {
+    "path": "exports/11_rigs_contacto_r03.fbx",
+    "sha256": "597d343468309379d0243fba6297ca741bd24e829c744cc52206696b593013a3",
+    "bytes": 1803276
+  },
+  {
+    "path": "exports/11_rigs_contacto_r03.json",
+    "sha256": "a178023edd159ed1efd39897498a0a7c480146a84d848b5dfbc71e0f5c023e34",
+    "bytes": 18563057
+  }
+]

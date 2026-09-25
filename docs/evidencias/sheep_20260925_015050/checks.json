@@ -1,0 +1,12 @@
+{
+    "passed": true,
+    "physicalDevice": false,
+    "triangles": 612,
+    "bones": 24,
+    "materials": 2,
+    "samples": 4,
+    "maxVertexError": 0.00011044330312870443,
+    "standingHeight": 1.1799994707107545,
+    "minPoseHeight": -0.00008874107152223587,
+    "source": "Quaternius / Farm Animals / CC0-1.0"
+}

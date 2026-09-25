@@ -1,0 +1,53 @@
+{
+  "completed_steps": [
+    10,
+    11
+  ],
+  "next_steps": [
+    12,
+    13
+  ],
+  "physical_device": false,
+  "previous_files_unchanged": 533,
+  "python_syntax": 19,
+  "checks": {
+    "sheep": {
+      "passed": true,
+      "physicalDevice": false,
+      "samples": 241,
+      "verticesCompared": 73987,
+      "triangles": 612,
+      "duration": 8.0,
+      "maxVertexError": 4.260929563315585e-05,
+      "maxShapeError": 2.384185791015625e-07,
+      "minHeight": -3.6102719604969025e-06,
+      "maxContact": 0.0
+    },
+    "controls": {
+      "passed": true,
+      "physicalDevice": false,
+      "samples": 181,
+      "verticesCompared": 205435,
+      "triangles": 11162,
+      "duration": 6.000000476837158,
+      "maxVertexError": 3.0045707717363257e-06,
+      "maxShapeError": 0.0,
+      "minHeight": -4.76837158203125e-07,
+      "maxContact": 0.0,
+      "maxSurfaceContact": 0.0
+    },
+    "contact": {
+      "passed": true,
+      "physicalDevice": false,
+      "samples": 181,
+      "verticesCompared": 242359,
+      "triangles": 11162,
+      "duration": 6.000000476837158,
+      "maxVertexError": 2.769675847957842e-05,
+      "maxShapeError": 0.0,
+      "minHeight": -2.5153160095214844e-05,
+      "maxContact": 1.1099115226897993e-06,
+      "maxSurfaceContact": 1.4079823813517578e-06
+    }
+  }
+}
