@@ -1,0 +1,3 @@
+{
+  "passed":true, "physicalDevice":false, "triangles":2915, "staticRenderers":10, "sharedMaterials":10, "hiddenCreatureFrames":150, "hiddenSheepFrames":114, "emptyFrames":30, "eyesPixels":4, "sheepPixelsBefore":460, "sheepPixelsAfter":653
+}
