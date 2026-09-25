@@ -64,6 +64,22 @@ APK ni prueba física nuevas. La ventana de revisión es 3D en tiempo real en
 Editor. Los conteos de geometría y máscaras no son rendimiento del G20 ni
 validación del S23. La luz/brillo definitivos permanecen en el paso 12.
 
+## Revisión de presentación y cámara
+
+Tras revisar la captura de referencia, el usuario pidió que la composición
+final incluya una figura quieta del chupacabras en 3D, anclada a la pose del
+AprilTag, junto al panel lateral que reproduce la secuencia. Los pasos 8–9
+entregaron los modelos y escenas de revisión; **esa figura exterior aún no
+está añadida a la aplicación ni comprobada físicamente**. El plan ahora la
+sitúa en la previsualización visual del paso 12 y en la integración de tracking
+del paso 20. La cámara del corto se suavizará en las animaciones nuevas de
+13–14: anticipación antes del segundo 20 y entrada lateral o desde detrás del
+granero. R04 conserva el corte como bloqueo histórico.
+
+Pruebas manuales futuras, después de preparar build e instrucciones:
+M#[4] revisará tamaño, perspectiva y legibilidad de la composición en el G20;
+M#[5] probará pose conjunta, pérdida/recuperación y reinicio durante el paso 20.
+
 Próximos dos pasos: 10, rig/deformaciones de oveja; 11, rig y contacto del
 chupacabras. No se iniciaron en esta sesión. No quedan acciones manuales
 indispensables. Demos y entregas anteriores se conservan; no se hizo push.
