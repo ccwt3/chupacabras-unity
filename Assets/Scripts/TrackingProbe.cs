@@ -16,9 +16,11 @@ namespace Chupacabras
     {
         public Shader unlitShader;
         public Shader litShader;
+        public AppearanceStudy appearance;
 #if UNITY_EDITOR
         public bool syntheticPreview;
         public bool syntheticBlank;
+        public Texture2D syntheticFixture;
 #endif
         public readonly TrackingState State = new TrackingState();
         public string Status { get; private set; } = "Iniciando cámara…";
@@ -115,6 +117,12 @@ namespace Chupacabras
                 Vector3.one, Color.white);
             backdropMaterial = backdrop.GetComponent<Renderer>().sharedMaterial;
             anchor = new GameObject("Tag0_100mm").transform;
+            if (appearance != null)
+            {
+                appearance.Attach(anchor);
+                anchor.gameObject.SetActive(false);
+                return;
+            }
             Primitive("Cube_50mm", PrimitiveType.Cube, anchor, new Vector3(0, 0, -.025f),
                 Vector3.one * .05f, new Color(.35f, .7f, .68f), lit: true);
             // A thin cross marks the physical detection square's center and axes.
@@ -204,7 +212,7 @@ namespace Chupacabras
                         if (now - lastProcessed >= 1.0 / 15)
                         {
                             timer.Restart();
-                            var fixture = Resources.Load<Texture2D>("AprilTagFixture");
+                            var fixture = syntheticFixture != null ? syntheticFixture : Resources.Load<Texture2D>("AprilTagFixture");
                             Process(fixture.GetPixels32(), fixture.width, fixture.height, 0, false, now, syntheticBlank);
                         }
                     }
@@ -226,9 +234,14 @@ namespace Chupacabras
             }
             State.Tick(now, Time.unscaledDeltaTime);
             anchor.gameObject.SetActive(State.Visible);
-            cinema.enabled = State.Visible && rtEnabled;
-            window.SetActive(rtEnabled);
-            spinner.rotation = Quaternion.Euler(20, (float)State.PlaybackSeconds * 45, 15);
+            if (appearance != null)
+                appearance.Present(State.Visible, State.PlaybackSeconds, rtEnabled);
+            else
+            {
+                cinema.enabled = State.Visible && rtEnabled;
+                window.SetActive(rtEnabled);
+                spinner.rotation = Quaternion.Euler(20, (float)State.PlaybackSeconds * 45, 15);
+            }
             if (ready && !State.Visible && now - lastProcessed > .4) Status = "Sin imagen reciente; seguimiento pausado.";
             if (image != null) ConfigureProjection();
             if (now >= nextSample) { WriteSample(now); nextSample = now + .1; }
@@ -267,7 +280,7 @@ namespace Chupacabras
             }
             if (State.Visible != valid) Debug.Log("CHUPACABRAS_TRACK " + (valid ? "acquired" : "lost"));
             State.Observe(valid, now); lastProcessed = now; processedFrames++;
-            Status = valid ? "ID 0 visible · cubo 5 cm · escala por comprobar" : "Marcador ausente · oculto y pausado";
+            Status = valid ? (appearance != null ? "Figura + panel · " + appearance.ShotLabel : "ID 0 visible · cubo 5 cm · escala por comprobar") : "Marcador ausente · oculto y pausado";
         }
 
         private void ConfigureProjection()
@@ -293,7 +306,7 @@ namespace Chupacabras
             float w = Screen.width / scale, h = Screen.height / scale;
             GUI.Box(new Rect(0, 0, w, 95), "");
             var label = new GUIStyle(GUI.skin.label) { wordWrap = true, fontSize = 14 };
-            GUI.Label(new Rect(12, 6, w - 24, 28), "CHUPACABRAS · prueba 03 · " + phase, label);
+            GUI.Label(new Rect(12, 6, w - 24, 28), (appearance != null ? "CHUPACABRAS · aspecto 12 · " : "CHUPACABRAS · prueba 03 · ") + phase, label);
             GUI.Label(new Rect(12, 32, w - 24, 52), Status + $"\n{frameMs:F1} ms/frame · detector {detectMs:F1} ms · reloj {State.PlaybackSeconds:F1} s", label);
             GUI.Box(new Rect(0, h - 174, w, 174), "");
             GUI.Label(new Rect(12, h - 168, w - 24, 24), $"FOV provisional {SensorFov:F1}° · tag {TagMeters * 100:F1} cm", label);
@@ -314,7 +327,7 @@ namespace Chupacabras
                 string[] phases = { "inicio", "fijo", "cerca", "lejos", "inclinar", "ocultar", "recuperar", "rendimiento" };
                 phase = phases[(Array.IndexOf(phases, phase) + 1) % phases.Length];
             }
-            GUI.Label(new Rect(12, h - 32, w - 24, 26), "Prueba técnica; escala y rendimiento en evaluación.", label);
+            GUI.Label(new Rect(12, h - 32, w - 24, 26), (appearance != null ? "Tres vistas de luz; actuación definitiva pendiente." : "Prueba técnica; escala y rendimiento en evaluación."), label);
         }
 
         private void RestartCamera(bool next)
