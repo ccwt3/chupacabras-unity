@@ -1,0 +1,7 @@
+Starting: Intent { cmp=com.chupacabras.ar.appearance12/com.unity3d.player.UnityPlayerGameActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.chupacabras.ar.appearance12/com.unity3d.player.UnityPlayerGameActivity
+TotalTime: 2320
+WaitTime: 2324
+Complete

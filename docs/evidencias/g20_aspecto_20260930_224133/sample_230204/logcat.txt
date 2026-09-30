@@ -1,0 +1,683 @@
+--------- beginning of main
+09-30 17:00:20.865  2485  2485 I ar.appearance1: Late-enabling -Xcheck:jni
+09-30 17:00:20.922  2485  2485 I ar.appearance1: Unquickening 15 vdex files!
+09-30 17:00:21.886  2485  2485 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+09-30 17:00:21.887  2485  2485 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+09-30 17:00:21.970  2485  2485 W linker  : Warning: "/data/app/~~PhKG0Sdjcta-qTIJHWPz3w==/com.chupacabras.ar.appearance12-qXt8innS638hqc7k49KVOg==/lib/arm64/libc++_shared.so" unused DT entry: unknown processor-specific (type 0x70000001 arg 0x0) (ignoring)
+09-30 17:00:21.972  2485  2485 D GameActivity: GameActivity_register
+09-30 17:00:22.055  2485  2485 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+09-30 17:00:22.097  2485  2485 D gti.InputConnection: InputConnection created
+09-30 17:00:22.098  2485  2485 D gti.InputConnection: setEditorInfo
+09-30 17:00:22.118  2485  2485 I ThreeFingerSwipe: mSwipeDistanceThreshold:18
+09-30 17:00:22.118  2485  2485 I ThreeFingerSwipe: mMaxWidth = 720; mMaxHeight = 1522
+09-30 17:00:22.123  2485  2485 I ThreeFingerSwipe: getPackageName = com.chupacabras.ar.appearance12
+09-30 17:00:22.151  2485  2485 W ar.appearance1: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+09-30 17:00:22.153  2485  2485 W ar.appearance1: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+09-30 17:00:22.175  2485  2485 I Unity   : applyWindowUIChanges fullScreen = true, renderOutsideSafeArea = true
+09-30 17:00:22.212  2485  2485 I IL2CPP  : JNI_OnLoad
+09-30 17:00:22.212  2485  2485 V Unity   : Context Type: GameActivity
+09-30 17:00:22.213  2485  2485 D Unity   : CommandLine:  
+09-30 17:00:22.245  2485  2485 I GameActivity: Looking for library libgame.so
+09-30 17:00:22.246  2485  2485 I GameActivity: Found library libgame.so. Loading...
+09-30 17:00:23.501  2485  2485 D GameActivity: SDK version: 30
+09-30 17:00:23.536  2485  2558 I Unity   : UnityApplication::CreateInstance
+09-30 17:00:23.536  2485  2558 I Unity   : GameActivity Package Version '4.4.0'
+09-30 17:00:23.537  2485  2558 I Unity   : Starting Game Loop
+09-30 17:00:23.613  2485  2485 W CheckTime: App running slow: Executing activity onCreate took 1534ms
+09-30 17:00:23.623  2485  2558 I Unity   : Handle cmd APP_CMD_START(11)
+09-30 17:00:23.645  2485  2485 I Unity   : onResume
+09-30 17:00:23.659  2485  2558 I Unity   : Handle cmd APP_CMD_RESUME(12)
+--------- beginning of system
+09-30 17:00:23.663  2485  2485 I ActivityThread: smart_link is  not supported!!!
+09-30 17:00:23.693  2485  2485 V GameActivity: onImeInsetsChanged from Text Listener
+09-30 17:00:23.695  2485  2558 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-30 17:00:23.715  2485  2485 V GameActivity: onImeInsetsChanged from Text Listener
+09-30 17:00:23.715  2485  2558 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-30 17:00:23.718  2485  2558 I Unity   : Handle cmd APP_CMD_CONTENT_RECT_CHANGED(5)
+09-30 17:00:23.731  2485  2558 I Unity   : Handle cmd APP_CMD_INIT_WINDOW(1)
+09-30 17:00:23.735  2485  2558 D Unity   : Error setting CPU thread affinity, errno=22, tid=2558
+09-30 17:00:23.754  2485  2485 I gralloc4: register: id=22000009705
+09-30 17:00:23.755  2485  2485 E libc    : Access denied finding property "persist.vendor.sf.fbc"
+09-30 17:00:23.755  2485  2485 E libc    : Access denied finding property "persist.vendor.gpu.fbc"
+09-30 17:00:23.755  2485  2485 E libc    : Access denied finding property "persist.vendor.vsp.fbc"
+09-30 17:00:23.756  2485  2558 I Unity   : MemoryManager: Using 'Dynamic Heap' Allocator.
+09-30 17:00:23.757  2485  2558 D Unity   : [UnityMemory] Configuration Parameters - Can be set up in boot.config
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-allocator-temp-initial-block-size-main=262144"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-allocator-temp-initial-block-size-worker=262144"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-temp-allocator-size-background-worker=32768"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-temp-allocator-size-job-worker=262144"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-temp-allocator-size-preload-manager=262144"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-temp-allocator-size-audio-worker=65536"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-temp-allocator-size-cloud-worker=32768"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-bucket-allocator-granularity=16"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-bucket-allocator-bucket-count=8"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-bucket-allocator-block-size=4194304"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-bucket-allocator-block-count=1"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-main-allocator-block-size=16777216"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-thread-allocator-block-size=16777216"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-gfx-main-allocator-block-size=16777216"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-gfx-thread-allocator-block-size=16777216"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-cache-allocator-block-size=4194304"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-typetree-allocator-block-size=2097152"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-profiler-bucket-allocator-granularity=16"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-profiler-bucket-allocator-bucket-count=8"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-profiler-bucket-allocator-block-size=4194304"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-profiler-bucket-allocator-block-count=1"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-profiler-allocator-block-size=16777216"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-profiler-editor-allocator-block-size=1048576"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-temp-allocator-size-main=4194304"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-job-temp-allocator-block-size=2097152"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-job-temp-allocator-block-size-background=1048576"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+09-30 17:00:23.757  2485  2558 D Unity   :     "memorysetup-temp-allocator-size-gfx=262144"
+09-30 17:00:23.758  2485  2485 E ion     : ioctl c0044901 failed with code -1: Inappropriate ioctl for device
+09-30 17:00:23.774  2485  2558 E libprocessgroup: set_timerslack_ns write failed: Operation not permitted
+09-30 17:00:23.802  2485  2485 I gralloc4: register: id=22000009707
+09-30 17:00:23.814  2485  2558 D Unity   : Enabling Unity systrace
+09-30 17:00:23.814  2485  2558 D Unity   : Starting Unity systrace
+09-30 17:00:23.820  2485  2485 I Unity   : windowFocusChanged: true
+09-30 17:00:23.820  2485  2485 I Unity   : applyWindowUIChanges fullScreen = true, renderOutsideSafeArea = true
+09-30 17:00:23.821  2485  2485 I Unity   : resumeUnity
+09-30 17:00:23.831  2485  2485 V GameActivity: onImeInsetsChanged from Text Listener
+09-30 17:00:23.863  2485  2558 D Unity   : [VFS] Mount /data/app/~~PhKG0Sdjcta-qTIJHWPz3w==/com.chupacabras.ar.appearance12-qXt8innS638hqc7k49KVOg==/base.apk
+09-30 17:00:23.930  2485  2558 I Unity   : SystemInfo CPU = ARM64 FP ASIMD AES, Cores = 8, Memory = 3486mb
+09-30 17:00:23.930  2485  2558 I Unity   : SystemInfo ARM big.LITTLE configuration: 2 big (mask: 0xc0), 6 little (mask: 0x3f)
+09-30 17:00:23.933  2485  2485 I Unity   : applyWindowUIChanges fullScreen = true, renderOutsideSafeArea = true
+09-30 17:00:23.936  2485  2558 I Unity   : ApplicationInfo 'com.chupacabras.ar.appearance12', Version '0.0.14', Min API Level '26', Target API Level '35'
+09-30 17:00:23.936  2485  2558 I Unity   : Built from '6000.3/staging' branch, Version '6000.3.22f1 (1c726e1fb402)', Build type 'Development', Scripting Backend 'il2cpp', CPU 'arm64-v8a', Stripping 'Enabled'
+09-30 17:00:23.936  2485  2558 I Unity   : Device Model 'motorola moto g(20)', OS 'Android OS 11 (API 30)'
+09-30 17:00:23.939  2485  2558 D Unity   : Determine if il2cpp resources need to extracted:
+09-30 17:00:23.940  2485  2558 D Unity   :     Missing '/storage/emulated/0/Android/data/com.chupacabras.ar.appearance12/files/il2cpp/unity.ver'
+09-30 17:00:23.940  2485  2558 D Unity   :     Extracting il2cpp resources
+09-30 17:00:23.943  2485  2485 V GameActivity: onImeInsetsChanged from Text Listener
+09-30 17:00:24.067  2485  2558 D Unity   : Unable to find library path for 'il2cpp.usym'.
+09-30 17:00:24.429  2485  2558 D Unity   : [EGL] Attaching window :0xb4000072017e3f10
+09-30 17:00:24.429  2485  2558 D Unity   : InitializeScriptEngine OK (0x7015f35fc0)
+09-30 17:00:24.438  2485  2558 D Unity   : Found 2 interfaces on host :
+09-30 17:00:24.438  2485  2558 D Unity   :  0) 10.70.191.130
+09-30 17:00:24.438  2485  2558 D Unity   :  1) 192.168.100.5
+09-30 17:00:24.438  2485  2558 D Unity   : 
+09-30 17:00:24.440  2485  2558 D Unity   : Player connection [481324059776]  Target information:
+09-30 17:00:24.440  2485  2558 D Unity   : 
+09-30 17:00:24.440  2485  2558 D Unity   : Player connection [481324059776]  * "[IP] 10.70.191.130 [Port] 55000 [Flags] 2 [Guid] 1699376532 [EditorId] 919320011 [Version] 1048832 [Id] AndroidPlayer(11,motorola_moto_g(20)@192.168.100.5) [Debug] 0 [PackageName] AndroidPlayer [ProjectName] Chupacabras — Aspecto 12" 
+09-30 17:00:24.440  2485  2558 D Unity   : 
+09-30 17:00:24.440  2485  2558 D Unity   : Player connection [481324059776]  * "[IP] 192.168.100.5 [Port] 55000 [Flags] 2 [Guid] 1699376532 [EditorId] 919320011 [Version] 1048832 [Id] AndroidPlayer(11,motorola_moto_g(20)@192.168.100.5) [Debug] 0 [PackageName] AndroidPlayer [ProjectName] Chupacabras — Aspecto 12" 
+09-30 17:00:24.440  2485  2558 D Unity   : 
+09-30 17:00:24.440  2485  2558 D Unity   : Player connection [481324059776] Started UDP target info broadcast (1) on [225.0.0.222:54997].
+09-30 17:00:24.440  2485  2558 D Unity   : 
+09-30 17:00:24.452  2485  2558 D Unity   : Error setting CPU thread affinity, errno=22, tid=2586
+09-30 17:00:24.452  2485  2558 D Unity   : Error setting CPU thread affinity, errno=22, tid=2587
+09-30 17:00:24.465  2485  2558 E libprocessgroup: set_timerslack_ns write failed: Operation not permitted
+09-30 17:00:24.473  2485  2558 I chatty  : uid=10687(com.chupacabras.ar.appearance12) UnityMain identical 10 lines
+09-30 17:00:24.475  2485  2558 E libprocessgroup: set_timerslack_ns write failed: Operation not permitted
+09-30 17:00:24.480  2485  2558 E libprocessgroup: set_timerslack_ns write failed: Operation not permitted
+09-30 17:00:24.481  2485  2558 E libprocessgroup: set_timerslack_ns write failed: Operation not permitted
+09-30 17:00:24.486  2485  2558 E libprocessgroup: set_timerslack_ns write failed: Operation not permitted
+09-30 17:00:24.493  2485  2558 E libprocessgroup: set_timerslack_ns write failed: Operation not permitted
+09-30 17:00:24.494  2485  2558 E libprocessgroup: set_timerslack_ns write failed: Operation not permitted
+09-30 17:00:24.501  2485  2558 E libprocessgroup: set_timerslack_ns write failed: Operation not permitted
+09-30 17:00:24.504  2485  2558 E libprocessgroup: set_timerslack_ns write failed: Operation not permitted
+09-30 17:00:24.504  2485  2558 D Unity   : Error setting CPU thread affinity, errno=22, tid=2591
+09-30 17:00:24.504  2485  2558 D Unity   : Error setting CPU thread affinity, errno=22, tid=2592
+09-30 17:00:24.504  2485  2558 D Unity   : Error setting CPU thread affinity, errno=22, tid=2593
+09-30 17:00:24.504  2485  2558 D Unity   : Error setting CPU thread affinity, errno=22, tid=2594
+09-30 17:00:24.504  2485  2558 D Unity   : Error setting CPU thread affinity, errno=22, tid=2595
+09-30 17:00:24.504  2485  2558 D Unity   : Error setting CPU thread affinity, errno=22, tid=2596
+09-30 17:00:24.504  2485  2558 D Unity   : Error setting CPU thread affinity, errno=22, tid=2597
+09-30 17:00:24.504  2485  2558 D Unity   : Error setting CPU thread affinity, errno=22, tid=2599
+09-30 17:00:24.504  2485  2558 D Unity   : Error setting CPU thread affinity, errno=22, tid=2600
+09-30 17:00:24.504  2485  2558 D Unity   : Error setting CPU thread affinity, errno=22, tid=2601
+09-30 17:00:24.504  2485  2558 D Unity   : Error setting CPU thread affinity, errno=22, tid=2602
+09-30 17:00:24.504  2485  2558 D Unity   : Error setting CPU thread affinity, errno=22, tid=2603
+09-30 17:00:24.504  2485  2558 D Unity   : Error setting CPU thread affinity, errno=22, tid=2604
+09-30 17:00:24.504  2485  2558 D Unity   : Error setting CPU thread affinity, errno=22, tid=2605
+09-30 17:00:24.504  2485  2558 D Unity   : Error setting CPU thread affinity, errno=22, tid=2607
+09-30 17:00:24.504  2485  2558 D Unity   : Error setting CPU thread affinity, errno=22, tid=2608
+09-30 17:00:24.519  2485  2558 D Unity   : Input System module state changed to: Initialized.
+09-30 17:00:24.531  2485  2558 D Unity   : [Physics::Module] Initialized fallback backend.
+09-30 17:00:24.531  2485  2558 D Unity   : [Physics::Module] Id: 0xdecafbad
+09-30 17:00:24.540  2485  2558 D Unity   : PlayerInitEngineNoGraphics OK
+09-30 17:00:24.540  2485  2558 I Unity   : Company Name: Chupacabras
+09-30 17:00:24.540  2485  2558 I Unity   : Product Name: Chupacabras — Aspecto 12
+09-30 17:00:24.540  2485  2558 D Unity   : AndroidGraphics::Startup window =  0xb4000072017e3f10
+09-30 17:00:24.540  2485  2558 D Unity   : [EGL] Attaching window :0xb4000072017e3f10
+09-30 17:00:24.542  2485  2485 V GameActivity: onImeInsetsChanged from Text Listener
+09-30 17:00:24.543  2485  2485 I Unity   : applyWindowUIChanges fullScreen = true, renderOutsideSafeArea = true
+09-30 17:00:24.545  2485  2558 D Unity   : [Subsystems] Discovering subsystems at path /data/app/~~PhKG0Sdjcta-qTIJHWPz3w==/com.chupacabras.ar.appearance12-qXt8innS638hqc7k49KVOg==/base.apk/assets/bin/Data/UnitySubsystems
+09-30 17:00:24.553  2485  2485 V GameActivity: onImeInsetsChanged from Text Listener
+09-30 17:00:24.595  2485  2558 D Unity   : [EGL] Request: ES 3.2 RGB 000 0/0
+09-30 17:00:24.600  2485  2558 D Unity   : [EGL] Checking ES 3.2 support...
+09-30 17:00:24.619  2485  2558 D Unity   : [EGL] ES 3.2 support detected
+09-30 17:00:24.620  2485  2558 D Unity   : [EGL] Found: ID[5] ES 3.2 RGB 565 0/0
+09-30 17:00:24.624  2485  2558 D Unity   : GfxDevice: creating device client; kGfxThreadingModeThreaded
+09-30 17:00:24.624  2485  2558 D Unity   : [EGL] Request: ES 3.2 RGB 000 0/0
+09-30 17:00:24.624  2485  2558 D Unity   : [EGL] Found: ID[5] ES 3.2 RGB 565 0/0
+09-30 17:00:24.624  2485  2558 D Unity   : [EGL] Request: ES 3.0 RGBA 8888 0/0
+09-30 17:00:24.625  2485  2558 D Unity   : [EGL] Found: ID[1] ES 3.0 RGBA 8888 0/0
+09-30 17:00:24.644  2485  2485 I Unity   : applyWindowUIChanges fullScreen = true, renderOutsideSafeArea = true
+09-30 17:00:24.646  2485  2558 D Unity   : ANativeWindow: (720/1600) RequestedResolution: (0/0) RenderingResolution: (0/0) EGLSurface: (720/1600)
+09-30 17:00:24.653  2485  2485 V GameActivity: onImeInsetsChanged from Text Listener
+09-30 17:00:24.656  2485  2558 D Unity   : Renderer: Mali-G52
+09-30 17:00:24.656  2485  2558 D Unity   : Vendor:   ARM
+09-30 17:00:24.656  2485  2558 D Unity   : Version:  OpenGL ES 3.2 v1.r25p1-01bet0.###other-sha0123456789ABCDEF0###
+09-30 17:00:24.656  2485  2558 D Unity   : GLES:     3
+09-30 17:00:24.656  2485  2558 D Unity   :  GL_EXT_debug_marker GL_ARM_rgba8 GL_ARM_mali_shader_binary GL_OES_depth24 GL_OES_depth_texture GL_OES_depth_texture_cube_map GL_OES_packed_depth_stencil GL_OES_rgb8_rgba8 GL_EXT_read_format_bgra GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_standard_derivatives GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_EGL_image_external_essl3 GL_OES_EGL_sync GL_OES_texture_npot GL_OES_vertex_half_float GL_OES_required_internalformat GL_OES_vertex_array_object GL_OES_mapbuffer GL_EXT_texture_format_BGRA8888 GL_EXT_texture_rg GL_EXT_texture_type_2_10_10_10_REV GL_OES_fbo_render_mipmap GL_OES_element_index_uint GL_EXT_shadow_samplers GL_OES_texture_compression_astc GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_hdr GL_KHR_texture_compression_astc_sliced_3d GL_EXT_texture_compression_astc_decode_mode GL_EXT_texture_compression_astc_decode_mode_rgb9e5 GL_KHR_debug GL_EXT_occlusion_query_boolean GL_EXT_disjoint_timer_query GL_EXT_blend_minmax GL_EXT_discard_framebuffer
+09-30 17:00:24.656  2485  2558 D Unity   :  GL_OES_get_program_binary GL_OES_texture_3D GL_EXT_texture_storage GL_EXT_multisampled_render_to_texture GL_EXT_multisampled_render_to_texture2 GL_OES_surfaceless_context GL_OES_texture_stencil8 GL_EXT_shader_pixel_local_storage GL_ARM_shader_framebuffer_fetch GL_ARM_shader_framebuffer_fetch_depth_stencil GL_ARM_mali_program_binary GL_EXT_sRGB GL_EXT_sRGB_write_control GL_EXT_texture_sRGB_decode GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_RG8 GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_OES_texture_storage_multisample_2d_array GL_OES_shader_image_atomic GL_EXT_robustness GL_EXT_draw_buffers_indexed GL_OES_draw_buffers_indexed GL_EXT_texture_border_clamp GL_OES_texture_border_clamp GL_EXT_texture_cube_map_array GL_OES_texture_cube_map_array GL_OES_sample_variables GL_OES_sample_shading GL_OES_shader_multisample_interpolation GL_EXT_shader_io_blocks GL_OES_shader_io_blocks GL_EXT_tessellation_shader GL_OES_tessellation_shader GL_EXT_primitive_bounding_box GL_OES_primitive_bounding_
+09-30 17:00:24.656  2485  2558 D Unity   : box GL_EXT_geometry_shader GL_OES_geometry_shader GL_ANDROID_extension_pack_es31a GL_EXT_gpu_shader5 GL_OES_gpu_shader5 GL_EXT_texture_buffer GL_OES_texture_buffer GL_EXT_copy_image GL_OES_copy_image GL_EXT_shader_non_constant_global_initializers GL_EXT_color_buffer_half_float GL_EXT_color_buffer_float GL_EXT_YUV_target GL_OVR_multiview GL_OVR_multiview2 GL_OVR_multiview_multisampled_render_to_texture GL_KHR_robustness GL_KHR_robust_buffer_access_behavior GL_EXT_draw_elements_base_vertex GL_OES_draw_elements_base_vertex GL_EXT_protected_textures GL_EXT_buffer_storage GL_EXT_external_buffer GL_EXT_EGL_image_array GL_EXT_texture_filter_anisotropic GL_ARM_texture_unnormalized_coordinates
+09-30 17:00:25.174  2485  2558 D Unity   : OPENGL LOG: Creating OpenGL ES 3.2 graphics device ; Context level  <OpenGL ES 3.2> ; Context handle -243181952
+09-30 17:00:25.177  2485  2558 D Unity   : Error setting CPU thread affinity, errno=22, tid=2680
+09-30 17:00:25.181  2485  2558 D Unity   : [EGL] Attaching window :0xb4000072017e3f10
+09-30 17:00:25.190  2485  2558 D Unity   : Requested framebuffer: resolution[720x1600], rgba[8/8/8/8], depth+stencil[on], samples[1]
+09-30 17:00:25.190  2485  2558 D Unity   : Created framebuffer: resolution[720x1600], rgba[8/8/8/8], depth+stencil[24/8], samples[0] 
+09-30 17:00:25.208  2485  2558 I SwappyWrapper: SwappyWrapperInit() succeeded. Build: Wed Sep 30 16:59:01 2026
+09-30 17:00:25.208  2485  2558 D Unity   : SwappyWrapper: InitSwappyWrapper() succeeded.
+09-30 17:00:25.237  2485  2558 E SwappyDisplayManager: dalvik.system.InMemoryDexClassLoader[DexPathList[[dex file "InMemoryDexFile[cookie=[0, -5476376660989192944]]"],nativeLibraryDirectories=[/system/lib64, /system_ext/lib64]]] couldn't find "libgame.so"
+09-30 17:00:25.239  2485  2689 I SwappyDisplayManager: Starting looper thread
+09-30 17:00:25.240  2485  2558 D Unity   : [EGL] Attaching window :0xb4000072017e3f10
+09-30 17:00:25.240  2485  2558 D Unity   : Initialize engine version: 6000.3.22f1 (1c726e1fb402)
+09-30 17:00:25.292  2485  2558 I AAudio  : AAudioStreamBuilder_openStream() called ----------------------------------------
+09-30 17:00:25.292  2485  2558 I AudioStreamBuilder: rate   =  24000, channels  = 2, format   = 5, sharing = SH, dir = OUTPUT
+09-30 17:00:25.292  2485  2558 I AudioStreamBuilder: device =      0, sessionId = 0, perfMode = 12, callback: ON with frames = 512
+09-30 17:00:25.292  2485  2558 I AudioStreamBuilder: usage  =      0, contentType = 0, inputPreset = 0, allowedCapturePolicy = 0
+09-30 17:00:25.292  2485  2558 I AudioStreamBuilder: privacy sensitive = false
+09-30 17:00:25.292  2485  2558 D AudioStreamBuilder: build() MMAP not used because sessionId specified.
+09-30 17:00:25.292  2485  2558 D ar.appearance1: PlayerBase::PlayerBase()
+09-30 17:00:25.293  2485  2558 D AudioStreamTrack: open(), request notificationFrames = 512, frameCount = 8192
+09-30 17:00:25.296  2485  2558 I AudioTrack: set(): streamType -1, sampleRate 24000, format 0x5, channelMask 0x3, frameCount 8192, flags #4, notificationFrames 512, sessionId 0, transferType 1, uid -1, pid -1
+09-30 17:00:25.312  2485  2558 D AudioTrack: createTrack_l(112): AUDIO_OUTPUT_FLAG_FAST denied by server; frameCount 8192 -> 8192
+09-30 17:00:25.314  2485  2558 D AAudioStream: setState(s#1) from 0 to 2
+09-30 17:00:25.315  2485  2558 W AudioStreamTrack: open() flags changed from 0x00000004 to 0x00000000
+09-30 17:00:25.315  2485  2558 W AudioStreamTrack: open() perfMode changed from 12 to 10
+09-30 17:00:25.316  2485  2558 I AAudio  : AAudioStreamBuilder_openStream() returns 0 = AAUDIO_OK for s#1 ----------------
+09-30 17:00:25.318  2485  2558 D AAudio  : AAudioStream_requestStart(s#1) called --------------
+09-30 17:00:25.318  2485  2558 D AAudioStream: setState(s#1) from 2 to 3
+09-30 17:00:25.318  2485  2558 I AudioTrack: start  mClientUid:10687 mClientPid:2485  mSessionId:18529 app name:com.chupacabras.ar.appearance12 
+09-30 17:00:25.323  2485  2558 D ar.appearance1: PlayerBase::start() from IPlayer
+09-30 17:00:25.323  2485  2558 D AAudio  : AAudioStream_requestStart(s#1) returned 0 ---------
+09-30 17:00:25.323  2485  2523 D AudioStreamLegacy: onAudioDeviceUpdate() devId 3 => 3
+09-30 17:00:25.430  2485  2692 D AAudioStream: setState(s#1) from 3 to 4
+09-30 17:00:25.621  2485  2558 D Unity   : [Physics::Module] Selected backend.
+09-30 17:00:25.621  2485  2558 D Unity   : [Physics::Module] Name: PhysX
+09-30 17:00:25.621  2485  2558 D Unity   : [Physics::Module] Id: 0xf2b8ea05
+09-30 17:00:25.621  2485  2558 D Unity   : [Physics::Module] SDK Version: 4.1.2
+09-30 17:00:25.621  2485  2558 D Unity   : [Physics::Module] Integration Version: 1.0.0
+09-30 17:00:25.621  2485  2558 D Unity   : [Physics::Module] Threading Mode: Multi-Threaded
+09-30 17:00:25.948  2485  2558 D Unity   : PlayerInitEngineGraphics OK
+09-30 17:00:25.957  2485  2558 D Unity   : Found 63 native sensors
+09-30 17:00:25.964  2485  2558 D Unity   : Sensor :        Accelerometer ( 1) ; 0.010000 / 0.00s ; icm42607 Accelerometer / INV 
+09-30 17:00:25.964  2485  2558 D Unity   : Sensor :        Accelerometer ( 1) ; 0.010000 / 0.00s ; icm42607 Accelerometer / INV 
+09-30 17:00:25.964  2485  2558 D Unity   : enabled Accelerometer sensor
+09-30 17:00:25.973  2485  2558 D Unity   : Input: mapping [16:AXIS_GENERIC_1]
+09-30 17:00:25.973  2485  2558 D Unity   : Input: attaching joystick ["uinput-fpc"][0x00000007:0a2365ce4f51162539f3bf91469900de3a450172] at pos [0x01]
+09-30 17:00:25.975  2485  2558 I Unity   :     HasWindow = 1, HasFocus = 0
+09-30 17:00:25.975  2485  2558 I Unity   : Handle cmd APP_CMD_WINDOW_RESIZED(3)
+09-30 17:00:25.975  2485  2558 D Unity   : NativeWindow resized 720x1600
+09-30 17:00:25.976  2485  2558 I Unity   : Handle cmd APP_CMD_WINDOW_REDRAW_NEEDED(4)
+09-30 17:00:25.976  2485  2558 I Unity   : Handle cmd APP_CMD_GAINED_FOCUS(7)
+09-30 17:00:25.976  2485  2558 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-30 17:00:25.978  2485  2558 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-30 17:00:25.981  2485  2558 W libEGL  : EGLNativeWindowType 0xb4000072017e3f10 disconnect failed
+09-30 17:00:25.983  2485  2558 D Unity   : ANativeWindow: (720/1600) RequestedResolution: (0/0) RenderingResolution: (0/0) EGLSurface: (720/1600)
+09-30 17:00:25.995  2485  2558 V MediaRouter: Selecting route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+09-30 17:00:26.161  2485  2558 D Unity   : Error setting CPU thread affinity, errno=22, tid=2699
+09-30 17:00:26.242  2485  2680 I gralloc4: register: id=22000009708
+09-30 17:00:26.324  2485  2680 I gralloc4: register: id=22000009709
+09-30 17:00:26.336  2485  2680 I gralloc4: register: id=2200000970a
+09-30 17:00:28.218  2485  2485 D GameActivity: ************** mainWorkCallback *********
+09-30 17:00:28.218  2485  2485 D gti.InputConnection: setSoftKeyboardActive, active: false
+09-30 17:00:28.220  2485  2558 D Unity   : UnloadTime: 2.115884 ms
+09-30 17:00:28.259  2485  2558 D CompatibilityChangeReporter: Compat change id reported: 147600208; UID 10687; state: ENABLED
+09-30 17:00:28.276  2485  2558 D Unity   : Sensor :        Accelerometer ( 1) ; 0.010000 / 0.00s ; icm42607 Accelerometer / INV 
+09-30 17:00:28.276  2485  2558 D Unity   : Using NDK Choreographer.
+09-30 17:00:28.317  2485  2558 D Unity   : Stopping Unity systrace
+09-30 17:00:28.325  2485  2558 I IL2CPP  : Locale en-US
+09-30 17:00:28.679  2485  2558 D Unity   : Failed to load native plugin: Unable to lookup library path for '_burst_0_0'.
+09-30 17:00:28.798  2485  2558 I Unity   : CHUPACABRAS_DEVICE_DETECTOR_OK {
+09-30 17:00:28.798  2485  2558 I Unity   :     "unity": "6000.3.22f1",
+09-30 17:00:28.798  2485  2558 I Unity   :     "platform": "Android",
+09-30 17:00:28.798  2485  2558 I Unity   :     "family": "tagStandard41h12",
+09-30 17:00:28.798  2485  2558 I Unity   :     "id": 0,
+09-30 17:00:28.798  2485  2558 I Unity   :     "detections": 1,
+09-30 17:00:28.798  2485  2558 I Unity   :     "blankDetections": 0,
+09-30 17:00:28.798  2485  2558 I Unity   :     "position": {
+09-30 17:00:28.798  2485  2558 I Unity   :         "x": -0.000030418614187510684,
+09-30 17:00:28.798  2485  2558 I Unity   :         "y": 0.0001228229666594416,
+09-30 17:00:28.798  2485  2558 I Unity   :         "z": 0.27718374133110049
+09-30 17:00:28.798  2485  2558 I Unity   :     },
+09-30 17:00:28.798  2485  2558 I Unity   :     "rotation": {
+09-30 17:00:28.798  2485  2558 I Unity   :         "x": 0.002918973797932267,
+09-30 17:00:28.798  2485  2558 I Unity   :         "y": -0.0010334892431274057,
+09-30 17:00:28.798  2485  2558 I Unity   :         "z": -0.00016976076585706323,
+09-30 17:00:28.798  2485  2558 I Unity   :         "w": 0.9999952912330627
+09-30 17:00:28.798  2485  2558 I Unity   :     },
+09-30 17:00:28.798  2485  2558 I Unity   :     "passed": true,
+09-30 17:00:28.798  2485  2558 I Unity   :     "limitation": "Imagen incluida; no valida marcador físico, escala ni calibración."
+09-30 17:00:28.798  2485  2558 I Unity   : }
+09-30 17:00:28.798  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:00:28.798  2485  2558 I Unity   : Chupacabras.TrackingProbe:Start()
+09-30 17:00:28.798  2485  2558 I Unity   : 
+09-30 17:00:28.954  2485  2485 I Unity   : onPause
+09-30 17:00:28.956  2485  2485 I Unity   : pauseUnity
+09-30 17:00:30.957  2485  2485 E threaded_app: android_app_set_activity_state timed out waiting for cmd 14
+09-30 17:00:30.976  2485  2485 I Unity   : windowFocusChanged: false
+09-30 17:00:31.376  2485  2558 I Unity   : Handle cmd APP_CMD_PAUSE(14)
+09-30 17:00:31.416  2485  2709 D Unity   : ChoreographerNDK: Ignoring event, since Choreographer is disabled
+09-30 17:00:31.416  2485  2558 D AAudio  : AAudioStream_requestStop(s#1) called
+09-30 17:00:31.416  2485  2558 D AAudioStream: setState(s#1) from 4 to 9
+09-30 17:00:31.416  2485  2558 I AudioTrack: stop  mClientUid:10687 mClientPid:2485  mSessionId:18529 app name:com.chupacabras.ar.appearance12 
+09-30 17:00:31.416  2485  2558 D AudioTrack: stop(2397): called with 147360 frames delivered
+09-30 17:00:31.417  2485  2558 D ar.appearance1: PlayerBase::stop() from IPlayer
+09-30 17:00:31.417  2485  2558 D AAudioStream: setState(s#1) from 9 to 10
+09-30 17:00:31.418  2485  2558 D Unity   : Sensor :        Accelerometer ( 1) ; 0.010000 / 0.00s ; icm42607 Accelerometer / INV 
+09-30 17:00:31.419  2485  2558 I Unity   : Handle cmd APP_CMD_LOST_FOCUS(8)
+09-30 17:00:46.248  2485  2485 I Unity   : onResume
+09-30 17:00:46.270  2485  2558 I Unity   : Handle cmd APP_CMD_RESUME(12)
+09-30 17:00:46.271  2485  2485 I ActivityThread: smart_link is  not supported!!!
+09-30 17:00:46.288  2485  2485 V GameActivity: onImeInsetsChanged from Text Listener
+09-30 17:00:46.289  2485  2558 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-30 17:00:46.302  2485  2485 I Unity   : windowFocusChanged: true
+09-30 17:00:46.302  2485  2485 I Unity   : applyWindowUIChanges fullScreen = true, renderOutsideSafeArea = true
+09-30 17:00:46.303  2485  2485 I Unity   : resumeUnity
+09-30 17:00:46.303  2485  2558 I Unity   : Handle cmd APP_CMD_GAINED_FOCUS(7)
+09-30 17:00:46.314  2485  2485 V GameActivity: onImeInsetsChanged from Text Listener
+09-30 17:00:46.326  2485  2558 D Unity   : Sensor :        Accelerometer ( 1) ; 0.010000 / 0.00s ; icm42607 Accelerometer / INV 
+09-30 17:00:46.326  2485  2558 D Unity   : Found 2 interfaces on host motorola_moto_g(20)@192.168.100.5:
+09-30 17:00:46.326  2485  2558 D Unity   :  0) 10.70.191.130
+09-30 17:00:46.326  2485  2558 D Unity   :  1) 192.168.100.5
+09-30 17:00:46.326  2485  2558 D Unity   : 
+09-30 17:00:46.327  2485  2558 D Unity   : Player connection [481324059776]  Target information:
+09-30 17:00:46.327  2485  2558 D Unity   : 
+09-30 17:00:46.327  2485  2558 D Unity   : Player connection [481324059776]  * "[IP] 10.70.191.130 [Port] 55000 [Flags] 2 [Guid] 1699376532 [EditorId] 919320011 [Version] 1048832 [Id] AndroidPlayer(11,motorola_moto_g(20)@192.168.100.5) [Debug] 0 [PackageName] AndroidPlayer [ProjectName] Chupacabras — Aspecto 12" 
+09-30 17:00:46.327  2485  2558 D Unity   : 
+09-30 17:00:46.327  2485  2558 D Unity   : Player connection [481324059776]  * "[IP] 192.168.100.5 [Port] 55000 [Flags] 2 [Guid] 1699376532 [EditorId] 919320011 [Version] 1048832 [Id] AndroidPlayer(11,motorola_moto_g(20)@192.168.100.5) [Debug] 0 [PackageName] AndroidPlayer [ProjectName] Chupacabras — Aspecto 12" 
+09-30 17:00:46.327  2485  2558 D Unity   : 
+09-30 17:00:46.327  2485  2558 D Unity   : Player connection [481324059776] Started UDP target info broadcast (1) on [225.0.0.222:54997].
+09-30 17:00:46.327  2485  2558 D Unity   : 
+09-30 17:00:46.327  2485  2558 D Unity   : Player connection [481324059776] Started UDP target info broadcast (1) on [225.0.0.222:54997].
+09-30 17:00:46.327  2485  2558 D Unity   : 
+09-30 17:00:46.334  2485  2558 I CameraManagerGlobal: Connecting to camera service
+09-30 17:00:46.352  2485  2558 I Unity   : Camera2 0 is a simple camera
+09-30 17:00:46.357  2485  2558 I Unity   : Camera2 1 is a simple camera
+09-30 17:00:46.359  2485  2558 I Unity   : Camera2 2 is a simple camera
+09-30 17:00:46.361  2485  2558 I Unity   : Camera2 3 is a simple camera
+09-30 17:00:46.365  2485  2558 I Unity   : Camera2 4 is a simple camera
+09-30 17:00:46.370  2485  2558 I Unity   : Camera2: 0 focal length 4.71
+09-30 17:00:46.371  2485  2558 I Unity   : Camera2: sensor size 6.4 x 4.8
+09-30 17:00:46.371  2485  2558 I Unity   : Camera2: focal length equivalent 26
+09-30 17:00:46.404  2485  2558 I Unity   : Camera2: 1 focal length 3.748
+09-30 17:00:46.404  2485  2558 I Unity   : Camera2: sensor size 4.712 x 3.494
+09-30 17:00:46.405  2485  2558 I Unity   : Camera2: focal length equivalent 28
+09-30 17:00:46.442  2485  2558 I Unity   : Camera2: 2 focal length 4.222
+09-30 17:00:46.442  2485  2558 I Unity   : Camera2: sensor size 4.614 x 3.444
+09-30 17:00:46.442  2485  2558 I Unity   : Camera2: focal length equivalent 32
+09-30 17:00:46.454  2485  2558 I Unity   : Camera2: 3 focal length 1.66
+09-30 17:00:46.454  2485  2558 I Unity   : Camera2: sensor size 3.655 x 2.741
+09-30 17:00:46.455  2485  2558 I Unity   : Camera2: focal length equivalent 16
+09-30 17:00:46.468  2485  2558 I Unity   : Camera2: 4 focal length 1.93
+09-30 17:00:46.468  2485  2558 I Unity   : Camera2: sensor size 2.8 x 2.1
+09-30 17:00:46.468  2485  2558 I Unity   : Camera2: focal length equivalent 24
+09-30 17:00:46.491  2485  2558 I Unity   : Camera2: Hardware level: 0
+09-30 17:00:46.498  2485  2558 I Unity   : Camera2: FrameSize 4000 x 3000 [5.051457288616511]
+09-30 17:00:46.498  2485  2558 I Unity   : Camera2: FrameSize 4000 x 2250 [4.7637752161647295]
+09-30 17:00:46.498  2485  2558 I Unity   : Camera2: FrameSize 4000 x 2000 [4.645992180508347]
+09-30 17:00:46.498  2485  2558 I Unity   : Camera2: FrameSize 4000 x 1800 [4.540631664850521]
+09-30 17:00:46.498  2485  2558 I Unity   : Camera2: FrameSize 4000 x 1896 [4.592591403781231]
+09-30 17:00:46.498  2485  2558 I Unity   : Camera2: FrameSize 3840 x 2160 [4.68213122712422]
+09-30 17:00:46.498  2485  2558 I Unity   : Camera2: FrameSize 3264 x 2448 [4.64477544058045]
+09-30 17:00:46.498  2485  2558 I Unity   : Camera2: FrameSize 3264 x 1836 [4.35709336812867]
+09-30 17:00:46.498  2485  2558 I Unity   : Camera2: FrameSize 3264 x 1632 [4.239310332472286]
+09-30 17:00:46.498  2485  2558 I Unity   : Camera2: FrameSize 3264 x 1552 [4.189048497691398]
+09-30 17:00:46.498  2485  2558 I Unity   : Camera2: FrameSize 3264 x 1468 [4.133405006122695]
+09-30 17:00:46.498  2485  2558 I Unity   : Camera2: FrameSize 2592 x 1944 [4.1837281233567865]
+09-30 17:00:46.498  2485  2558 I Unity   : Camera2: FrameSize 2592 x 1458 [3.8960460509050057]
+09-30 17:00:46.498  2485  2558 I Unity   : Camera2: FrameSize 2592 x 1296 [3.778263015248622]
+09-30 17:00:46.499  2485  2558 I Unity   : Camera2: FrameSize 2592 x 1224 [3.7211046014086735]
+09-30 17:00:46.499  2485  2558 I Unity   : Camera2: FrameSize 2560 x 1920 [4.1588830833596715]
+09-30 17:00:46.499  2485  2558 I Unity   : Camera2: FrameSize 2560 x 1440 [3.8712010109078907]
+09-30 17:00:46.499  2485  2558 I Unity   : Camera2: FrameSize 2448 x 2448 [4.35709336812867]
+09-30 17:00:46.499  2485  2558 I Unity   : Camera2: FrameSize 2320 x 1740 [3.9620029377331667]
+09-30 17:00:46.499  2485  2558 I Unity   : Camera2: FrameSize 2304 x 1728 [3.9481620520440193]
+09-30 17:00:46.499  2485  2558 I Unity   : Camera2: FrameSize 2272 x 1080 [3.464172180823544]
+09-30 17:00:46.499  2485  2558 I Unity   : Camera2: FrameSize 2160 x 1080 [3.413619901660713]
+09-30 17:00:46.499  2485  2558 I Unity   : Camera2: FrameSize 2048 x 1536 [3.7125959807312525]
+09-30 17:00:46.499  2485  2558 I Unity   : Camera2: FrameSize 2048 x 1152 [3.4249139082794713]
+09-30 17:00:46.499  2485  2558 I Unity   : Camera2: FrameSize 1920 x 1080 [3.295836866004329]
+09-30 17:00:46.499  2485  2558 I Unity   : Camera2: FrameSize 1920 x 1072 [3.2884018875168106]
+09-30 17:00:46.499  2485  2558 I Unity   : Camera2: FrameSize 1600 x 1200 [3.2188758248682006]
+09-30 17:00:46.499  2485  2558 I Unity   : Camera2: FrameSize 1440 x 1080 [3.0081547935525483]
+09-30 17:00:46.499  2485  2558 I Unity   : Camera2: FrameSize 1600 x 720 [2.70805020110221]
+09-30 17:00:46.499  2485  2558 I Unity   : Camera2: FrameSize 1280 x 720 [2.4849066497880004]
+09-30 17:00:46.499  2485  2558 I Unity   : Camera2: FrameSize 960 x 720 [2.1972245773362196]
+09-30 17:00:46.499  2485  2558 I Unity   : Camera2: FrameSize 800 x 600 [1.83258146374831]
+09-30 17:00:46.500  2485  2558 I Unity   : Camera2: FrameSize 720 x 480 [1.5040773967762742]
+09-30 17:00:46.500  2485  2558 I Unity   : Camera2: FrameSize 640 x 480 [1.3862943611198906]
+09-30 17:00:46.500  2485  2558 I Unity   : Camera2: FrameSize 352 x 288 [0.2776317365982795]
+09-30 17:00:46.500  2485  2558 I Unity   : Camera2: FrameSize 320 x 240 [0.0]
+09-30 17:00:46.500  2485  2558 I Unity   : Camera2: FrameSize 320 x 180 [0.28768207245178085]
+09-30 17:00:46.500  2485  2558 I Unity   : Camera2: FrameSize 320 x 144 [0.5108256237659907]
+09-30 17:00:46.500  2485  2558 I Unity   : Camera2: FrameSize 176 x 144 [1.1086626245216111]
+09-30 17:00:46.501  2485  2558 I Unity   : Camera2: FPS requested: 15 set: 15
+09-30 17:00:46.501  2485  2558 I Unity   : Camera2: Open logical camera 0
+09-30 17:00:47.004  2485  2850 I Unity   : Camera2: CameraDevice opened.
+09-30 17:00:47.009  2485  2558 I Unity   : Camera2: Start preview.
+09-30 17:00:47.024  2485  2558 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-30 17:00:47.024  2485  2850 I Unity   : Camera2: CaptureSession is configured.
+09-30 17:00:47.032  2485  2523 I gralloc4: register: id=22000009714
+09-30 17:00:47.032  2485  2558 D AAudio  : AAudioStream_requestStart(s#1) called --------------
+09-30 17:00:47.032  2485  2558 D AAudioStream: setState(s#1) from 10 to 3
+09-30 17:00:47.032  2485  2558 I AudioTrack: start  mClientUid:10687 mClientPid:2485  mSessionId:18529 app name:com.chupacabras.ar.appearance12 
+09-30 17:00:47.034  2485  2558 D ar.appearance1: PlayerBase::start() from IPlayer
+09-30 17:00:47.034  2485  2558 D AAudio  : AAudioStream_requestStart(s#1) returned 0 ---------
+09-30 17:00:47.035  2485  2521 D AudioStreamLegacy: onAudioDeviceUpdate() devId 3 => 3
+09-30 17:00:47.036  2485  2485 V MediaRouter: Selecting route: RouteInfo{ name=Phone, description=null, status=null, category=RouteCategory{ name=System types=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO  groupable=false }, supportedTypes=ROUTE_TYPE_LIVE_AUDIO ROUTE_TYPE_LIVE_VIDEO , presentationDisplay=null }
+09-30 17:00:47.114  2485  2692 D AAudioStream: setState(s#1) from 3 to 4
+09-30 17:00:47.188  2485  2521 I gralloc4: register: id=22000009715
+09-30 17:00:47.190  2485  2521 I gralloc4: register: id=22000009716
+09-30 17:00:47.192  2485  2521 I gralloc4: register: id=22000009717
+09-30 17:00:47.444  2485  2523 I gralloc4: register: id=22000009718
+09-30 17:00:47.511  2485  2523 I gralloc4: register: id=22000009719
+09-30 17:00:48.033  2485  2558 I Unity   : CHUPACABRAS_CAMERA Camera 0 320x240 rotation=90 mirrored=False
+09-30 17:00:48.033  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:00:48.033  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:00:48.033  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:00:48.033  2485  2558 I Unity   : 
+09-30 17:00:52.095  2485  2485 V GameActivity: onImeInsetsChanged from Text Listener
+09-30 17:00:52.109  2485  2558 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-30 17:00:52.228  2485  2485 I Unity   : onConfigurationChanged
+09-30 17:00:52.247  2485  2485 V GameActivity: onImeInsetsChanged from Text Listener
+09-30 17:00:52.259  2485  2558 I Unity   : Handle cmd APP_CMD_CONFIG_CHANGED(9)
+09-30 17:00:52.259  2485  2558 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-30 17:00:52.269  2485  2485 V GameActivity: onImeInsetsChanged from Text Listener
+09-30 17:00:52.297  2485  2485 I gralloc4: unregister: id=22000009705
+09-30 17:00:52.297  2485  2485 I gralloc4: register: id=2200000971b
+09-30 17:00:52.366  2485  2485 I gralloc4: unregister: id=22000009707
+09-30 17:00:52.366  2485  2485 I gralloc4: register: id=2200000971c
+09-30 17:00:52.400  2485  2558 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-30 17:00:52.401  2485  2558 I Unity   : Handle cmd APP_CMD_WINDOW_RESIZED(3)
+09-30 17:00:52.419  2485  2558 D Unity   : NativeWindow resized 1600x720
+09-30 17:00:52.420  2485  2485 I Unity   : applyWindowUIChanges fullScreen = true, renderOutsideSafeArea = true
+09-30 17:00:52.420  2485  2558 I Unity   : Handle cmd APP_CMD_WINDOW_REDRAW_NEEDED(4)
+09-30 17:00:52.421  2485  2558 I Unity   : Handle cmd APP_CMD_CONTENT_RECT_CHANGED(5)
+09-30 17:00:52.424  2485  2485 V GameActivity: onImeInsetsChanged from Text Listener
+09-30 17:00:52.426  2485  2558 I gralloc4: unregister: id=22000009709
+09-30 17:00:52.427  2485  2558 I gralloc4: unregister: id=2200000970a
+09-30 17:00:52.427  2485  2558 I gralloc4: unregister: id=22000009708
+09-30 17:00:52.440  2485  2558 W libEGL  : EGLNativeWindowType 0xb4000072017e3f10 disconnect failed
+09-30 17:00:52.453  2485  2558 D Unity   : ANativeWindow: (1600/720) RequestedResolution: (0/0) RenderingResolution: (0/0) EGLSurface: (1600/720)
+09-30 17:00:53.234  2485  2558 I Unity   : CHUPACABRAS_CAMERA Camera 0 320x240 rotation=0 mirrored=False
+09-30 17:00:53.234  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:00:53.234  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:00:53.234  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:00:53.234  2485  2558 I Unity   : 
+09-30 17:00:53.294  2485  2558 I Unity   : Handle cmd APP_CMD_WINDOW_INSETS_CHANGED(17)
+09-30 17:00:53.315  2485  2680 I gralloc4: register: id=2200000971d
+09-30 17:00:53.359  2485  2680 D Unity   : Requested framebuffer: resolution[1600x720], rgba[8/8/8/8], depth+stencil[on], samples[1]
+09-30 17:00:53.363  2485  2680 D Unity   : Created framebuffer: resolution[1600x720], rgba[8/8/8/8], depth+stencil[24/8], samples[0] 
+09-30 17:00:53.434  2485  2680 I gralloc4: register: id=2200000971e
+09-30 17:00:53.743  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:00:53.743  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:00:53.743  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:00:53.743  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:00:53.743  2485  2558 I Unity   : 
+09-30 17:00:54.133  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:00:54.133  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:00:54.133  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:00:54.133  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:00:54.133  2485  2558 I Unity   : 
+09-30 17:00:54.189  2485  2680 I gralloc4: register: id=22000009727
+09-30 17:00:54.281  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:00:54.281  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:00:54.281  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:00:54.281  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:00:54.281  2485  2558 I Unity   : 
+09-30 17:00:54.373  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:00:54.373  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:00:54.373  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:00:54.373  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:00:54.373  2485  2558 I Unity   : 
+09-30 17:00:54.416  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:00:54.416  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:00:54.416  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:00:54.416  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:00:54.416  2485  2558 I Unity   : 
+09-30 17:00:54.516  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:00:54.516  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:00:54.516  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:00:54.516  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:00:54.516  2485  2558 I Unity   : 
+09-30 17:00:55.439  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:00:55.439  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:00:55.439  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:00:55.439  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:00:55.439  2485  2558 I Unity   : 
+09-30 17:00:56.585  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:00:56.585  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:00:56.585  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:00:56.585  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:00:56.585  2485  2558 I Unity   : 
+09-30 17:00:56.640  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:00:56.640  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:00:56.640  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:00:56.640  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:00:56.640  2485  2558 I Unity   : 
+09-30 17:00:56.764  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:00:56.764  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:00:56.764  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:00:56.764  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:00:56.764  2485  2558 I Unity   : 
+09-30 17:00:58.160  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:00:58.160  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:00:58.160  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:00:58.160  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:00:58.160  2485  2558 I Unity   : 
+09-30 17:00:58.422  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:00:58.422  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:00:58.422  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:00:58.422  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:00:58.422  2485  2558 I Unity   : 
+09-30 17:00:58.499  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:00:58.499  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:00:58.499  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:00:58.499  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:00:58.499  2485  2558 I Unity   : 
+09-30 17:00:58.625  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:00:58.625  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:00:58.625  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:00:58.625  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:00:58.625  2485  2558 I Unity   : 
+09-30 17:01:03.503  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:01:03.503  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:03.503  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:03.503  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:03.503  2485  2558 I Unity   : 
+09-30 17:01:14.555  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:01:14.555  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:14.555  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:14.555  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:14.555  2485  2558 I Unity   : 
+09-30 17:01:14.627  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:01:14.627  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:14.627  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:14.627  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:14.627  2485  2558 I Unity   : 
+09-30 17:01:15.091  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:01:15.091  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:15.091  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:15.091  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:15.091  2485  2558 I Unity   : 
+09-30 17:01:22.094  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:01:22.094  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:22.094  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:22.094  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:22.094  2485  2558 I Unity   : 
+09-30 17:01:26.053  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:01:26.053  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:26.053  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:26.053  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:26.053  2485  2558 I Unity   : 
+09-30 17:01:26.093  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:01:26.093  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:26.093  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:26.093  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:26.093  2485  2558 I Unity   : 
+09-30 17:01:26.134  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:01:26.134  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:26.134  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:26.134  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:26.134  2485  2558 I Unity   : 
+09-30 17:01:26.409  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:01:26.409  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:26.409  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:26.409  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:26.409  2485  2558 I Unity   : 
+09-30 17:01:37.064  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:01:37.064  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:37.064  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:37.064  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:37.064  2485  2558 I Unity   : 
+09-30 17:01:37.140  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:01:37.140  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:37.140  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:37.140  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:37.140  2485  2558 I Unity   : 
+09-30 17:01:45.255  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:01:45.255  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:45.255  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:45.255  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:45.255  2485  2558 I Unity   : 
+09-30 17:01:46.173  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:01:46.173  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:46.173  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:46.173  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:46.173  2485  2558 I Unity   : 
+09-30 17:01:46.254  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:01:46.254  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:46.254  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:46.254  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:46.254  2485  2558 I Unity   : 
+09-30 17:01:49.513  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:01:49.513  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:49.513  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:49.513  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:49.513  2485  2558 I Unity   : 
+09-30 17:01:49.648  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:01:49.648  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:49.648  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:49.648  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:49.648  2485  2558 I Unity   : 
+09-30 17:01:50.015  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:01:50.015  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:50.015  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:50.015  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:50.015  2485  2558 I Unity   : 
+09-30 17:01:50.057  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:01:50.057  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:50.057  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:50.057  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:50.057  2485  2558 I Unity   : 
+09-30 17:01:50.161  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:01:50.161  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:50.161  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:50.161  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:50.161  2485  2558 I Unity   : 
+09-30 17:01:50.251  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:01:50.251  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:50.251  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:50.251  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:50.251  2485  2558 I Unity   : 
+09-30 17:01:50.360  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:01:50.360  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:50.360  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:50.360  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:50.360  2485  2558 I Unity   : 
+09-30 17:01:50.412  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:01:50.412  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:50.412  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:50.412  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:50.412  2485  2558 I Unity   : 
+09-30 17:01:50.681  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:01:50.681  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:50.681  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:50.681  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:50.681  2485  2558 I Unity   : 
+09-30 17:01:50.790  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:01:50.790  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:50.790  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:50.790  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:50.790  2485  2558 I Unity   : 
+09-30 17:01:51.196  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:01:51.196  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:51.196  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:51.196  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:51.196  2485  2558 I Unity   : 
+09-30 17:01:51.256  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:01:51.256  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:51.256  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:51.256  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:51.256  2485  2558 I Unity   : 
+09-30 17:01:51.462  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:01:51.462  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:51.462  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:51.462  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:51.462  2485  2558 I Unity   : 
+09-30 17:01:51.657  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:01:51.657  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:51.657  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:51.657  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:51.657  2485  2558 I Unity   : 
+09-30 17:01:51.866  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:01:51.866  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:51.866  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:51.866  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:51.866  2485  2558 I Unity   : 
+09-30 17:01:52.057  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:01:52.057  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:52.057  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:52.057  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:52.057  2485  2558 I Unity   : 
+09-30 17:01:52.197  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:01:52.197  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:01:52.197  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:01:52.197  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:01:52.197  2485  2558 I Unity   : 
+09-30 17:02:01.587  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:02:01.587  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:02:01.587  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:02:01.587  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:02:01.587  2485  2558 I Unity   : 
+09-30 17:02:01.659  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:02:01.659  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:02:01.659  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:02:01.659  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:02:01.659  2485  2558 I Unity   : 
+09-30 17:02:01.870  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:02:01.870  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:02:01.870  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:02:01.870  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:02:01.870  2485  2558 I Unity   : 
+09-30 17:02:01.911  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:02:01.911  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:02:01.911  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:02:01.911  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:02:01.911  2485  2558 I Unity   : 
+09-30 17:02:01.985  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:02:01.985  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:02:01.985  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:02:01.985  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:02:01.985  2485  2558 I Unity   : 
+09-30 17:02:02.094  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:02:02.094  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:02:02.094  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:02:02.094  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:02:02.094  2485  2558 I Unity   : 
+09-30 17:02:03.267  2485  2558 I Unity   : CHUPACABRAS_TRACK lost
+09-30 17:02:03.267  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:02:03.267  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:02:03.267  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:02:03.267  2485  2558 I Unity   : 
+09-30 17:02:03.410  2485  2558 I Unity   : CHUPACABRAS_TRACK acquired
+09-30 17:02:03.410  2485  2558 I Unity   : UnityEngine.DebugLogHandler:Internal_Log(LogType, LogOption, String, Object)
+09-30 17:02:03.410  2485  2558 I Unity   : Chupacabras.TrackingProbe:Process(Color32[], Int32, Int32, Int32, Boolean, Double, Boolean)
+09-30 17:02:03.410  2485  2558 I Unity   : Chupacabras.TrackingProbe:Update()
+09-30 17:02:03.410  2485  2558 I Unity   : 

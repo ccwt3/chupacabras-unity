@@ -1,0 +1,43 @@
+{
+  "completed_main_steps": [
+    12
+  ],
+  "not_started": [
+    13,
+    14
+  ],
+  "M4": "resuelta",
+  "user_confirmation": "Sí, ahora está como quería",
+  "apk_version": "0.0.14",
+  "scene_revision": "R05",
+  "physical_device": "Moto G20",
+  "telemetry_rows": 879,
+  "visible_rows": 628,
+  "playback_seconds": 76.3558,
+  "frame_ms_median_visible": 39.407,
+  "gl_invalid_operation_count": 0,
+  "managed_exception_count": 0,
+  "five_minutes_sustained": false,
+  "physical_S23": false,
+  "cleanup": {
+    "utc": "2026-09-30T23:02:40.479079+00:00",
+    "package": "com.chupacabras.ar.appearance12",
+    "uninstall": "Success",
+    "packages_after": "",
+    "process_absent": true,
+    "external_data_absent": true,
+    "internal_data": "removed by Android uninstall; not directly inspected without root",
+    "apk_not_copied_to_downloads": true,
+    "cleanup_complete": true
+  },
+  "next_steps": [
+    13,
+    14
+  ],
+  "historical_blender_files_unchanged": 844,
+  "foreign_settings_unchanged": [
+    "ProjectSettings/GraphicsSettings.asset",
+    "ProjectSettings/QualitySettings.asset",
+    "ProjectSettings/PackageManagerSettings.asset"
+  ]
+}

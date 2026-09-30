@@ -107,3 +107,23 @@ en Play Mode: `docs/evidencias/2026-09-30_visual/tracking_regresion.log` y
 `docs/evidencias/editor_tracking_20260930_223507_0.png` (más estados 1 y 2).
 Los archivos de caché `.utmp` rastreados que regeneró la compilación se restituyeron
 a sus bytes previos; no forman parte de la entrega ni del commit.
+
+## Continuación física y revisión vigente
+
+La APK inicial se instaló y reveló orientación incorrecta sobre una mesa. El
+usuario pidió figura de pie en la parte superior del marcador y panel frontal
+a su lado. La revisión vigente es `12_AppearanceAR_r04.unity`, APK 0.0.13
+`12_appearance_20260930_224951.apk`, instalada y capturada en G20; pendiente de
+confirmación de posición/brillo por el usuario. El script de build ahora usa R04.
+La app se desinstaló y la limpieza quedó verificada. Informe, límites y aviso
+OpenGL observado: [prueba_aspecto_g20.md](prueba_aspecto_g20.md).
+
+### Cierre vigente tras aclaración del usuario
+
+**R05 / APK 0.0.14 aceptada físicamente, M#[4] resuelta.** Figura de pie centrada
+**directamente encima del símbolo**, panel vertical al lado. R04 queda histórica.
+La superposición virtual de la figura sobre el dibujo es ahora intencional;
+no se vuelve a pedir el despeje virtual de ese personaje. El panel sí queda al lado.
+La app se retiró y la limpieza final está verificada. Reproducción usa R05.
+Consultar el cierre de [prueba_aspecto_g20.md](prueba_aspecto_g20.md) para APK,
+evidencia, rendimiento observado y limitaciones. Las vistas no sustituyen el corto.

@@ -1,0 +1,11 @@
+UTC 2026-09-30T22:53:41.6537070Z
+Unity 6000.3.22f1
+motorola moto g(20)
+Android OS 11 / API-30 (RTAS31.68-66-3/66-3)
+Camera Camera 0
+Requested 320x240 @15
+Camera 0: WideAngle
+Camera 2: WideAngle
+Camera 4: WideAngle
+Camera 3: UltraWideAngle
+FOV 60 degrees is provisional; physical calibration pending.

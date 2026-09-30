@@ -1,0 +1,11 @@
+{
+  "utc": "2026-09-30T22:56:08.943930+00:00",
+  "package": "com.chupacabras.ar.appearance12",
+  "uninstall": "Success",
+  "packages_after": "",
+  "process_absent": true,
+  "external_data_absent": true,
+  "internal_data": "removed by Android uninstall; not directly inspected without root",
+  "apk_not_copied_to_downloads": true,
+  "cleanup_complete": true
+}

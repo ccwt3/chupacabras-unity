@@ -7,9 +7,9 @@ export CHUPA_APPEARANCE_EVIDENCE="docs/evidencias/appearance_$(date -u +%Y%m%d_%
 mkdir "$CHUPA_APPEARANCE_EVIDENCE"
 export DOTNET_PROCESSOR_COUNT=2
 export GRADLE_USER_HOME="$PROJECT_ROOT/Library/GradleUserHome"
-if [[ ! -f Assets/Scenes/12_AppearanceAR.unity ]]; then
+if [[ ! -f Assets/Scenes/12_AppearanceAR_r05.unity ]]; then
   "$UNITY_EDITOR" -job-worker-count 2 -batchmode -quit -projectPath "$PROJECT_ROOT" \
-    -executeMethod AppearanceBuild.Configure -logFile "$CHUPA_APPEARANCE_EVIDENCE/configure.log"
+    -executeMethod AppearanceBuild.CreateTableRevision -logFile "$CHUPA_APPEARANCE_EVIDENCE/configure.log"
 fi
 "$UNITY_EDITOR" -job-worker-count 2 -batchmode -quit -projectPath "$PROJECT_ROOT" \
   -executeMethod AppearanceBuild.Verify -logFile "$CHUPA_APPEARANCE_EVIDENCE/verify.log"

@@ -1,0 +1,51 @@
+Applications Memory Usage (in Kilobytes):
+Uptime: 150316330 Realtime: 175952626
+
+** MEMINFO in pid 32062 [com.chupacabras.ar.appearance12] **
+                   Pss  Private  Private  SwapPss      Rss     Heap     Heap     Heap
+                 Total    Dirty    Clean    Dirty    Total     Size    Alloc     Free
+                ------   ------   ------   ------   ------   ------   ------   ------
+  Native Heap   201236   201220        0    11844   201684   225500   216622     4761
+  Dalvik Heap     5446     5308        0      101     6112    27735     3159    24576
+ Dalvik Other     1468     1140        0      722     2108                           
+        Stack      868      868        0      708      872                           
+       Ashmem       64       24        0        0      112                           
+    Other dev       20        4       16        0      292                           
+     .so mmap    15259     1600    10320     2829    39804                           
+    .jar mmap     1485        0      244        0    28712                           
+    .apk mmap      514        0        0        0    27160                           
+    .ttf mmap        4        0        0        0        8                           
+    .dex mmap      850      840        4     6684      904                           
+    .oat mmap       54        0        0        0     2016                           
+    .art mmap     4854     4128       16     4834    12468                           
+   Other mmap      583        4      544        4     1308                           
+      Unknown    88207    88196        0    59675    88312                           
+        TOTAL   408313   303332    11144    87401   408313   253235   219781    29337
+ 
+ App Summary
+                       Pss(KB)                        Rss(KB)
+                        ------                         ------
+           Java Heap:     9452                          18580
+         Native Heap:   201220                         201684
+                Code:    13008                          99316
+               Stack:      868                            872
+            Graphics:        0                              0
+       Private Other:    89928
+              System:    93837
+             Unknown:                                   91420
+ 
+           TOTAL PSS:   408313            TOTAL RSS:   411872       TOTAL SWAP PSS:    87401
+ 
+ Objects
+               Views:        9         ViewRootImpl:        1
+         AppContexts:        5           Activities:        1
+              Assets:       26        AssetManagers:        0
+       Local Binders:       20        Proxy Binders:       40
+       Parcel memory:        8         Parcel count:       33
+    Death Recipients:       13      OpenSSL Sockets:        0
+            WebViews:        0
+ 
+ SQL
+         MEMORY_USED:        0
+  PAGECACHE_OVERFLOW:        0          MALLOC_SIZE:        0
+ 

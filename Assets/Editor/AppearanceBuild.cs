@@ -11,7 +11,7 @@ using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
 public static class AppearanceBuild {
-  public const string Scene = "Assets/Scenes/12_AppearanceAR.unity";
+  public const string Scene = "Assets/Scenes/12_AppearanceAR_r05.unity";
   public const string Folder = "Assets/Appearance12";
   public static string Evidence =>
       Environment.GetEnvironmentVariable("CHUPA_APPEARANCE_EVIDENCE") ??
@@ -200,6 +200,44 @@ public static class AppearanceBuild {
     EditorSceneManager.SaveScene(study.gameObject.scene, Scene);
     Debug.Log("CHUPACABRAS_APPEARANCE_CONFIGURED");
   }
+  // Preserve the first APK/scene; correct tabletop presentation from physical
+  // G20 evidence.
+  public static void CreateTableRevision() {
+    TrackingBuild.RequireVersion();
+    ExchangeBuild.Require(!File.Exists(Scene), "Preserve table revision");
+    EditorSceneManager.OpenScene("Assets/Scenes/12_AppearanceAR.unity");
+    var study = UnityEngine.Object.FindFirstObjectByType<AppearanceStudy>();
+    var figure = study.visualRoot.Find("StaticFigure");
+    figure.localRotation = Quaternion.Euler(-90, 0, 0) * figure.localRotation;
+    figure.localPosition = Vector3.zero;
+    study.panel.transform.localRotation = Quaternion.Euler(-90, 0, 0);
+    study.panel.transform.localPosition = new Vector3(.28f, .10f, -.075f);
+    var fill = study.visualRoot.Find("FigureFill").GetComponent<Light>();
+    fill.transform.localPosition = new Vector3(0, -.05f, -.25f);
+    fill.intensity = .045f;
+    PrefabUtility.SaveAsPrefabAsset(study.gameObject,
+                                    Folder + "/AppearanceStudy_r05.prefab");
+    EditorSceneManager.SaveScene(study.gameObject.scene, Scene);
+    AssetDatabase.SaveAssets();
+  }
+  static bool ProjectedPolygonsOverlap(Vector2[] a, Vector2[] b) {
+    // Separating axis test for convex polygons in the image plane.
+    foreach (var polygon in new[] { a, b }) {
+      for (int i = 0; i < polygon.Length; i++) {
+        var edge = polygon[(i + 1) % polygon.Length] - polygon[i];
+        var axis = new Vector2(-edge.y, edge.x);
+        if (axis.sqrMagnitude < 1e-12f)
+          continue;
+        float amin = a.Min(p => Vector2.Dot(p, axis));
+        float amax = a.Max(p => Vector2.Dot(p, axis));
+        float bmin = b.Min(p => Vector2.Dot(p, axis));
+        float bmax = b.Max(p => Vector2.Dot(p, axis));
+        if (amax < bmin || bmax < amin)
+          return false;
+      }
+    }
+    return true;
+  }
   public static void Verify() {
     TrackingBuild.RequireVersion();
     Directory.CreateDirectory(Evidence);
@@ -240,6 +278,9 @@ public static class AppearanceBuild {
           study.visualRoot.GetComponentsInChildren<Renderer>().All(
               r => r.gameObject.layer == 0),
           "Exterior layer");
+      var staticFigure = study.visualRoot.Find("StaticFigure");
+      ExchangeBuild.Require(staticFigure.localPosition == Vector3.zero,
+                            "Figure must stand directly over marker center");
       for (int shot = 0; shot < 3; shot++) {
         study.Present(true, shot * 6, true);
         ExchangeBuild.SaveCamera(study.cinema,
@@ -250,38 +291,45 @@ public static class AppearanceBuild {
       var rotation = study.cinema.transform.rotation;
       ExchangeBuild.SaveCamera(study.cinema,
                                Evidence + ("/internal_before." + "png"));
-      foreach (var angle in new[] { ("front", new Vector3(.015f, .07f, -.85f)),
-                                    ("left", new Vector3(-.24f, .12f, -.85f)),
+      foreach (var angle in new[] { ("front", new Vector3(.015f, -.7f, -.4f)),
+                                    ("left", new Vector3(-.22f, -.7f, -.4f)),
                                     ("right",
-                                     new Vector3(.27f, .12f, -.85f)) }) {
+                                     new Vector3(.25f, -.7f, -.4f)) }) {
         view.transform.position = angle.Item2;
-        view.transform.LookAt(new Vector3(.015f, 0, 0));
+        view.transform.LookAt(new Vector3(.015f, 0, 0), Vector3.back);
         ExchangeBuild.SaveCamera(view, Evidence + "/composition_" +
                                            angle.Item1 + ".png");
-        // Project conservative bounds of every exterior mesh: the entire 220 mm
-        // protected square (180 mm drawing + 20 mm margin each side) must stay
-        // unobscured.
-        var tagRect = new Rect();
+        // A rotated marker is a quadrilateral, not its enclosing rectangle.
+        // Test actual projected triangles so empty corners of bounds do not
+        // fail.
         var tagPoints =
             new[] { new Vector3(-.11f, -.11f, 0), new Vector3(.11f, -.11f, 0),
                     new Vector3(.11f, .11f, 0), new Vector3(-.11f, .11f, 0) }
-                .Select(p => view.WorldToViewportPoint(p))
+                .Select(p => (Vector2)view.WorldToViewportPoint(p))
                 .ToArray();
-        tagRect =
-            Rect.MinMaxRect(tagPoints.Min(p => p.x), tagPoints.Min(p => p.y),
-                            tagPoints.Max(p => p.x), tagPoints.Max(p => p.y));
         foreach (var mesh in study.visualRoot
                      .GetComponentsInChildren<MeshFilter>()) {
+          // Explicit user correction: the figure is over the printed symbol.
+          // Its virtual occlusion is intentional; the detector reads raw camera
+          // pixels. The panel must still leave the marker clear.
+          if (mesh.transform.IsChildOf(staticFigure))
+            continue;
           var points = mesh.sharedMesh.vertices
                            .Select(v => view.WorldToViewportPoint(
                                        mesh.transform.TransformPoint(v)))
                            .ToArray();
-          var rect =
-              Rect.MinMaxRect(points.Min(p => p.x), points.Min(p => p.y),
-                              points.Max(p => p.x), points.Max(p => p.y));
-          ExchangeBuild.Require(!tagRect.Overlaps(rect),
-                                "Protected marker overlaps " + mesh.name +
-                                    " from " + angle.Item1);
+          ExchangeBuild.Require(points.All(p => p.z > 0),
+                                "Exterior behind camera");
+          var indices = mesh.sharedMesh.triangles;
+          for (int i = 0; i < indices.Length; i += 3) {
+            var triangle = new[] { (Vector2)points[indices[i]],
+                                   (Vector2)points[indices[i + 1]],
+                                   (Vector2)points[indices[i + 2]] };
+            ExchangeBuild.Require(
+                !ProjectedPolygonsOverlap(triangle, tagPoints),
+                "Protected marker overlaps triangle of " + mesh.name +
+                    " from " + angle.Item1);
+          }
         }
       }
       anchor.SetPositionAndRotation(new Vector3(.02f, -.01f, .02f),
@@ -323,8 +371,8 @@ public static class AppearanceBuild {
     var pipeline = GraphicsSettings.defaultRenderPipeline;
     try {
       PlayerSettings.productName = "Chupacabras — Aspecto 12";
-      PlayerSettings.bundleVersion = "0.0.12";
-      PlayerSettings.Android.bundleVersionCode = 12;
+      PlayerSettings.bundleVersion = "0.0.14";
+      PlayerSettings.Android.bundleVersionCode = 14;
       PlayerSettings.SetApplicationIdentifier(
           NamedBuildTarget.Android, "com.chupacabras.ar.appearance12");
       GraphicsSettings.defaultRenderPipeline =

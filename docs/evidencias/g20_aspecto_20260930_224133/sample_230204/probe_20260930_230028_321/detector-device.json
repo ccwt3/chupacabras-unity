@@ -1,0 +1,21 @@
+{
+    "unity": "6000.3.22f1",
+    "platform": "Android",
+    "family": "tagStandard41h12",
+    "id": 0,
+    "detections": 1,
+    "blankDetections": 0,
+    "position": {
+        "x": -0.000030418614187510684,
+        "y": 0.0001228229666594416,
+        "z": 0.27718374133110049
+    },
+    "rotation": {
+        "x": 0.002918973797932267,
+        "y": -0.0010334892431274057,
+        "z": -0.00016976076585706323,
+        "w": 0.9999952912330627
+    },
+    "passed": true,
+    "limitation": "Imagen incluida; no valida marcador físico, escala ni calibración."
+}
