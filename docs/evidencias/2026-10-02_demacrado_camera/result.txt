@@ -1,0 +1,1 @@
+Best position Unity (0.60, 2.60, -6.00); sampled pixels 19; full range pixels 40
