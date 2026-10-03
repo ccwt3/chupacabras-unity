@@ -1,3 +1,8 @@
+> **Referencia histórica anterior al cambio de alcance del 2 de octubre de 2026.**
+> Resultados y entregas se conservan; sus próximos pasos, ventana/corto y
+> solicitudes manuales no son instrucciones vigentes. Ver [estado](estado.md)
+> y [migración a figura AR](figura_ar.md). M#[6] no se declara aprobada.
+
 # Preparación Unity/Android — paso 2
 
 Este proyecto pertenece a `/home/cacawatin/code/unity/chupacabras`; las fuentes Blender permanecen en `/home/cacawatin/code/blender/chupacabras`. El estado general y el límite de pasos se consultan en `docs/estado.md` de Blender.

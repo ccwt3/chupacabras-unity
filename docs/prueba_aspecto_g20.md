@@ -1,3 +1,8 @@
+> **Referencia histórica anterior al cambio de alcance del 2 de octubre de 2026.**
+> Resultados y entregas se conservan; sus próximos pasos, ventana/corto y
+> solicitudes manuales no son instrucciones vigentes. Ver [estado](estado.md)
+> y [migración a figura AR](figura_ar.md). M#[6] no se declara aprobada.
+
 # Prueba física del aspecto — 30 de septiembre de 2026
 
 Se retomó **12.2 / M#[4]**. El usuario conectó el Moto G20 y autorizó instalar

@@ -1,3 +1,8 @@
+> **Referencia histórica anterior al cambio de alcance del 2 de octubre de 2026.**
+> Resultados y entregas se conservan; sus próximos pasos, ventana/corto y
+> solicitudes manuales no son instrucciones vigentes. Ver [estado](estado.md)
+> y [migración a figura AR](figura_ar.md). M#[6] no se declara aprobada.
+
 # Primer acceso físico al Moto G20 — 23 de septiembre de 2026
 
 Se retomaron exclusivamente **2.4 y 3.2–3.3**. El usuario autorizó probar la app del proyecto y pidió desinstalar lo añadido al terminar. También pidió notificaciones para las acciones manuales; se usaron para autorización USB y disponibilidad del marcador. Respondió que aceptó USB y que **todavía no tiene el marcador impreso**.

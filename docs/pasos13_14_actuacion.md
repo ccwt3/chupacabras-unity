@@ -1,3 +1,8 @@
+> **Referencia histórica anterior al cambio de alcance del 2 de octubre de 2026.**
+> Resultados y entregas se conservan; sus próximos pasos, ventana/corto y
+> solicitudes manuales no son instrucciones vigentes. Ver [estado](estado.md)
+> y [migración a figura AR](figura_ar.md). M#[6] no se declara aprobada.
+
 # Pasos 13–14: calma y ataque importados
 
 Unity **6000.3.22f1**, desde Linux. Fuentes Blender en

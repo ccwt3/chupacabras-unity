@@ -1,3 +1,8 @@
+> **Referencia histórica anterior al cambio de alcance del 2 de octubre de 2026.**
+> Resultados y entregas se conservan; sus próximos pasos, ventana/corto y
+> solicitudes manuales no son instrucciones vigentes. Ver [estado](estado.md)
+> y [migración a figura AR](figura_ar.md). M#[6] no se declara aprobada.
+
 # Resultado de preparación de seguimiento — 23 de septiembre de 2026
 
 Se trabajó **2 retomado + 3**; no se inició 4. Cambio: añadida cámara/pose y prueba de carga mínima para poder evaluar AprilTag en el G20 antes de producir recursos finales. La aplicación 02, los 62 archivos del paquete embebido y las demos Blender anteriores permanecen intactos. Estado general en `/home/cacawatin/code/blender/chupacabras/docs/estado.md`.
