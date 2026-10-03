@@ -30,6 +30,7 @@ public static class RigBuild {
   [Serializable]
   public class Reference {
     public float duration;
+    public int triangles;
     public Sample[] samples;
   }
   [Serializable]
@@ -101,7 +102,7 @@ public static class RigBuild {
           color = new Color(.105f, .12f, .12f);
         if (n.Contains("Ridge"))
           color = new Color(.23f, .26f, .235f);
-        if (n.Contains("Mouth"))
+        if (n.Contains("Mouth") || n.Contains("Sockets"))
           color = new Color(.036f, .026f, .028f);
         mat.SetColor("_BaseColor", color);
         mat.SetFloat("_Smoothness", 0);
@@ -193,8 +194,10 @@ public static class RigBuild {
                           "Neck compression blend shape");
     foreach (var renderer in go.GetComponentsInChildren<SkinnedMeshRenderer>())
       result.triangles += renderer.sharedMesh.triangles.Length / 3;
-    ExchangeBuild.Require(result.triangles ==
-                              (Name.StartsWith("10") ? 612 : 11162),
+    ExchangeBuild.Require(result.triangles == (reference.triangles > 0
+                                                   ? reference.triangles
+                                               : Name.StartsWith("10") ? 612
+                                                                       : 11162),
                           "Triangle preservation " + result.triangles);
     foreach (var s in reference.samples) {
       playable.SetTime(s.time);

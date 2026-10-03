@@ -11,8 +11,12 @@ using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
 
 public static class AppearanceBuild {
-  public const string Scene = "Assets/Scenes/12_AppearanceAR_r05.unity";
-  public const string Folder = "Assets/Appearance12";
+  public static string Scene =>
+      Environment.GetEnvironmentVariable("CHUPA_APPEARANCE_SCENE") ??
+      "Assets/Scenes/12_AppearanceAR_r05.unity";
+  public static string Folder =>
+      Environment.GetEnvironmentVariable("CHUPA_APPEARANCE_FOLDER") ??
+      "Assets/Appearance12";
   public static string Evidence =>
       Environment.GetEnvironmentVariable("CHUPA_APPEARANCE_EVIDENCE") ??
       "docs/evidencias/2026-09-30_visual";
@@ -47,16 +51,16 @@ public static class AppearanceBuild {
     foreach (var r in go.GetComponentsInChildren<Renderer>(true)) {
       var materials = r.sharedMaterials;
       for (int i = 0; i < materials.Length; i++) {
-        string name = r.name.StartsWith("Sheep") ? (i == 0 ? "Wool" : "Hoof")
-                      : r.name.Contains("Eye")   ? "Eye"
-                      : r.name.Contains("Teeth") || r.name.Contains("Ivory")
-                          ? "Ivory"
-                      : r.name.Contains("Mouth") ? "Mouth"
-                      : r.name.Contains("Ridge") ? "Ridge"
-                      : r.name.Contains("Crest") || r.name.Contains("Ear") ||
-                              r.name.Contains("Horn")
-                          ? "Horn"
-                          : "Skin";
+        string name =
+            r.name.StartsWith("Sheep") ? (i == 0 ? "Wool" : "Hoof")
+            : r.name.Contains("Eye")   ? "Eye"
+            : r.name.Contains("Teeth") || r.name.Contains("Ivory")   ? "Ivory"
+            : r.name.Contains("Mouth") || r.name.Contains("Sockets") ? "Mouth"
+            : r.name.Contains("Ridge")                               ? "Ridge"
+            : r.name.Contains("Crest") || r.name.Contains("Ear") ||
+                    r.name.Contains("Horn")
+                ? "Horn"
+                : "Skin";
         materials[i] = AssetDatabase.LoadAssetAtPath<Material>(Folder + "/" +
                                                                name + ".mat");
       }
@@ -220,6 +224,80 @@ public static class AppearanceBuild {
     EditorSceneManager.SaveScene(study.gameObject.scene, Scene);
     AssetDatabase.SaveAssets();
   }
+  // New assets and scene retain R05's accepted placement and historical build.
+  public static void CreateLeanRevision() {
+    TrackingBuild.RequireVersion();
+    ExchangeBuild.Require(Folder != "Assets/Appearance12" &&
+                              !Directory.Exists(Folder) && !File.Exists(Scene),
+                          "Use a new lean appearance destination");
+    Directory.CreateDirectory(Folder);
+    AssetDatabase.Refresh();
+    foreach (var path in Directory.GetFiles("Assets/Appearance12")) {
+      if (path.EndsWith(".mat") || path.EndsWith(".asset"))
+        ExchangeBuild.Require(AssetDatabase.CopyAsset(
+                                  path, Folder + "/" + Path.GetFileName(path)),
+                              "Copy " + path);
+    }
+    EditorSceneManager.OpenScene("Assets/Scenes/12_AppearanceAR_r05.unity");
+    var study = UnityEngine.Object.FindFirstObjectByType<AppearanceStudy>();
+    const string creature =
+        "Assets/Creature/09_chupacabras_demacrado_r02/Chupacabras.prefab";
+    var figure = ReplaceInstance(
+        study.visualRoot.Find("StaticFigure").gameObject, creature);
+    foreach (var animator in figure.GetComponentsInChildren<Animator>())
+      UnityEngine.Object.DestroyImmediate(animator);
+    var oldCalm = study.calm.transform.Cast<Transform>().Single(
+        t => t != study.sheepAnimator.transform);
+    ReplaceInstance(oldCalm.gameObject, creature);
+    study.contact = ReplaceInstance(
+        study.contact, "Assets/Rigs/11_rigs_contacto_demacrado_r01.prefab");
+    study.contactAnimator = study.contact.GetComponent<Animator>();
+    study.contactClip =
+        ExchangeBuild.Clip("Assets/Rigs/11_rigs_contacto_demacrado_r01.fbx");
+    Dress(figure);
+    Dress(study.calm);
+    Dress(study.contact);
+    Layer(study.cinemaRoot.gameObject, 8);
+    foreach (var renderer in study.GetComponentsInChildren<Renderer>(true)) {
+      var materials = renderer.sharedMaterials;
+      for (int i = 0; i < materials.Length; i++) {
+        var path = AssetDatabase.GetAssetPath(materials[i]);
+        if (path.StartsWith("Assets/Appearance12/"))
+          materials[i] = AssetDatabase.LoadAssetAtPath<Material>(
+              Folder + "/" + Path.GetFileName(path));
+      }
+      renderer.sharedMaterials = materials;
+    }
+    study.pipeline =
+        AssetDatabase.LoadAssetAtPath<UniversalRenderPipelineAsset>(
+            Folder + "/AppearanceURP.asset");
+    // Keep the approved lighting but retain the revised source's dry skin
+    // palette.
+    foreach (var pair in new[] { ("Skin", new Color(.19f, .205f, .18f)),
+                                 ("Ridge", new Color(.28f, .29f, .25f)),
+                                 ("Horn", new Color(.075f, .085f, .080f)),
+                                 ("Mouth", new Color(.025f, .018f, .025f)),
+                                 ("Ivory", new Color(.53f, .50f, .36f)) }) {
+      var material = AssetDatabase.LoadAssetAtPath<Material>(
+          Folder + "/" + pair.Item1 + ".mat");
+      material.SetColor("_BaseColor", pair.Item2);
+      EditorUtility.SetDirty(material);
+    }
+    PrefabUtility.SaveAsPrefabAsset(study.gameObject,
+                                    Folder + "/AppearanceStudy.prefab");
+    AssetDatabase.SaveAssets();
+    EditorSceneManager.SaveScene(study.gameObject.scene, Scene);
+  }
+  static GameObject ReplaceInstance(GameObject old, string path) {
+    var replacement = Instance(path, old.transform.parent);
+    replacement.name = old.name;
+    Layer(replacement, old.layer);
+    replacement.transform.localPosition = old.transform.localPosition;
+    replacement.transform.localRotation = old.transform.localRotation;
+    replacement.transform.localScale = old.transform.localScale;
+    UnityEngine.Object.DestroyImmediate(old);
+    return replacement;
+  }
   static bool ProjectedPolygonsOverlap(Vector2[] a, Vector2[] b) {
     // Separating axis test for convex polygons in the image plane.
     foreach (var polygon in new[] { a, b }) {
@@ -281,6 +359,21 @@ public static class AppearanceBuild {
       var staticFigure = study.visualRoot.Find("StaticFigure");
       ExchangeBuild.Require(staticFigure.localPosition == Vector3.zero,
                             "Figure must stand directly over marker center");
+      if (Scene.Contains("demacrado")) {
+        ExchangeBuild.Require(
+            staticFigure.GetComponentsInChildren<MeshFilter>().Sum(
+                m => m.sharedMesh.triangles.Length / 3) == 30880,
+            "Revised exterior mesh");
+        ExchangeBuild.Require(
+            study.contact.GetComponentsInChildren<SkinnedMeshRenderer>().Sum(
+                m => m.sharedMesh.triangles.Length / 3) == 31492,
+            "Revised contact rig plus sheep");
+        ExchangeBuild.Require(
+            study.GetComponentsInChildren<Renderer>(true)
+                .Where(r => r.name.Contains("Sockets"))
+                .All(r => r.sharedMaterials.All(m => m.name == "Mouth")),
+            "Dark orbital sockets");
+      }
       for (int shot = 0; shot < 3; shot++) {
         study.Present(true, shot * 6, true);
         ExchangeBuild.SaveCamera(study.cinema,
@@ -371,8 +464,11 @@ public static class AppearanceBuild {
     var pipeline = GraphicsSettings.defaultRenderPipeline;
     try {
       PlayerSettings.productName = "Chupacabras — Aspecto 12";
-      PlayerSettings.bundleVersion = "0.0.14";
-      PlayerSettings.Android.bundleVersionCode = 14;
+      PlayerSettings.bundleVersion =
+          Environment.GetEnvironmentVariable("CHUPA_APPEARANCE_VERSION") ??
+          "0.0.14";
+      PlayerSettings.Android.bundleVersionCode =
+          int.Parse(PlayerSettings.bundleVersion.Split('.').Last());
       PlayerSettings.SetApplicationIdentifier(
           NamedBuildTarget.Android, "com.chupacabras.ar.appearance12");
       GraphicsSettings.defaultRenderPipeline =
@@ -387,7 +483,7 @@ public static class AppearanceBuild {
       });
       File.WriteAllText(
           output + ".build.txt",
-          $"Unity: {Application.unityVersion}\nResult: {report.summary.result}\nErrors: {report.summary.totalErrors}\nWarnings: {report.summary.totalWarnings}\nBytes: {report.summary.totalSize}\nDuration: {report.summary.totalTime}\nPhysical G20: pending M#[4]\n");
+          $"Unity: {Application.unityVersion}\nResult: {report.summary.result}\nErrors: {report.summary.totalErrors}\nWarnings: {report.summary.totalWarnings}\nBytes: {report.summary.totalSize}\nDuration: {report.summary.totalTime}\nPhysical G20: pending for this APK\n");
       if (report.summary.result != BuildResult.Succeeded)
         throw new BuildFailedException("Appearance APK failed");
       Debug.Log("CHUPACABRAS_APPEARANCE_APK " + output);

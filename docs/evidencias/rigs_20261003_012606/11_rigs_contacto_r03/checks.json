@@ -1,0 +1,13 @@
+{
+    "passed": true,
+    "physicalDevice": false,
+    "samples": 181,
+    "verticesCompared": 242359,
+    "triangles": 11162,
+    "duration": 6.000000476837158,
+    "maxVertexError": 0.00002769675847957842,
+    "maxShapeError": 0.0,
+    "minHeight": -0.000025153160095214844,
+    "maxContact": 0.0000011099115226897994,
+    "maxSurfaceContact": 0.0000014079823813517579
+}

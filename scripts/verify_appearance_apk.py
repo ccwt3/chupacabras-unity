@@ -10,7 +10,8 @@ for name,args in [('signature',['apksigner','verify','--verbose',str(apk)]),('zi
  result=subprocess.run([str(bt/args[0]),*args[1:]],capture_output=True,text=True,env=env)
  (evidence/(name+'.txt')).write_text(result.stdout+result.stderr)
  assert result.returncode==0,(name,result.stderr); results[name]=True
-badging=(evidence/'badging.txt').read_text();assert "name='com.chupacabras.ar.appearance12'" in badging and "versionName='0.0.14'" in badging and "native-code: 'arm64-v8a'" in badging
+version=os.environ.get('CHUPA_APPEARANCE_VERSION','0.0.14')
+badging=(evidence/'badging.txt').read_text();assert "name='com.chupacabras.ar.appearance12'" in badging and f"versionName='{version}'" in badging and "native-code: 'arm64-v8a'" in badging
 assert 'android.permission.CAMERA' in badging
 libs=[]
 with zipfile.ZipFile(apk) as z:
@@ -27,6 +28,6 @@ with zipfile.ZipFile(apk) as z:
     aligns.append(align)
   libs.append({'file':n,'machine':machine,'load_segment_alignments':aligns})
  assert any('AprilTag' in l['file'] for l in libs),libs
-report={'apk':str(apk),'sha256':hashlib.sha256(apk.read_bytes()).hexdigest(),'bytes':apk.stat().st_size,'tools':str(bt),'package':'com.chupacabras.ar.appearance12','version':'0.0.14','checks':results,'libraries':libs,'physical_device':False,'page_size_runtime_validation':False}
+report={'apk':str(apk),'sha256':hashlib.sha256(apk.read_bytes()).hexdigest(),'bytes':apk.stat().st_size,'tools':str(bt),'package':'com.chupacabras.ar.appearance12','version':version,'checks':results,'libraries':libs,'physical_device':False,'page_size_runtime_validation':False}
 (evidence/'apk_verificacion.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps({k:v for k,v in report.items() if k!='libraries'},indent=2))
